@@ -1,0 +1,6 @@
+framework module Pods_Proximiio_Tests {
+  umbrella header "Pods-Proximiio_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

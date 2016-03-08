@@ -1,0 +1,14 @@
+PODS:
+  - Proximiio (0.1.0)
+
+DEPENDENCIES:
+  - Proximiio (from `../`)
+
+EXTERNAL SOURCES:
+  Proximiio:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Proximiio: 803be49a31aaf1df0596b4f9b2ab2a1c005be715
+
+COCOAPODS: 0.39.0
