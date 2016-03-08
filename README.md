@@ -28,4 +28,4 @@ Proximi.io, support@proximi.io
 
 ## License
 
-Proximiio is available under the MIT license. See the LICENSE file for more info.
+Proximiio is available under commercial license. See the LICENSE file for more info.

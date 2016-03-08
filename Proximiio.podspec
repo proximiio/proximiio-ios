@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
                        DESC
 
   s.homepage         = "https://github.com/proximiio/proximiio-ios"
-  s.license          = 'MIT'
+  s.license          = 'Commercial'
   s.author           = { "Proximi.io" => "support@proximi.io" }
   s.source           = { :git => "https://github.com/proximiio/proximiio-ios.git", :tag => s.version.to_s }
 
