@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Proximiio"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "The one-step  solution for location-aware applications."
 
 # This description is used to generate tags and improve search results.
@@ -32,11 +32,11 @@ Pod::Spec.new do |s|
 #s.resource_bundles = {
 #'Proximiio' => ['Pod/Assets/*.png']
 #}
-  s.vendored_frameworks = 'Pod/Proximiio.framework', 'Pod/IndoorAtlas.framework'
+  s.vendored_frameworks = 'Pod/Proximiio.framework', 'Pod/IndoorAtlas.framework', 'Pod/Firebase.framework', 'Pod/GeoFire.framework'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.libraries = 'z', 'c++', 'icucore'
   s.frameworks = 'CoreLocation', 'SystemConfiguration', 'Security', 'Accelerate', 'CoreMotion', 'CFNetwork', 'CoreBluetooth', 'UIKit', 'Accelerate', 'CoreMotion'
-s.dependency 'GeoFire', '>=1.1'
+#s.dependency 'GeoFire', '>=1.1'
 
 end
