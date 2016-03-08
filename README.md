@@ -7,7 +7,11 @@
 
 ## Usage
 
+Check out the [documentation](https://proximi.io/docs/ios/)!
+
 ## Requirements
+
+The framework is not bitcode compatible. Background location services have to be enabled. A string for the plist key "NSLocationAlwaysUsageDescription" has to be present.
 
 ## Installation
 
