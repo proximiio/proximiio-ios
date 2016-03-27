@@ -24,4 +24,6 @@
 
 @property (nonatomic, readonly) NSString *URL;
 
+- (BOOL)hasAllValuesSet;
+
 @end

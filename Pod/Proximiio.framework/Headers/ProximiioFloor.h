@@ -33,6 +33,11 @@
 @property (nonatomic, readonly) NSString *floorPlanImageURL;
 
 /*!
+ @brief The floor number/level of this floor.
+ */
+@property (nonatomic, readonly) NSNumber *floorNumber;
+
+/*!
  @brief The corners of this floor plan (coordinates) of this floor.
  */
 @property (nonatomic, readonly) NSArray  *cornerArray;

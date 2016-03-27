@@ -36,6 +36,8 @@ FOUNDATION_EXPORT const unsigned char ProximiioVersionString[];
 
 - (void)proximiioPositionUpdated:(CLLocation*)location;
 
+- (void)proximiioFloorChanged:(ProximiioFloor*)floor;
+
 
 - (void)proximiioFoundiBeacon:(ProximiioBeacon*)beacon isRegistered:(BOOL)registered;
 
@@ -95,28 +97,33 @@ FOUNDATION_EXPORT const unsigned char ProximiioVersionString[];
 
 
 - (BOOL) addPlace:(NSString*)name location:(CLLocationCoordinate2D)location address:(NSString*)address indoorAtlasVenueID:(NSString*)venueID tags:(NSArray*)tags withCallback:(void (^)(BOOL success, NSError* error))callback;
-- (BOOL) addFloor:(NSString*)name floorID:(NSString*)floorID floorPlanID:(NSString*)floorPlanID place:(ProximiioPlace*)place withCallback:(void (^)(BOOL success, NSError* error))callback;
+- (BOOL) addFloor:(NSString*)name floorID:(NSString*)floorID floorPlanID:(NSString*)floorPlanID place:(ProximiioPlace*)place floorNumber:(NSNumber*)floorNumber withCallback:(void (^)(BOOL success, NSError* error))callback;
 - (BOOL) addDepartment:(NSString*)name floor:(ProximiioFloor*)floor tags:(NSArray*)tags withCallback:(void (^)(BOOL success, NSError* error))callback;
 - (BOOL) addGeofence:(NSString*)name department:(ProximiioDepartment*)department location:(CLLocationCoordinate2D)location radius:(double)radius address:(NSString*)address withCallback:(void (^)(BOOL success, NSError* error))callback;
-- (BOOL) addiBeaconInput:(NSString*)name department:(ProximiioDepartment*)department location:(CLLocationCoordinate2D)location uuid:(NSString*)uuid major:(int)major minor:(int)minor triggersFloorChange:(BOOL)triggersFloorChange triggersPlaceChange:(BOOL)triggersPlaceChange floorID:(NSString*)floorID placeID:(NSString*)placeID withCallback:(void (^)(BOOL success, NSError* error))callback;
-- (BOOL) addEddystoneInput:(NSString*)name department:(ProximiioDepartment*)department location:(CLLocationCoordinate2D)location namespaceID:(NSString*)namespaceID instanceID:(NSString*)instanceID triggersFloorChange:(BOOL)triggersFloorChange triggersPlaceChange:(BOOL)triggersPlaceChange floorID:(NSString*)floorID placeID:(NSString*)placeID withCallback:(void (^)(BOOL success, NSError* error))callback;
-- (BOOL) addCustomInput:(NSString*)name department:(ProximiioDepartment*)department location:(CLLocationCoordinate2D)location triggersFloorChange:(BOOL)triggersFloorChange triggersPlaceChange:(BOOL)triggersPlaceChange floorID:(NSString*)floorID placeID:(NSString*)placeID withCallback:(void (^)(BOOL success, NSError* error))callback;
+- (BOOL) addiBeaconInput:(NSString*)name department:(ProximiioDepartment*)department location:(CLLocationCoordinate2D)location uuid:(NSString*)uuid major:(int)major minor:(int)minor withCallback:(void (^)(BOOL success, NSError* error))callback;
+- (BOOL) addEddystoneInput:(NSString*)name department:(ProximiioDepartment*)department location:(CLLocationCoordinate2D)location namespaceID:(NSString*)namespaceID instanceID:(NSString*)instanceID withCallback:(void (^)(BOOL success, NSError* error))callback;
+- (BOOL) addCustomInput:(NSString*)name department:(ProximiioDepartment*)department location:(CLLocationCoordinate2D)location withCallback:(void (^)(BOOL success, NSError* error))callback;
+- (BOOL) addApplication:(NSString*)name eddystones:(BOOL)eddystones iBeacons:(BOOL)iBeacons indoorAtlas:(BOOL)indoorAtlas indoorAtlasApiKey:(NSString*)iaApiKey indoorAtlasApiKeySecret:(NSString*)iaApiKeySecret nativeGeofences:(BOOL)nativeGeofences steerPath:(BOOL)steerPath steerPathNDD:(NSString*)steerPathNDD withCallback:(void (^)(BOOL success, NSError* error))callback;
+
 
 
 - (BOOL) updatePlace:(NSString*)ID name:(NSString*)name location:(CLLocationCoordinate2D)location address:(NSString*)address indoorAtlasVenueID:(NSString*)venueID tags:(NSArray*)tags withCallback:(void (^)(BOOL success, NSError* error))callback;
-- (BOOL) updateFloor:(NSString*)ID name:(NSString*)name floorID:(NSString*)floorID floorPlanID:(NSString*)floorPlanID place:(ProximiioPlace*)place withCallback:(void (^)(BOOL success, NSError* error))callback;
+- (BOOL) updateFloor:(NSString*)ID name:(NSString*)name floorID:(NSString*)floorID floorPlanID:(NSString*)floorPlanID place:(ProximiioPlace*)place floorNumber:(NSNumber*)floorNumber withCallback:(void (^)(BOOL success, NSError* error))callback;
 - (BOOL) updateDepartment:(NSString*)ID name:(NSString*)name floor:(ProximiioFloor*)floor tags:(NSArray*)tags withCallback:(void (^)(BOOL success, NSError* error))callback;
 - (BOOL) updateGeofence:(NSString*)ID name:(NSString*)name department:(ProximiioDepartment*)department location:(CLLocationCoordinate2D)location radius:(double)radius address:(NSString*)address withCallback:(void (^)(BOOL success, NSError* error))callback;
 - (BOOL) updateiBeaconInput:(NSString*)ID name:(NSString*)name department:(ProximiioDepartment*)department location:(CLLocationCoordinate2D)location uuid:(NSString*)uuid major:(int)major minor:(int)minor triggersFloorChange:(BOOL)triggersFloorChange triggersPlaceChange:(BOOL)triggersPlaceChange floorID:(NSString*)floorID placeID:(NSString*)placeID withCallback:(void (^)(BOOL success, NSError* error))callback;
 - (BOOL) updateEddystoneInput:(NSString*)ID name:(NSString*)name department:(ProximiioDepartment*)department location:(CLLocationCoordinate2D)location namespaceID:(NSString*)namespaceID instanceID:(NSString*)instanceID triggersFloorChange:(BOOL)triggersFloorChange triggersPlaceChange:(BOOL)triggersPlaceChange floorID:(NSString*)floorID placeID:(NSString*)placeID withCallback:(void (^)(BOOL success, NSError* error))callback;
 - (BOOL) updateCustomInput:(NSString*)ID name:(NSString*)name department:(ProximiioDepartment*)department location:(CLLocationCoordinate2D)location triggersFloorChange:(BOOL)triggersFloorChange triggersPlaceChange:(BOOL)triggersPlaceChange floorID:(NSString*)floorID placeID:(NSString*)placeID withCallback:(void (^)(BOOL success, NSError* error))callback;
+- (BOOL) updateApplication:(NSString*)ID name:(NSString*)name eddystones:(BOOL)eddystones iBeacons:(BOOL)iBeacons indoorAtlas:(BOOL)indoorAtlas indoorAtlasApiKey:(NSString*)iaApiKey indoorAtlasApiKeySecret:(NSString*)iaApiKeySecret nativeGeofences:(BOOL)nativeGeofences steerPath:(BOOL)steerPath steerPathNDD:(NSString*)steerPathNDD withCallback:(void (^)(BOOL success, NSError* error))callback;
 
 
-- (void) deletePlace:(NSString*)ID      withCallback:(void (^)(BOOL success, NSError* error))callback;
-- (void) deleteFloor:(NSString*)ID      withCallback:(void (^)(BOOL success, NSError* error))callback;
-- (void) deleteDepartment:(NSString*)ID withCallback:(void (^)(BOOL success, NSError* error))callback;
-- (void) deleteGeofence:(NSString*)ID   withCallback:(void (^)(BOOL success, NSError* error))callback;
-- (void) deleteInput:(NSString*)ID      withCallback:(void (^)(BOOL success, NSError* error))callback;
+
+- (void) deletePlace:(NSString*)ID       withCallback:(void (^)(BOOL success, NSError* error))callback;
+- (void) deleteFloor:(NSString*)ID       withCallback:(void (^)(BOOL success, NSError* error))callback;
+- (void) deleteDepartment:(NSString*)ID  withCallback:(void (^)(BOOL success, NSError* error))callback;
+- (void) deleteGeofence:(NSString*)ID    withCallback:(void (^)(BOOL success, NSError* error))callback;
+- (void) deleteInput:(NSString*)ID       withCallback:(void (^)(BOOL success, NSError* error))callback;
+- (void) deleteApplication:(NSString*)ID withCallback:(void (^)(BOOL success, NSError* error))callback;
 
 
 - (void) addCustomiBeaconUUID:(NSString*)uuid;

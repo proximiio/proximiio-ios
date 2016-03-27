@@ -39,22 +39,6 @@ typedef enum : NSUInteger {
  */
 @property (nonatomic, readonly) NSString                *departmentUID;
 /*!
- @brief Determines if the input triggers a floor change
- */
-@property (nonatomic, readonly) BOOL                    triggersFloorChange;
-/*!
- @brief Floor to be changed to, in case this input triggers a floor change.
- */
-@property (nonatomic, readonly) NSString*               floorID;
-/*!
- @brief Determines if the input triggers a place/venue change
- */
-@property (nonatomic, readonly) BOOL                    triggersPlaceChange;
-/*!
- @brief Place (venue) to be changed to, in case this input triggers a place change.
- */
-@property (nonatomic, readonly) NSString*               placeID;
-/*!
  @brief Associated beacon filter.
  */
 @property (nonatomic, readonly) ProximiioBeaconFilter   *beaconFilter;

@@ -10,6 +10,8 @@
 #import <CoreLocation/CoreLocation.h>
 #import "ProximiioNetworkObject.h"
 
+@class ProximiioFloor;
+
 /*!
  @interface ProximiioGeofence
  @brief ProximiioGeofence interface.
@@ -34,5 +36,7 @@
  @warning This value is only true when Geofences are currently enabled. Otherwise it might be out of date.
  */
 - (BOOL) isInsideGeofence:(CLLocation*)location shouldBeIn:(BOOL)shouldBe;
+
+- (BOOL) isAtFloor:(ProximiioFloor*)floor;
 
 @end
