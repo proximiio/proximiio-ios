@@ -8,14 +8,14 @@
 
 Pod::Spec.new do |s|
   s.name             = "Proximiio"
-  s.version          = "1.0.5"
+  s.version          = "1.0.6"
   s.summary          = "The one-step  solution for location-aware applications."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
 #   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
+#   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description      = <<-DESC
                         Proximi.io is the one-step  solution for location-aware applications.
                        DESC
