@@ -44,30 +44,17 @@ FOUNDATION_EXPORT const unsigned char ProximiioVersionString[];
 - (void)proximiioUpdatediBeacon:(ProximiioBeacon*)beacon isRegistered:(BOOL)registered;
 
 - (void)proximiioLostiBeacon:(ProximiioBeacon*)beacon isRegistered:(BOOL)registered;
-
 - (void)proximiioFoundEddystoneBeacon:(ProximiioEddystoneBeacon*)beacon isRegistered:(BOOL)registered;
-
 - (void)proximiioUpdatedEddystoneBeacon:(ProximiioEddystoneBeacon*)beacon isRegistered:(BOOL)registered;
-
 - (void)proximiioLostEddystoneBeacon:(ProximiioEddystoneBeacon*)beacon isRegistered:(BOOL)registered;
 
-
 - (void)proximiioUpdatedApplications;
-
 - (void)proximiioUpdatedPlaces;
-
 - (void)proximiioUpdatedFloors;
-
 - (void)proximiioUpdatedDepartments;
-
 - (void)proximiioUpdatedInputs;
-
 - (void)proximiioUpdatedGeofences;
-
-
-
 - (BOOL)proximiioHandlePushMessage:(NSString*)title;
-
 - (void)proximiioHandleOutput:(NSObject*)payload;
 
 @end
@@ -89,7 +76,7 @@ FOUNDATION_EXPORT const unsigned char ProximiioVersionString[];
 
 + (id) sharedInstance;
 
-
+- (void) authWithToken:(NSString*)token;
 - (void) authWithEmail:(NSString*)email andPassword:(NSString*)password authCallback:(void (^)(BOOL success, int statusCode))authCallback;
 - (void) registerWithEmail:(NSString*)email password:(NSString*)password firstName:(NSString*)firstName lastName:(NSString*)lastName company:(NSString*)company background:(NSString*)background country:(NSString*)country authCallback:(void (^)(BOOL success, int statusCode))authCallback;
 - (void) setAuthToken:(NSString*)authToken andApplication:(NSString*)application;
