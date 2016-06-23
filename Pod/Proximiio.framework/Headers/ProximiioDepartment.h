@@ -1,27 +1,24 @@
 //
 //  ProximiioDepartment.h
-//  Proximiio
+//  ProximiioApp
 //
-//  Created by Marian Frische on 27.04.15.
-//  Copyright (c) 2015 NavtureApps. All rights reserved.
+//  Created by Matej Držík on 09/06/16.
+//  Copyright © 2016 Quanto. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "ProximiioNetworkObject.h"
+#import "ProximiioResource.h"
+#import "ProximiioPlace.h"
+#import "ProximiioFloor.h"
 
+@interface ProximiioDepartment : ProximiioResource
 
-/*!
- @interface ProximiioDepartment
- @brief ProximiioDepartment interface.
- */
-@interface ProximiioDepartment : ProximiioNetworkObject
++ (ProximiioDepartment *)departmentFromJSON:(NSDictionary *)json;
 
-
-@property (nonatomic, readonly) NSString *placeID;
-/*!
- @brief An array of tags that is assigned to this department.
- */
-@property (nonatomic, readonly) NSArray  *tags;
-
+@property (nonatomic, strong) NSString *placeId;
+@property (nonatomic, strong) ProximiioPlace *place;
+@property (nonatomic, strong) NSString *floorId;
+@property (nonatomic, strong) ProximiioFloor *floor;
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSArray *tags;
 
 @end

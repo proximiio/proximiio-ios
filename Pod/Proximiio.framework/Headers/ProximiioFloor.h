@@ -1,46 +1,23 @@
 //
 //  ProximiioFloor.h
-//  Proximiio
+//  ProximiioApp
 //
-//  Created by Marian Frische on 08.06.15.
-//  Copyright (c) 2015 NavtureApps. All rights reserved.
+//  Created by Matej Držík on 09/06/16.
+//  Copyright © 2016 Quanto. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "ProximiioNetworkObject.h"
+#import "ProximiioResource.h"
+#import "ProximiioPlace.h"
 
-/*!
- @interface ProximiioFloor
- @brief ProximiioFloor interface.
- */
-@interface ProximiioFloor : ProximiioNetworkObject
+@interface ProximiioFloor : ProximiioResource
 
++ (ProximiioFloor *)floorFromJSON:(NSDictionary *)json;
 
-
-/*!
- @brief The floor ID of this floor. (IndoorAtlas)
- */
-@property (nonatomic, readonly) NSString *floorID;
-
-/*!
- @brief The floor plan ID of this floor. (IndoorAtlas)
- */
-@property (nonatomic, readonly) NSString *floorPlanID;
-
-/*!
- @brief The floor plan image URL of this floor.
- */
-@property (nonatomic, readonly) NSString *floorPlanImageURL;
-
-/*!
- @brief The floor number/level of this floor.
- */
-@property (nonatomic, readonly) NSNumber *floorNumber;
-
-/*!
- @brief The corners of this floor plan (coordinates) of this floor.
- */
-@property (nonatomic, readonly) NSArray  *cornerArray;
-
+@property (nonatomic, strong) ProximiioPlace *place;
+@property (nonatomic, strong) NSString *placeId;
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSArray *anchors;
+@property (nonatomic, strong) NSString *indoorAtlasFloorId;
+@property (nonatomic, strong) NSString *indoorAtlasFloorPlanId;
 
 @end

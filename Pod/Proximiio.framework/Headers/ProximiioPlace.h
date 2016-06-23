@@ -1,38 +1,21 @@
 //
 //  ProximiioPlace.h
-//  Proximiio
+//  ProximiioApp
 //
-//  Created by Marian Frische on 29.05.15.
-//  Copyright (c) 2015 NavtureApps. All rights reserved.
+//  Created by Matej Držík on 08/06/16.
+//  Copyright © 2016 Quanto. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <CoreLocation/CoreLocation.h>
-#import "ProximiioNetworkObject.h"
+#import "ProximiioResource.h"
+#import "ProximiioLocation.h"
 
-/*!
- @interface ProximiioPlace
- @brief ProximiioPlace interface.
- */
-@interface ProximiioPlace : ProximiioNetworkObject
+@interface ProximiioPlace : ProximiioResource
 
++ (ProximiioPlace *)placeFromJSON:(NSDictionary *)json;
 
-/*!
- @brief The address of this place.
- */
-@property (nonatomic, readonly) NSString *address;
-/*!
- @brief The location of this place.
- */
-@property (nonatomic, readonly) CLLocation *location;
-/*!
- @brief An array of tags that is assigned to this place.
- */
-@property (nonatomic, readonly) NSArray *tags;
-/*!
- @brief The IA venue id of this place.
- */
-@property (nonatomic, readonly) NSString *IndoorAtlasVenueID;
-
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *address;
+@property (nonatomic, strong) NSArray *tags;
+@property (nonatomic, strong) ProximiioLocation *location;
 
 @end

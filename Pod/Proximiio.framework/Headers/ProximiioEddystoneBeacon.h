@@ -1,14 +1,15 @@
 //
 //  ProximiioEddystoneBeacon.h
-//  Proximiio
+//  ProximiioApp
 //
-//  Created by Marian Frische on 31.07.15.
-//  Copyright (c) 2015 NavtureApps. All rights reserved.
+//  Created by Matej Držík on 17/06/16.
+//  Copyright © 2016 Quanto. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+#import "ProximiioBeacon.h"
 
-@interface ProximiioEddystoneBeacon : NSObject
+@interface ProximiioEddystoneBeacon : ProximiioBeacon
 
 @property (nonatomic, readonly) NSData *IDData;
 @property (nonatomic, readonly) NSString *Namespace;

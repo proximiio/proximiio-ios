@@ -1,42 +1,28 @@
 //
 //  ProximiioGeofence.h
-//  Proximiio
+//  ProximiioApp
 //
-//  Created by Marian Frische on 28.04.15.
-//  Copyright (c) 2015 NavtureApps. All rights reserved.
+//  Created by Matej Držík on 09/06/16.
+//  Copyright © 2016 Quanto. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <CoreLocation/CoreLocation.h>
-#import "ProximiioNetworkObject.h"
+#import "ProximiioResource.h"
+#import "ProximiioLocation.h"
+#import "ProximiioPlace.h"
+#import "ProximiioDepartment.h"
 
-@class ProximiioFloor;
+@interface ProximiioGeofence : ProximiioResource
 
-/*!
- @interface ProximiioGeofence
- @brief ProximiioGeofence interface.
- */
-@interface ProximiioGeofence : ProximiioNetworkObject
++ (ProximiioGeofence *)geofenceFromJSON:(NSDictionary *)json;
 
-/*!
- @brief Location of the geofence.
- */
-@property (nonatomic, readonly) CLLocation   *location;
-/*!
- @brief Address of the geofence.
- */
-@property (nonatomic, readonly) NSString     *address;
-/*!
- @brief BOOL status if this geofence is currently being entered.
- */
-@property (nonatomic, readonly) BOOL         entered;
-
-/*!
- @brief Stating whether the user is currently within the geofence.
- @warning This value is only true when Geofences are currently enabled. Otherwise it might be out of date.
- */
-- (BOOL) isInsideGeofence:(CLLocation*)location shouldBeIn:(BOOL)shouldBe;
-
-- (BOOL) isAtFloor:(ProximiioFloor*)floor;
+@property float radius;
+@property (nonatomic, strong) NSString *placeId;
+@property (nonatomic, strong) ProximiioPlace *place;
+@property (nonatomic, strong) NSString *departmentId;
+@property (nonatomic, strong) ProximiioDepartment *department;
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *address;
+@property (nonatomic, strong) NSArray *tags;
+@property (nonatomic, strong) ProximiioLocation *area;
 
 @end

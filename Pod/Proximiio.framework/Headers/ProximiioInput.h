@@ -1,49 +1,37 @@
 //
 //  ProximiioInput.h
-//  Proximiio
+//  ProximiioApp
 //
-//  Created by Marian Frische on 22.04.15.
-//  Copyright (c) 2015 NavtureApps. All rights reserved.
+//  Created by Matej Držík on 09/06/16.
+//  Copyright © 2016 Quanto. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <CoreLocation/CoreLocation.h>
-#import "ProximiioNetworkObject.h"
-#import "ProximiioBeaconFilter.h"
+#import "ProximiioResource.h"
+#import "ProximiioLocation.h"
+#import "ProximiioBeacon.h"
+#import "ProximiioKalmanFilter.h"
+#import "ProximiioInputType.h"
 
+@interface ProximiioInput : ProximiioResource
 
-typedef enum : NSUInteger {
-    kProximiioInputiBeacon,
-    kProximiioInputEddystone,
-    kProximiioInputCustom
-} ProximiioInputType;
+- (int)getMajor;
+- (int)getMinor;
 
+- (void)updateAccuracyWithBeacon:(ProximiioBeacon *)beacon;
++ (ProximiioInput *)inputFromJSON:(NSDictionary *)json;
 
-/*!
- @interface ProximiioInput
- @brief ProximiioInput base interface.
- */
-@interface ProximiioInput : ProximiioNetworkObject
-
-
-/*!
- @brief The location of this input.
- */
-@property (nonatomic, readonly) ProximiioInputType      inputType;
-/*
- @brief The location of this input.
- */
-@property (nonatomic, readonly) CLLocation              *location;
-/*!
- @brief The ID of the department this input belongs to.
- */
-@property (nonatomic, readonly) NSString                *departmentUID;
-/*!
- @brief Associated beacon filter.
- */
-@property (nonatomic, readonly) ProximiioBeaconFilter   *beaconFilter;
-
-
-- (NSString*)inputTypeString;
+@property ProximiioInputType type;
+@property BOOL triggerFloorChange;
+@property BOOL triggerVenueChange;
+@property (nonatomic, strong) NSUUID *beaconUUID;
+@property (nonatomic, strong) NSString *namespaceId;
+@property (nonatomic, strong) NSString *instanceId;
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSDictionary *beaconData;
+@property (nonatomic, strong) NSString *departmentId;
+@property (nonatomic, strong) NSString *floorId;
+@property (nonatomic, strong) NSString *placeId;
+@property (nonatomic, strong) ProximiioLocation *location;
+@property (nonatomic, strong) ProximiioKalmanFilter *filter;
 
 @end

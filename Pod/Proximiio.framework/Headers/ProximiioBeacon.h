@@ -1,46 +1,17 @@
 //
 //  ProximiioBeacon.h
-//  ProximiiBeaconLibrary
+//  ProximiioApp
 //
-//  Created by Marian Frische on 09.09.14.
-//  Copyright (c) 2014 Navture Apps. All rights reserved.
-//
-//  Class that mirrors the CLBeacon functionality with addtional smoothing
+//  Created by Matej Držík on 17/06/16.
+//  Copyright © 2016 Quanto. All rights reserved.
 //
 
-#import <CoreLocation/CoreLocation.h>
-#import <CoreBluetooth/CoreBluetooth.h>
+#import <Foundation/Foundation.h>
+#import "ProximiioInputType.h"
+#import "ProximiioLocationSource.h"
 
+@interface ProximiioBeacon : ProximiioLocationSource;
 
-/*!
- @interface ProximiioBeacon
- @brief ProximiioBeacon interface.
- */
-@interface ProximiioBeacon : NSObject
-
-/*!
- @brief UUID of this beacon.
- */
-@property (nonatomic, readonly) NSUUID      *uuid;
-/*!
- @brief Major value of this beacon.
- */
-@property (nonatomic, readonly) int         major;
-/*!
- @brief Minor value of this beacon.
- */
-@property (nonatomic, readonly) int         minor;
-/*!
- @brief Proximty of the user to this beacon.
- */
-@property (nonatomic, readonly) CLProximity proximity;
-/*!
- @brief Approximate distance to this beacon.
- */
-@property (nonatomic, readonly) double      distance;
-/*!
- @brief Avarage signal strength of this beacon in decibels.
- */
-@property (nonatomic, readonly) int         rssi;
+@property ProximiioInputType type;
 
 @end
