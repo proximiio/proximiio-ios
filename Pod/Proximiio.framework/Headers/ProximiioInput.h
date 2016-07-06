@@ -11,6 +11,7 @@
 #import "ProximiioBeacon.h"
 #import "ProximiioKalmanFilter.h"
 #import "ProximiioInputType.h"
+#import "ProximiioDepartment.h"
 
 @interface ProximiioInput : ProximiioResource
 
@@ -32,6 +33,7 @@
 @property (nonatomic, strong) NSString *floorId;
 @property (nonatomic, strong) NSString *placeId;
 @property (nonatomic, strong) ProximiioLocation *location;
+@property (nonatomic, strong) ProximiioDepartment *department;
 @property (nonatomic, strong) ProximiioKalmanFilter *filter;
 
 @end

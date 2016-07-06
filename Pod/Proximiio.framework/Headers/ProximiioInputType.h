@@ -8,5 +8,6 @@
 
 typedef enum ProximiioInputType {
     kProximiioInputTypeIBeacon,
-    kProximiioInputTypeEddystone
+    kProximiioInputTypeEddystone,
+    kProximiioInputTypeCustom
 } ProximiioInputType;

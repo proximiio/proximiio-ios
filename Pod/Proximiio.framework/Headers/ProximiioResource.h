@@ -12,6 +12,7 @@
 
 -(void)assignStandardData:(NSDictionary *)json;
 - (id)initWithResourceString:(NSString *)resourceString;
+- (id)parent;
 
 @property (nonatomic, strong) NSString *uuid;
 @property (nonatomic, strong) NSDate *createdAt;

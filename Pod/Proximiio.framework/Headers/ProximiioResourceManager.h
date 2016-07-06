@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ProximiioAPI.h"
+#import "ProximiioAPIResult.h"
 #import "ProximiioInput.h"
 #import "ProximiioDepartment.h"
 #import "ProximiioPlace.h"
 #import "ProximiioFloor.h"
+#import "ProximiioApplication.h"
 
 @interface ProximiioResourceManager : NSObject
 
@@ -25,11 +26,25 @@
 + (id)sharedManager;
 - (void)fetchWithCallback:(void (^)(ProximiioAPIResult result))callback;
 
+- (ProximiioApplication *)applicationWithUUID:(NSString *)uuid;
 - (ProximiioInput *)inputWithUUID:(NSUUID *)uuid major:(int)major minor:(int)minor;
 - (ProximiioInput *)inputWithNamespace:(NSString *)ns instance:(NSString *)instance;
 - (ProximiioFloor *)floorWithUUID:(NSString *)uuid;
 - (ProximiioPlace *)placeWithUUID:(NSString *)uuid;
 - (ProximiioDepartment *)departmentWithUUID:(NSString *)uuid;
+
+- (void)update:(NSString *)resource data:(NSDictionary *)data;
+
+- (void)upsert:(NSString *)resource
+    parameters:(NSDictionary *)parameters
+  withCallback:(void (^)(ProximiioAPIResult result))callback;
+
+- (void)upsertPlace:(NSDictionary *)parameters withCallback:(void (^)(ProximiioAPIResult result))callback;
+- (void)upsertFloor:(NSDictionary *)parameters withCallback:(void (^)(ProximiioAPIResult result))callback;
+- (void)upsertDepartment:(NSDictionary *)parameters withCallback:(void (^)(ProximiioAPIResult result))callback;
+- (void)upsertGeofence:(NSDictionary *)parameters withCallback:(void (^)(ProximiioAPIResult result))callback;
+- (void)upsertInput:(NSDictionary *)parameters withCallback:(void (^)(ProximiioAPIResult result))callback;
+- (void)upsertApplication:(NSDictionary *)parameters withCallback:(void (^)(ProximiioAPIResult result))callback;
 
 @property (readonly, nonatomic, strong) NSMutableDictionary *applications;
 @property (readonly, nonatomic, strong) NSMutableDictionary *places;

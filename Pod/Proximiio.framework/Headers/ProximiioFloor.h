@@ -19,5 +19,11 @@
 @property (nonatomic, strong) NSArray *anchors;
 @property (nonatomic, strong) NSString *indoorAtlasFloorId;
 @property (nonatomic, strong) NSString *indoorAtlasFloorPlanId;
+@property (nonatomic, strong) NSArray *cornerArray;
+@property (nonatomic, strong) NSString *floorID;
+@property (nonatomic, strong) NSString *floorPlanImageURL;
+@property (nonatomic, strong) NSNumber *floorNumber;
+@property (nonatomic, strong) NSNumber *level;
+
 
 @end
