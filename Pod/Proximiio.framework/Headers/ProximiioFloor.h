@@ -2,8 +2,8 @@
 //  ProximiioFloor.h
 //  ProximiioApp
 //
-//  Created by Matej Držík on 09/06/16.
-//  Copyright © 2016 Quanto. All rights reserved.
+//  Created by Proximi.io Developer Team on 09/06/16.
+//  Copyright © 2016 Proximi.io. All rights reserved.
 //
 
 #import "ProximiioResource.h"
@@ -24,6 +24,12 @@
 @property (nonatomic, strong) NSString *floorPlanImageURL;
 @property (nonatomic, strong) NSNumber *floorNumber;
 @property (nonatomic, strong) NSNumber *level;
-
+@property BOOL floorPlanFlipped;
+@property float floorPlanWidth;
+@property float floorPlanHeight;
+@property float floorPlanHeading;
+@property float floorPlanSideWidth;
+@property float floorPlanSideHeight;
+@property (nonatomic, strong) ProximiioLocation *floorPlanPivot;
 
 @end

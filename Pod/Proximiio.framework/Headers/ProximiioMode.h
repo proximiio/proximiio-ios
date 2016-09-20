@@ -2,8 +2,8 @@
 //  ProximiioMode.h
 //  Proximiio
 //
-//  Created by Matej Držík on 23/06/16.
-//  Copyright © 2016 proximi.io. All rights reserved.
+//  Created by Proximi.io Developer Team on 23/06/16.
+//  Copyright © 2016 Proximi.io. All rights reserved.
 //
 
 #ifndef ProximiioMode_h

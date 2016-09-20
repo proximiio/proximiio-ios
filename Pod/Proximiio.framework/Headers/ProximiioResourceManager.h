@@ -2,8 +2,8 @@
 //  ProximiioResourceManager.h
 //  ProximiioApp
 //
-//  Created by Matej Držík on 08/06/16.
-//  Copyright © 2016 Quanto. All rights reserved.
+//  Created by Proximi.io Developer Team on 08/06/16.
+//  Copyright © 2016 Proximi.io. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -24,6 +24,7 @@
 - (NSArray *)allInputs;
 
 + (id)sharedManager;
+
 - (void)fetchWithCallback:(void (^)(ProximiioAPIResult result))callback;
 
 - (ProximiioApplication *)applicationWithUUID:(NSString *)uuid;

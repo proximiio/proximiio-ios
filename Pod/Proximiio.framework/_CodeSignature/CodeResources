@@ -6,43 +6,47 @@
 	<dict>
 		<key>Headers/Proximiio.h</key>
 		<data>
-		DdfQ/kAFHs2wcS+29bzaimt7jWs=
+		b+EYI2uuQqAMitXI8/RvpM9M+Dk=
 		</data>
 		<key>Headers/ProximiioAPIResult.h</key>
 		<data>
-		s1wVc2ZdnsTBK5V6eKn4TfqVWxA=
+		CYVsFO7bnvFPvaRUVartM3ELcC0=
 		</data>
 		<key>Headers/ProximiioApplication.h</key>
 		<data>
-		0JVXSsD7mmOhA+y9yhzqC+w9gXI=
+		Ul5uvWVeKBWr/DMnEGRr7BaMK8Q=
 		</data>
 		<key>Headers/ProximiioBeacon.h</key>
 		<data>
-		sH5S8gVmCuVqCw9ccIM5FA53BcY=
+		TotGltRAbIOtYNNrP9rQ8YhBlKA=
+		</data>
+		<key>Headers/ProximiioCustomLocation.h</key>
+		<data>
+		RV6eEgCrv1AaAmRav6GrNE1e4xw=
 		</data>
 		<key>Headers/ProximiioDepartment.h</key>
 		<data>
-		vdItDzO1zQjOXY4OBb4lj+/+5dM=
+		gWOATvJ5dCPjoXALMTkg8qltrQo=
 		</data>
 		<key>Headers/ProximiioEddystoneBeacon.h</key>
 		<data>
-		PRq93I9jw8e3ubPewj0XzqbuaUE=
+		2IWqhkvgOzSsLepfXt6iVNXSshc=
 		</data>
 		<key>Headers/ProximiioFloor.h</key>
 		<data>
-		3ubKQEWex/aK6wQC1J1otb8DHOM=
+		XiVAErlOKcDXcFCL6SwRq/T2asE=
 		</data>
 		<key>Headers/ProximiioFormatter.h</key>
 		<data>
-		a/ak97VAJoI0RinnR6swDy/TYkw=
+		iMPiFOiznnoRRxl9mhECGuevWdk=
 		</data>
 		<key>Headers/ProximiioGeofence.h</key>
 		<data>
-		afiVehKqW7tTTIEVhmVB1t1cEos=
+		BtzS1/btnqpHOPG6BtmGyHZqhRI=
 		</data>
 		<key>Headers/ProximiioGeofenceManager.h</key>
 		<data>
-		WRzMAeGTbdATVSe/FibPJcq3RQ8=
+		ysZ57ga7pOa9SsOOCHlyVfj/VC4=
 		</data>
 		<key>Headers/ProximiioIBeacon.h</key>
 		<data>
@@ -50,47 +54,47 @@
 		</data>
 		<key>Headers/ProximiioInput.h</key>
 		<data>
-		+VlWpeDCaNRy/eH7syuf+lleWP8=
+		gwRIrqAw46TKU8v/9tXQGLR1I10=
 		</data>
 		<key>Headers/ProximiioInputType.h</key>
 		<data>
-		O2RSdG7E23TuPruKNrF9JwoaGUA=
+		/RltTQsWjEulbAxANp5HvHTAynU=
 		</data>
 		<key>Headers/ProximiioKalmanFilter.h</key>
 		<data>
-		z+HSmrOtvNXUvu+k87awt1UelTU=
+		s6fhcUzyr1nhgQySt+VnWJ3lnFQ=
 		</data>
 		<key>Headers/ProximiioLocation.h</key>
 		<data>
-		6aTQYdTGquh9iJ/byiWGEBNZ0HE=
+		RcYH1eRD7nnW40LL6vZ7/w5wkw8=
 		</data>
 		<key>Headers/ProximiioLocationSource.h</key>
 		<data>
-		NjJzG8KM9rgX2iTW1Au5AXsJgGI=
+		xPTFvr1su0jydTGhtGmF1ybcfKk=
 		</data>
 		<key>Headers/ProximiioMode.h</key>
 		<data>
-		fbZk/9ZQW8Rc1GX+JO3zwAOCuaw=
+		RdJIYYN3JVuUZzBfmBw367knx0o=
 		</data>
 		<key>Headers/ProximiioPlace.h</key>
 		<data>
-		nm0J+Uf5uRk7V7yFak9ozoWPmwY=
+		ILFBeDBoHFMTIweM6u/R3ZzXguI=
 		</data>
 		<key>Headers/ProximiioResource.h</key>
 		<data>
-		8pc7ISHUJ52T3Yi8+jy86V7jqZ8=
+		D9gwxOpMMqiS3JVDGvev4Omc5tA=
 		</data>
 		<key>Headers/ProximiioResourceManager.h</key>
 		<data>
-		jlinB2VXAM1fXmyDikUim1CKdvQ=
+		K+KmBgcJFF3SjQcIBmNni3oKXwo=
 		</data>
 		<key>Headers/ProximiioState.h</key>
 		<data>
-		nyEoCiVLdWNVBvU0cHLd+to2VY0=
+		wSeEaszF67CdgYujq51zqUMX6XI=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		FsXAJzxLHuM3OLKYjpt7QEci2Zc=
+		7OEPpES2REpFaHFSI9K4xvG1UO4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -103,110 +107,121 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DdfQ/kAFHs2wcS+29bzaimt7jWs=
+			b+EYI2uuQqAMitXI8/RvpM9M+Dk=
 			</data>
 			<key>hash2</key>
 			<data>
-			uYQWXwmd1ML1dNPSdOSJgxP+6DbblyZJq6tY6q2nxuc=
+			g4AQv3uMjMtC2JKbBEQAxWbTRBzvqsEsM+fk5onm6zc=
 			</data>
 		</dict>
 		<key>Headers/ProximiioAPIResult.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			s1wVc2ZdnsTBK5V6eKn4TfqVWxA=
+			CYVsFO7bnvFPvaRUVartM3ELcC0=
 			</data>
 			<key>hash2</key>
 			<data>
-			OSSgKaO0vSbeWmQL3/JNeA4V/aVCPC9MA15WtrlowqY=
+			U44mwWTI8FLTnAoKKcz60clyMp4GSD68Y3GOvTBKcHQ=
 			</data>
 		</dict>
 		<key>Headers/ProximiioApplication.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0JVXSsD7mmOhA+y9yhzqC+w9gXI=
+			Ul5uvWVeKBWr/DMnEGRr7BaMK8Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			RnKqoh2XBoHJMLWMgKIRjDf5TnKQivHXWPmyIqDiDTQ=
+			n6R2BSacBy1nKgnI3aPscbh8XNb0yjrAxzcAXLXrsJk=
 			</data>
 		</dict>
 		<key>Headers/ProximiioBeacon.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sH5S8gVmCuVqCw9ccIM5FA53BcY=
+			TotGltRAbIOtYNNrP9rQ8YhBlKA=
 			</data>
 			<key>hash2</key>
 			<data>
-			bizIYwfZCDSG0ajtNJDxQ8m3U75znr7hTiVDyKrXtiA=
+			LjFRiajuEF0wEMQxyZX+GXMNMyR+SCxRAEwCrN5CMpg=
+			</data>
+		</dict>
+		<key>Headers/ProximiioCustomLocation.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RV6eEgCrv1AaAmRav6GrNE1e4xw=
+			</data>
+			<key>hash2</key>
+			<data>
+			VuoIbbCABHBatrTbDh7ZOmAx9cIeNptSH5gEeip2ZkU=
 			</data>
 		</dict>
 		<key>Headers/ProximiioDepartment.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vdItDzO1zQjOXY4OBb4lj+/+5dM=
+			gWOATvJ5dCPjoXALMTkg8qltrQo=
 			</data>
 			<key>hash2</key>
 			<data>
-			7+5vCP8gSZHO00zj8U981T0nG2QoEa6dJBd8Vdzmn8k=
+			jCKppjDPYqLPf2dslnidU2F0RhvA2/6YrxFrZyRO0lo=
 			</data>
 		</dict>
 		<key>Headers/ProximiioEddystoneBeacon.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PRq93I9jw8e3ubPewj0XzqbuaUE=
+			2IWqhkvgOzSsLepfXt6iVNXSshc=
 			</data>
 			<key>hash2</key>
 			<data>
-			LG85w1xJLR8Z5Qnp5GkJMz24Em55eZRcXs7b7WhKU+0=
+			yEqFddMQtIZvw5YwSCc5cMyIeYQ8EkPn6SpDweHjigg=
 			</data>
 		</dict>
 		<key>Headers/ProximiioFloor.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3ubKQEWex/aK6wQC1J1otb8DHOM=
+			XiVAErlOKcDXcFCL6SwRq/T2asE=
 			</data>
 			<key>hash2</key>
 			<data>
-			T3g535CnekzBzmMe7CQk3R0s+xQo9wz1wQ+G/Cv1KQ8=
+			9DiQob7Q16/+aRwoxs0ak2VJosuXxpiav2DXxGYiPsY=
 			</data>
 		</dict>
 		<key>Headers/ProximiioFormatter.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			a/ak97VAJoI0RinnR6swDy/TYkw=
+			iMPiFOiznnoRRxl9mhECGuevWdk=
 			</data>
 			<key>hash2</key>
 			<data>
-			utx70Gd6B2octBUlMtBxfkUkFvYKZzB9d2m/w8fZE3E=
+			h3lLTHDqwfq27yZfCoQRcnqwXsITCHk8nimvVc5wrXk=
 			</data>
 		</dict>
 		<key>Headers/ProximiioGeofence.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			afiVehKqW7tTTIEVhmVB1t1cEos=
+			BtzS1/btnqpHOPG6BtmGyHZqhRI=
 			</data>
 			<key>hash2</key>
 			<data>
-			ath5Ut+Y4VeCoNC3YbGjt74UnT5G7W7GOlXFny/y5A4=
+			eDNzjz1xS+/rIHNcElafXbbNox5LYMc2EyBLD6+20LI=
 			</data>
 		</dict>
 		<key>Headers/ProximiioGeofenceManager.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WRzMAeGTbdATVSe/FibPJcq3RQ8=
+			ysZ57ga7pOa9SsOOCHlyVfj/VC4=
 			</data>
 			<key>hash2</key>
 			<data>
-			vCaF2KW05p2yslfZWnot4BDCnTO7VyXCog5HjknjtWc=
+			A6TG6OlvQndvBjdTf/Btyf0snimvsi9jVQLtmjv94oM=
 			</data>
 		</dict>
 		<key>Headers/ProximiioIBeacon.h</key>
@@ -224,110 +239,110 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+VlWpeDCaNRy/eH7syuf+lleWP8=
+			gwRIrqAw46TKU8v/9tXQGLR1I10=
 			</data>
 			<key>hash2</key>
 			<data>
-			HlIZfmzC2zlvTqZDkL5LzCFzhH6VzH9oBcbuA7UphGA=
+			cHwAYYViZm7CGXDpORF5HloiNXJfnoxcXzIUEs61YqA=
 			</data>
 		</dict>
 		<key>Headers/ProximiioInputType.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			O2RSdG7E23TuPruKNrF9JwoaGUA=
+			/RltTQsWjEulbAxANp5HvHTAynU=
 			</data>
 			<key>hash2</key>
 			<data>
-			HsWLva1n+ZIEdJz5ulBWgqVLei1S2xhbzV0L3mTxKQE=
+			KuDqhbTCTtfxAN3KdEDCelkIxab9A079lNCr1r7tIBA=
 			</data>
 		</dict>
 		<key>Headers/ProximiioKalmanFilter.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			z+HSmrOtvNXUvu+k87awt1UelTU=
+			s6fhcUzyr1nhgQySt+VnWJ3lnFQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			NNjV3FykdsAX4fNdCKDaTm3j5OGgkY070wIkBlh9Wno=
+			EXb/gl+zzat70wXIzNmz8MwVbdZkFmBx/t3q6sTSVX8=
 			</data>
 		</dict>
 		<key>Headers/ProximiioLocation.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6aTQYdTGquh9iJ/byiWGEBNZ0HE=
+			RcYH1eRD7nnW40LL6vZ7/w5wkw8=
 			</data>
 			<key>hash2</key>
 			<data>
-			H42kXiKJo9sTsRjoy7gXmH/A2ombmCK6xFMQr1a4pg8=
+			3jjhU5Tr0ja9m5OawuKuu0LlHGrkYBu1R+XTa++yll0=
 			</data>
 		</dict>
 		<key>Headers/ProximiioLocationSource.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NjJzG8KM9rgX2iTW1Au5AXsJgGI=
+			xPTFvr1su0jydTGhtGmF1ybcfKk=
 			</data>
 			<key>hash2</key>
 			<data>
-			kMKtGc8bIzMRV/u71QBiJO433kOsELU82sYEjVxW/Ck=
+			u0Q+DYktv5Pi0832dTvPNTzHnyF6HzMr7xK0HEcMFek=
 			</data>
 		</dict>
 		<key>Headers/ProximiioMode.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fbZk/9ZQW8Rc1GX+JO3zwAOCuaw=
+			RdJIYYN3JVuUZzBfmBw367knx0o=
 			</data>
 			<key>hash2</key>
 			<data>
-			eUrtjXXEbO87N0q0jXESXj/KnklIjLq+Lss+3W7NfDg=
+			BuXIKbhiX0Q7sXJY78jQWq86XFL0vNeAf4/NBPhpV2k=
 			</data>
 		</dict>
 		<key>Headers/ProximiioPlace.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nm0J+Uf5uRk7V7yFak9ozoWPmwY=
+			ILFBeDBoHFMTIweM6u/R3ZzXguI=
 			</data>
 			<key>hash2</key>
 			<data>
-			EJHcwU3AvmlKbm/HwAUkwXgwNJdSWlE41ibstY7ZzUY=
+			KcVYVRcBJz8uQQzo7qbvX60chtI73I0oKss+eACBpPY=
 			</data>
 		</dict>
 		<key>Headers/ProximiioResource.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8pc7ISHUJ52T3Yi8+jy86V7jqZ8=
+			D9gwxOpMMqiS3JVDGvev4Omc5tA=
 			</data>
 			<key>hash2</key>
 			<data>
-			SPsf7/iEy8gILmOVgJXwjZ3Es0EhO0SzRPXEwPhszrU=
+			RbR+Q67a507bI9HHPSGtO8Zrsjq3YOiROb+gC7hK5Gk=
 			</data>
 		</dict>
 		<key>Headers/ProximiioResourceManager.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jlinB2VXAM1fXmyDikUim1CKdvQ=
+			K+KmBgcJFF3SjQcIBmNni3oKXwo=
 			</data>
 			<key>hash2</key>
 			<data>
-			XDhJ23VBAwLKeunzfnb1wpkpzLo22GW06HYRCujcwaQ=
+			oYFZWd0SlfADYTEUOyNlX5Bdp0QKfCWTRQKFhugSLEo=
 			</data>
 		</dict>
 		<key>Headers/ProximiioState.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nyEoCiVLdWNVBvU0cHLd+to2VY0=
+			wSeEaszF67CdgYujq51zqUMX6XI=
 			</data>
 			<key>hash2</key>
 			<data>
-			qMrMV1ljSx3pfNeYzG7nsEbU/WLiELeOrCjZaNasfiE=
+			k/7yTucjnu58TgewpIv+P1n87E9gAZY46Bu6MPDokzk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
