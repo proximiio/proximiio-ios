@@ -24,6 +24,7 @@
 #import "ProximiioBeacon.h"
 #import "ProximiioFormatter.h"
 #import "ProximiioCustomLocation.h"
+#import "ProximiioMapView.h"
 
 //! Project version number for Proximiio.
 FOUNDATION_EXPORT double ProximiioVersionNumber;
