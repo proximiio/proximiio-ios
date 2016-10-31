@@ -18,6 +18,7 @@
 @property BOOL usesIndoorAtlas;
 @property BOOL usesIBeacons;
 @property BOOL usesEddyStones;
+@property BOOL usesGeofencePositioning;
 
 + (ProximiioApplication *)applicationFromJSON:(NSDictionary *)json;
 

@@ -16,6 +16,7 @@
 - (void)addMarker:(CLLocation *)location html:(NSString *)html options:(NSDictionary *)options;
 - (void)addIcon:(NSDictionary *)options;
 - (void)addFloorPlan:(NSDictionary *)floorPlan;
+- (void)setLocationTracking:(BOOL)enabled;
 - (void)setView:(CLLocation *)location zoom:(int)zoom;
 - (void)runCommand:(NSString *)command;
 - (void)rlog:(NSString *)message;
