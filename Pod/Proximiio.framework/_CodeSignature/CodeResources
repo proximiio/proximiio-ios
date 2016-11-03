@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Proximiio.h</key>
 		<data>
-		v5KnYR7Uy4NB6JzUQ3/RLpC3dbQ=
+		SjzaevgTrTlRgREZmizsvCr6R38=
 		</data>
 		<key>Headers/ProximiioAPIResult.h</key>
 		<data>
@@ -66,11 +66,19 @@
 		</data>
 		<key>Headers/ProximiioLocation.h</key>
 		<data>
-		RcYH1eRD7nnW40LL6vZ7/w5wkw8=
+		a+MgOU42GETA+mGg5P0p/ASbsS8=
+		</data>
+		<key>Headers/ProximiioLocationManagerDelegate.h</key>
+		<data>
+		YSZzAsF34zZuc+wHZwWdbLPCP54=
 		</data>
 		<key>Headers/ProximiioLocationSource.h</key>
 		<data>
 		xPTFvr1su0jydTGhtGmF1ybcfKk=
+		</data>
+		<key>Headers/ProximiioManager.h</key>
+		<data>
+		OI1JbEcu+Nb6CjlQo0kIM0KIeaE=
 		</data>
 		<key>Headers/ProximiioMapView.h</key>
 		<data>
@@ -98,7 +106,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		X4CwexJV4Hop6r4q2WDJQnWSfVU=
+		GV1gKCcZEyx4wtNt8YSeCdnLI38=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -151,11 +159,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			v5KnYR7Uy4NB6JzUQ3/RLpC3dbQ=
+			SjzaevgTrTlRgREZmizsvCr6R38=
 			</data>
 			<key>hash2</key>
 			<data>
-			DJZx3Mg5W/onCGmktZI2ahDM/HDBhrBGJAAFn8TFviE=
+			ZAcXttiFADKiSnx0xbzuNbsc9K9Tz/BhPwqlKE0EgPc=
 			</data>
 		</dict>
 		<key>Headers/ProximiioAPIResult.h</key>
@@ -316,11 +324,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RcYH1eRD7nnW40LL6vZ7/w5wkw8=
+			a+MgOU42GETA+mGg5P0p/ASbsS8=
 			</data>
 			<key>hash2</key>
 			<data>
-			3jjhU5Tr0ja9m5OawuKuu0LlHGrkYBu1R+XTa++yll0=
+			yPT1Bhpp6Shy2f4rIRJuFuaoX5PqRJlVpJproW7D/Vc=
+			</data>
+		</dict>
+		<key>Headers/ProximiioLocationManagerDelegate.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YSZzAsF34zZuc+wHZwWdbLPCP54=
+			</data>
+			<key>hash2</key>
+			<data>
+			tooppcL1UT5rvHeks8XdtfxCH5VcINSISE76twG60Xw=
 			</data>
 		</dict>
 		<key>Headers/ProximiioLocationSource.h</key>
@@ -332,6 +351,17 @@
 			<key>hash2</key>
 			<data>
 			u0Q+DYktv5Pi0832dTvPNTzHnyF6HzMr7xK0HEcMFek=
+			</data>
+		</dict>
+		<key>Headers/ProximiioManager.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OI1JbEcu+Nb6CjlQo0kIM0KIeaE=
+			</data>
+			<key>hash2</key>
+			<data>
+			2v2Oz4/6GdnivDi3uSzp5Qb7bekwUtNMHGraCCmEXw0=
 			</data>
 		</dict>
 		<key>Headers/ProximiioMapView.h</key>

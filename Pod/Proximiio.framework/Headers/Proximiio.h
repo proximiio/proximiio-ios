@@ -18,13 +18,12 @@
 #import "ProximiioAPIResult.h"
 #import "ProximiioResourceManager.h"
 #import "ProximiioGeofenceManager.h"
-#import "ProximiioAPIResult.h"
 #import "ProximiioKalmanFilter.h"
 #import "ProximiioInputType.h"
-#import "ProximiioBeacon.h"
 #import "ProximiioFormatter.h"
 #import "ProximiioCustomLocation.h"
 #import "ProximiioMapView.h"
+#import "ProximiioManager.h"
 
 //! Project version number for Proximiio.
 FOUNDATION_EXPORT double ProximiioVersionNumber;
