@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Proximiio.h</key>
 		<data>
-		SjzaevgTrTlRgREZmizsvCr6R38=
+		NAwi0gBTwnQ5pbhMJlP8jSpfnII=
 		</data>
 		<key>Headers/ProximiioAPIResult.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/ProximiioApplication.h</key>
 		<data>
-		LTt3s19/irXnvL+O7nwzExCCVOY=
+		danjbLoi8yIrb/PGrks+VUwDXsg=
 		</data>
 		<key>Headers/ProximiioBeacon.h</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>Headers/ProximiioManager.h</key>
 		<data>
-		OI1JbEcu+Nb6CjlQo0kIM0KIeaE=
+		7lIYnidArPc3ap9HxcEmowqFXKk=
 		</data>
 		<key>Headers/ProximiioMapView.h</key>
 		<data>
@@ -106,7 +106,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		GV1gKCcZEyx4wtNt8YSeCdnLI38=
+		trAMoG/FlV+leuL3ZouvAbXupgY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -159,11 +159,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SjzaevgTrTlRgREZmizsvCr6R38=
+			NAwi0gBTwnQ5pbhMJlP8jSpfnII=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZAcXttiFADKiSnx0xbzuNbsc9K9Tz/BhPwqlKE0EgPc=
+			ibgUDuYkb3L3G7yCTvYKI/4HhJuys6k7rHs/GnqNEPs=
 			</data>
 		</dict>
 		<key>Headers/ProximiioAPIResult.h</key>
@@ -181,11 +181,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LTt3s19/irXnvL+O7nwzExCCVOY=
+			danjbLoi8yIrb/PGrks+VUwDXsg=
 			</data>
 			<key>hash2</key>
 			<data>
-			TzBpTNDpjfCyERuPkiClKINOEUTAftB4cKiGxbjP9T8=
+			Amy+JoMeB6WG1e9xdouzzJQMxQW2ed23MaDnPd0kcqo=
 			</data>
 		</dict>
 		<key>Headers/ProximiioBeacon.h</key>
@@ -357,11 +357,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OI1JbEcu+Nb6CjlQo0kIM0KIeaE=
+			7lIYnidArPc3ap9HxcEmowqFXKk=
 			</data>
 			<key>hash2</key>
 			<data>
-			2v2Oz4/6GdnivDi3uSzp5Qb7bekwUtNMHGraCCmEXw0=
+			ZNUrvfEnepv8FD17d0dnlQaZEVaOUSMpm4FOPP6CxHI=
 			</data>
 		</dict>
 		<key>Headers/ProximiioMapView.h</key>
@@ -570,6 +570,11 @@
 			<key>weight</key>
 			<real>1100</real>
 		</dict>
+		<key>^Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
+		</dict>
 		<key>^version.plist$</key>
 		<true/>
 	</dict>
@@ -614,6 +619,11 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
+		</dict>
+		<key>^Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
 		</dict>
 		<key>^Info\.plist$</key>
 		<dict>

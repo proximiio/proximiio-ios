@@ -19,6 +19,7 @@
 @property BOOL usesIBeacons;
 @property BOOL usesEddyStones;
 @property BOOL usesGeofencePositioning;
+@property BOOL usesTrilateration;
 
 + (ProximiioApplication *)applicationFromJSON:(NSDictionary *)json;
 

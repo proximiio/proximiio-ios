@@ -25,6 +25,10 @@ FOUNDATION_EXPORT const unsigned char ProximiioVersionString[];
 @interface ProximiioManager : NSObject <ProximiioLocationManagerDelegate>
 
 + (ProximiioManager *)sharedManager;
+- (void)requestPermissions;
+
+- (void)startUpdating;
+- (void)stopUpdating;
 
 - (id)initWithDelegate:(id)delegate token:(NSString *)token;
 - (id)initWithDelegate:(id)delegate email:(NSString *)email password:(NSString *)password;
@@ -33,6 +37,8 @@ FOUNDATION_EXPORT const unsigned char ProximiioVersionString[];
 - (void)authWithEmail:(NSString *)email password:(NSString *)password callback:(void (^)(ProximiioState result))callback;
 
 - (void)setMode:(ProximiioMode)mode;
+
+- (void)setUpdateInterval:(double)updateInterval;
 
 - (void)handlePush:(NSString *)title;
 - (void)handleOutput:(NSObject *)payload;
