@@ -48,6 +48,7 @@ typedef enum ProximiioBufferSize {
 - (id)initWithDelegate:(id)delegate email:(NSString *)email password:(NSString *)password;
 - (void)startUpdating;
 - (void)stopUpdating;
+- (void)extendBackgroundTime;
 
 + (NSString *)visitorId;
 - (ProximiioLocation *)lastLocation;

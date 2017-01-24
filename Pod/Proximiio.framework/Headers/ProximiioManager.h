@@ -29,6 +29,7 @@ FOUNDATION_EXPORT const unsigned char ProximiioVersionString[];
 
 - (void)startUpdating;
 - (void)stopUpdating;
+- (void)extendBackgroundTime;
 
 - (id)initWithDelegate:(id)delegate token:(NSString *)token;
 - (id)initWithDelegate:(id)delegate email:(NSString *)email password:(NSString *)password;
