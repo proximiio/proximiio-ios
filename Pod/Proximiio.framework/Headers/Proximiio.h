@@ -17,29 +17,16 @@
 #import <Proximiio/ProximiioInput.h>
 #import <Proximiio/ProximiioAPIResult.h>
 #import <Proximiio/ProximiioResourceManager.h>
-#import <Proximiio/ProximiioGeofenceManager.h>
-#import <Proximiio/ProximiioKalmanFilter.h>
 #import <Proximiio/ProximiioInputType.h>
-#import <Proximiio/ProximiioFormatter.h>
 #import <Proximiio/ProximiioCustomLocation.h>
 #import <Proximiio/ProximiioMapView.h>
-#import <Proximiio/ProximiioManager.h>
+#import <Proximiio/ProximiioBufferSize.h>
 
 //! Project version number for Proximiio.
 FOUNDATION_EXPORT double ProximiioVersionNumber;
 
 //! Project version string for Proximiio.
 FOUNDATION_EXPORT const unsigned char ProximiioVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <Proximiio/PublicHeader.h>
-
-typedef enum ProximiioBufferSize {
-    kProximiioBufferMini,
-    kProximiioBufferSmall,
-    kProximiioBufferMedium,
-    kProximiioBufferLarge,
-    kProximiioBufferExtraLarge
-} ProximiioBufferSize;
 
 @interface Proximiio : NSObject
 
@@ -49,6 +36,7 @@ typedef enum ProximiioBufferSize {
 - (void)startUpdating;
 - (void)stopUpdating;
 - (void)extendBackgroundTime;
+- (NSArray *)geofencesForLocation:(ProximiioLocation *)location;
 
 + (NSString *)visitorId;
 - (ProximiioLocation *)lastLocation;
