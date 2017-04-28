@@ -1,27 +1,17 @@
 //
 //  Proximiio.h
+//  ProximiioApp
 //
-//
-//  Created by Proximi.io Developer Team 23/06/16.
+//  Created by Proximi.io Developer Team on 06/06/16.
 //  Copyright © 2016 Proximi.io. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import <Proximiio/ProximiioLocation.h>
-#import <Proximiio/ProximiioLocationSource.h>
-#import <Proximiio/ProximiioState.h>
-#import <Proximiio/ProximiioMode.h>
-#import <Proximiio/ProximiioGeofence.h>
-#import <Proximiio/ProximiioIBeacon.h>
-#import <Proximiio/ProximiioEddystoneBeacon.h>
-#import <Proximiio/ProximiioInput.h>
-#import <Proximiio/ProximiioAPIResult.h>
-#import <Proximiio/ProximiioResourceManager.h>
-#import <Proximiio/ProximiioInputType.h>
-#import <Proximiio/ProximiioCustomLocation.h>
-#import <Proximiio/ProximiioMapView.h>
-#import <Proximiio/ProximiioBufferSize.h>
-#import <Proximiio/ProximiioManager.h>
+#import "ProximiioApplication.h"
+#import "ProximiioState.h"
+#import "ProximiioMode.h"
+#import "ProximiioResourceManager.h"
+#import "ProximiioBufferSize.h"
 
 //! Project version number for Proximiio.
 FOUNDATION_EXPORT double ProximiioVersionNumber;
@@ -29,44 +19,40 @@ FOUNDATION_EXPORT double ProximiioVersionNumber;
 //! Project version string for Proximiio.
 FOUNDATION_EXPORT const unsigned char ProximiioVersionString[];
 
-@interface Proximiio : NSObject
+// In this header, you should import all the public headers of your framework using statements like #import <Proximiio/PublicHeader.h>
 
+
+@interface ProximiioManager : NSObject
+
++ (ProximiioManager *)sharedManager;
 - (void)requestPermissions;
-- (id)initWithDelegate:(id)delegate token:(NSString *)token;
-- (id)initWithDelegate:(id)delegate email:(NSString *)email password:(NSString *)password;
+
 - (void)startUpdating;
 - (void)stopUpdating;
 - (void)extendBackgroundTime;
-- (NSArray *)geofencesForLocation:(ProximiioLocation *)location;
 
-+ (NSString *)visitorId;
-- (ProximiioLocation *)lastLocation;
-
-- (void)setBufferSize:(ProximiioBufferSize)bufferSize;
+- (id)initWithDelegate:(id)delegate token:(NSString *)token;
+- (id)initWithDelegate:(id)delegate email:(NSString *)email password:(NSString *)password;
 
 - (void)authWithToken:(NSString *)token callback:(void (^)(ProximiioState result))callback;
 - (void)authWithEmail:(NSString *)email password:(NSString *)password callback:(void (^)(ProximiioState result))callback;
-- (void)registerWithEmail:(NSString *)email
-                 password:(NSString *)password
-                firstName:(NSString *)firstName
-                 lastName:(NSString *)lastName
-                  company:(NSString *)company
-               background:(NSString *)background
-                  country:(NSString *)country
-                 callback:(void (^)(ProximiioState result))callback;
 
-- (void)addCustomiBeaconUUID:(NSString*)uuid;
+- (void)setMode:(ProximiioMode)mode;
+- (void)setBufferSize:(ProximiioBufferSize)bufferSize;
+- (void)setUpdateInterval:(double)updateInterval;
+
+- (void)handlePush:(NSString *)title;
+- (void)handleOutput:(NSObject *)payload;
 - (void)selectApplication:(NSString *)uuid;
 
-+ (id)sharedInstance;
+- (NSArray *)geofencesForLocation:(ProximiioLocation *)location;
 
-@property (weak) id delegate;
-@property (nonatomic) id instance;
-@property (nonatomic, strong) NSString *visitorId;
+- (void)addCustomiBeaconUUID:(NSString *)uuid;
 
-// management methods
+- (void)proximiioFloorChanged:(ProximiioFloor *)floor;
 
-- (BOOL)addPlace:(NSString *)name location:(CLLocationCoordinate2D)location
+- (BOOL)addPlace:(NSString *)name
+        location:(CLLocationCoordinate2D)location
          address:(NSString *)address
 indoorAtlasVenueID:(NSString *)indoorAtlasVenueId
             tags:(NSArray *)tags
@@ -88,7 +74,7 @@ indoorAtlasVenueID:(NSString *)indoorAtlasVenueId
          department:(ProximiioDepartment*)department
            location:(CLLocationCoordinate2D)location
              radius:(double)radius
-            address:(NSString*)address 
+            address:(NSString*)address
        withCallback:(void (^)(BOOL success, NSError* error))callback;
 
 - (BOOL)addiBeaconInput:(NSString*)name
@@ -115,7 +101,7 @@ indoorAtlasVenueID:(NSString *)indoorAtlasVenueId
             eddystones:(BOOL)eddystones
               iBeacons:(BOOL)iBeacons
            indoorAtlas:(BOOL)indoorAtlas
-     indoorAtlasApiKey:(NSString*)iaApiKey 
+     indoorAtlasApiKey:(NSString*)iaApiKey
 indoorAtlasApiKeySecret:(NSString*)iaApiKeySecret
        nativeGeofences:(BOOL)nativeGeofences
              steerPath:(BOOL)steerPath
@@ -134,8 +120,8 @@ indoorAtlasApiKeySecret:(NSString*)iaApiKeySecret
                name:(NSString*)name
             floorID:(NSString*)floorID
         floorPlanID:(NSString*)floorPlanID
-              place:(ProximiioPlace*)place 
-        floorNumber:(NSNumber*)floorNumber 
+              place:(ProximiioPlace*)place
+        floorNumber:(NSNumber*)floorNumber
        withCallback:(void (^)(BOOL success, NSError* error))callback;
 
 - (BOOL)updateDepartment:(NSString*)ID
@@ -158,7 +144,7 @@ indoorAtlasApiKeySecret:(NSString*)iaApiKeySecret
                   location:(CLLocationCoordinate2D)location
                       uuid:(NSString*)uuid
                      major:(int)major
-                     minor:(int)minor 
+                     minor:(int)minor
        triggersFloorChange:(BOOL)triggersFloorChange
        triggersPlaceChange:(BOOL)triggersPlaceChange
                    floorID:(NSString*)floorID
@@ -205,35 +191,16 @@ indoorAtlasApiKeySecret:(NSString*)iaApiKeySecret
 - (void)deleteGeofence:(NSString *)uuid withCallback:(void (^)(BOOL success, NSError* error))callback;
 - (void)deleteInput:(NSString *)uuid withCallback:(void (^)(BOOL success, NSError* error))callback;
 
-@end
+- (ProximiioApplication *)application;
 
-@protocol ProximiioDelegate
+@property (readonly) BOOL authenticated;
+@property (readonly) BOOL remoteMode;
+@property (readonly) ProximiioMode mode;
+@property (readonly) ProximiioState state;
+@property (readonly, strong) ProximiioLocation *lastLocation;
+@property (readonly, strong) NSString *visitorId;
+@property (weak) id delegate;
 
-@optional
 
-- (void)proximiioPositionUpdated:(ProximiioLocation *)location;
-- (void)proximiioEnteredGeofence:(ProximiioGeofence *)geofence;
-- (void)proximiioExitedGeofence:(ProximiioGeofence *)geofence;
-- (void)proximiioFloorChanged:(ProximiioFloor *)floor;
-- (void)proximiioFoundiBeacon:(ProximiioIBeacon *)beacon;
-- (void)proximiioUpdatediBeacon:(ProximiioIBeacon *)beacon;
-- (void)proximiioLostiBeacon:(ProximiioIBeacon *)beacon;
-- (void)proximiioFoundEddystoneBeacon:(ProximiioEddystoneBeacon *)beacon;
-- (void)proximiioUpdatedEddystoneBeacon:(ProximiioEddystoneBeacon *)beacon;
-- (void)proximiioLostEddystoneBeacon:(ProximiioEddystoneBeacon *)beacon;
-
-- (BOOL)proximiioHandlePushMessage:(NSString*)title;
-- (void)proximiioHandleOutput:(NSObject*)payload;
-
-- (void)onProximiioReady;
-- (void)onProximiioAuthorizationInvalid;
-- (void)onProximiioAuthorizationFailure;
-
-- (void)proximiioUpdatedApplications;
-- (void)proximiioUpdatedDepartments;
-- (void)proximiioUpdatedFloors;
-- (void)proximiioUpdatedInputs;
-- (void)proximiioUpdatedPlaces;
-- (void)proximiioUpdatedGeofences;
 
 @end
