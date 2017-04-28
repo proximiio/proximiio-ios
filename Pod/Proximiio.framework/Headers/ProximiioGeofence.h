@@ -24,5 +24,6 @@
 @property (nonatomic, strong) NSString *address;
 @property (nonatomic, strong) NSArray *tags;
 @property (nonatomic, strong) ProximiioLocation *area;
+@property (nonatomic, strong) NSDictionary *metadata;
 
 @end

@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/ProximiioGeofence.h</key>
 		<data>
-		BtzS1/btnqpHOPG6BtmGyHZqhRI=
+		/ESdK8Ug3xea1pRDv3N4IR72vIc=
 		</data>
 		<key>Headers/ProximiioIBeacon.h</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		+/Hl2tgeZhFv/l8oZ3a4HfitzVc=
+		n+M55fsyk8Z664aRYrTjmJ4waf8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -246,11 +246,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BtzS1/btnqpHOPG6BtmGyHZqhRI=
+			/ESdK8Ug3xea1pRDv3N4IR72vIc=
 			</data>
 			<key>hash2</key>
 			<data>
-			eDNzjz1xS+/rIHNcElafXbbNox5LYMc2EyBLD6+20LI=
+			go3BIo4UQs9s1Xl/tyE7QZtvqJV6Rn6g2NNslEx/Veo=
 			</data>
 		</dict>
 		<key>Headers/ProximiioIBeacon.h</key>
