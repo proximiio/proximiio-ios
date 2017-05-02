@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/ProximiioGeofence.h</key>
 		<data>
-		/ESdK8Ug3xea1pRDv3N4IR72vIc=
+		rsztrS08qRUGaZggWRJz0nUU+bI=
 		</data>
 		<key>Headers/ProximiioIBeacon.h</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Headers/ProximiioLocation.h</key>
 		<data>
-		a+MgOU42GETA+mGg5P0p/ASbsS8=
+		tf1ZHCexTt6BXa5sJ8W/YztEid4=
 		</data>
 		<key>Headers/ProximiioLocationSource.h</key>
 		<data>
@@ -250,11 +250,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/ESdK8Ug3xea1pRDv3N4IR72vIc=
+			rsztrS08qRUGaZggWRJz0nUU+bI=
 			</data>
 			<key>hash2</key>
 			<data>
-			go3BIo4UQs9s1Xl/tyE7QZtvqJV6Rn6g2NNslEx/Veo=
+			rT5k6RXk9VMZQWIbZBWUs0BblsJSJ4iLwTtoDLRJBVI=
 			</data>
 		</dict>
 		<key>Headers/ProximiioIBeacon.h</key>
@@ -294,11 +294,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			a+MgOU42GETA+mGg5P0p/ASbsS8=
+			tf1ZHCexTt6BXa5sJ8W/YztEid4=
 			</data>
 			<key>hash2</key>
 			<data>
-			yPT1Bhpp6Shy2f4rIRJuFuaoX5PqRJlVpJproW7D/Vc=
+			d7p87ZM27OpGDygYAPMQxLUhNmVw4po1dbu0h02uM3A=
 			</data>
 		</dict>
 		<key>Headers/ProximiioLocationSource.h</key>
