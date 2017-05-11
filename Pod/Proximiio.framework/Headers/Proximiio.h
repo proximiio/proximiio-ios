@@ -46,18 +46,11 @@ FOUNDATION_EXPORT const unsigned char ProximiioVersionString[];
 
 - (void)authWithToken:(NSString *)token callback:(void (^)(ProximiioState result))callback;
 - (void)authWithEmail:(NSString *)email password:(NSString *)password callback:(void (^)(ProximiioState result))callback;
-- (void)registerWithEmail:(NSString *)email
-                 password:(NSString *)password
-                firstName:(NSString *)firstName
-                 lastName:(NSString *)lastName
-                  company:(NSString *)company
-               background:(NSString *)background
-                  country:(NSString *)country
-                 callback:(void (^)(ProximiioState result))callback;
 
 - (void)addCustomiBeaconUUID:(NSString*)uuid;
 - (void)selectApplication:(NSString *)uuid;
-
+- (void)enable;
+- (void)disable;
 + (id)sharedInstance;
 
 @property (weak) id delegate;
@@ -65,6 +58,13 @@ FOUNDATION_EXPORT const unsigned char ProximiioVersionString[];
 @property (nonatomic, strong) NSString *visitorId;
 
 // management methods
+
+-(NSArray *)places;
+-(NSArray *)floors;
+-(NSArray *)departments;
+-(NSArray *)geofences;
+-(NSArray *)applications;
+
 
 - (BOOL)addPlace:(NSString *)name location:(CLLocationCoordinate2D)location
          address:(NSString *)address
@@ -131,8 +131,7 @@ indoorAtlasApiKeySecret:(NSString*)iaApiKeySecret
        withCallback:(void (^)(BOOL success, NSError* error))callback;
 
 - (BOOL)updateFloor:(NSString*)ID
-               name:(NSString*)name
-            floorID:(NSString*)floorID
+               name:(NSString*)name            
         floorPlanID:(NSString*)floorPlanID
               place:(ProximiioPlace*)place 
         floorNumber:(NSNumber*)floorNumber 
@@ -205,6 +204,14 @@ indoorAtlasApiKeySecret:(NSString*)iaApiKeySecret
 - (void)deleteGeofence:(NSString *)uuid withCallback:(void (^)(BOOL success, NSError* error))callback;
 - (void)deleteInput:(NSString *)uuid withCallback:(void (^)(BOOL success, NSError* error))callback;
 
+- (void)registerWithEmail:(NSString *)email
+                 password:(NSString *)password
+                firstName:(NSString *)firstName
+                 lastName:(NSString *)lastName
+                  company:(NSString *)company
+               background:(NSString *)background
+                  country:(NSString *)country
+                 callback:(void (^)(ProximiioState result))callback;
 @end
 
 @protocol ProximiioDelegate

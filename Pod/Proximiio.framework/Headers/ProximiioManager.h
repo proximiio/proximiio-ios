@@ -21,12 +21,13 @@ FOUNDATION_EXPORT const unsigned char ProximiioVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Proximiio/PublicHeader.h>
 
-
 @interface ProximiioManager : NSObject
 
 + (ProximiioManager *)sharedManager;
 - (void)requestPermissions;
 
+- (void)enable;
+- (void)disable;
 - (void)startUpdating;
 - (void)stopUpdating;
 - (void)extendBackgroundTime;
@@ -45,6 +46,12 @@ FOUNDATION_EXPORT const unsigned char ProximiioVersionString[];
 - (void)handleOutput:(NSObject *)payload;
 - (void)selectApplication:(NSString *)uuid;
 
+-(NSArray *)places;
+-(NSArray *)floors;
+-(NSArray *)departments;
+-(NSArray *)geofences;
+-(NSArray *)applications;
+
 - (NSArray *)geofencesForLocation:(ProximiioLocation *)location;
 
 - (void)addCustomiBeaconUUID:(NSString *)uuid;
@@ -59,7 +66,6 @@ indoorAtlasVenueID:(NSString *)indoorAtlasVenueId
     withCallback:(void (^)(BOOL success, NSError* error))callback;
 
 - (BOOL)addFloor:(NSString*)name
-         floorID:(NSString*)floorID
      floorPlanID:(NSString*)floorPlanID
            place:(ProximiioPlace*)place
      floorNumber:(NSNumber*)floorNumber
@@ -118,7 +124,6 @@ indoorAtlasApiKeySecret:(NSString*)iaApiKeySecret
 
 - (BOOL)updateFloor:(NSString*)ID
                name:(NSString*)name
-            floorID:(NSString*)floorID
         floorPlanID:(NSString*)floorPlanID
               place:(ProximiioPlace*)place
         floorNumber:(NSNumber*)floorNumber

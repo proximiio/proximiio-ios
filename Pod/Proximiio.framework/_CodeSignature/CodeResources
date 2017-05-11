@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Proximiio.h</key>
 		<data>
-		KzS8Nzrirbwhka0s8meGPffj8g8=
+		P30TBdxeTuJo4eLcjeJK6yrXFrA=
 		</data>
 		<key>Headers/ProximiioAPIResult.h</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Headers/ProximiioManager.h</key>
 		<data>
-		jEvoGxRgImaoBt/AbGoA2Z4x49o=
+		wm6HxtF3RwzMgDzonjBlOCLhQj4=
 		</data>
 		<key>Headers/ProximiioMapView.h</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		I1yFeYBLPmBnuPSuWORMsboDOIc=
+		VLbZiuSx28z+CoJZj0tDBVCYJcQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -151,11 +151,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KzS8Nzrirbwhka0s8meGPffj8g8=
+			P30TBdxeTuJo4eLcjeJK6yrXFrA=
 			</data>
 			<key>hash2</key>
 			<data>
-			5k9YOKWpjTMJq62z3PotWIqu+tXu+c7cwLkO8QzQTqA=
+			8mY1w8Og1PRa2bYk1zZjuLrU30o1anppUc2h3qTrrBQ=
 			</data>
 		</dict>
 		<key>Headers/ProximiioAPIResult.h</key>
@@ -316,11 +316,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jEvoGxRgImaoBt/AbGoA2Z4x49o=
+			wm6HxtF3RwzMgDzonjBlOCLhQj4=
 			</data>
 			<key>hash2</key>
 			<data>
-			WuvqODvxI+NcHM/gfakiq94dv8k2t753kZ/1w5ELpg8=
+			xRRC8CSHBanCoCvcN/YJJkEjE0c0ZA3foHOmsm7wZbI=
 			</data>
 		</dict>
 		<key>Headers/ProximiioMapView.h</key>
