@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Proximiio.h</key>
 		<data>
-		P30TBdxeTuJo4eLcjeJK6yrXFrA=
+		0e9JcOdKI30xDC6w+9iWOkp13Vs=
 		</data>
 		<key>Headers/ProximiioAPIResult.h</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Headers/ProximiioMapView.h</key>
 		<data>
-		qCw1SSnctCXB2rVZlufs0mA7dyc=
+		t7hl+EAxbfdILknORTjnFk71cVo=
 		</data>
 		<key>Headers/ProximiioMode.h</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		VLbZiuSx28z+CoJZj0tDBVCYJcQ=
+		t2mzmxUmbKZkeNxo8z4Vf9JVBK4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -138,11 +138,11 @@
 		</data>
 		<key>assets/proximiio-map.css</key>
 		<data>
-		FLkfJI15DV4gMf+H68zJtBqfhNs=
+		hd6pcYSiJWj1Jd8x2dxMHuCob1A=
 		</data>
 		<key>assets/proximiio-map.js</key>
 		<data>
-		hA+leWde+sqSedBvLSDtFAvLqIA=
+		A+EwghHIcIAL3KLySXHtoHcILk4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -151,11 +151,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			P30TBdxeTuJo4eLcjeJK6yrXFrA=
+			0e9JcOdKI30xDC6w+9iWOkp13Vs=
 			</data>
 			<key>hash2</key>
 			<data>
-			8mY1w8Og1PRa2bYk1zZjuLrU30o1anppUc2h3qTrrBQ=
+			xCjBvnWuSgoxEv8wYxDtVJ2ZyHKV15bnEU1O1fSrunM=
 			</data>
 		</dict>
 		<key>Headers/ProximiioAPIResult.h</key>
@@ -327,11 +327,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qCw1SSnctCXB2rVZlufs0mA7dyc=
+			t7hl+EAxbfdILknORTjnFk71cVo=
 			</data>
 			<key>hash2</key>
 			<data>
-			78pfBNX1SW3Tn8c72bczpevrLKwPHC/zkZnDgdKED34=
+			T0XjP6TsAxuKd0Qa9B4DmeIbpq02N3nZCzSlsemqUHM=
 			</data>
 		</dict>
 		<key>Headers/ProximiioMode.h</key>
@@ -503,22 +503,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FLkfJI15DV4gMf+H68zJtBqfhNs=
+			hd6pcYSiJWj1Jd8x2dxMHuCob1A=
 			</data>
 			<key>hash2</key>
 			<data>
-			GIcb9KsgtPAEEO4IA95fWsrS8dVajZbPZZbM21PpN8U=
+			bHRRTr1p2cu/qLTr+QKC0qSmmMKdg3qEWMz+HtNTAEI=
 			</data>
 		</dict>
 		<key>assets/proximiio-map.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hA+leWde+sqSedBvLSDtFAvLqIA=
+			A+EwghHIcIAL3KLySXHtoHcILk4=
 			</data>
 			<key>hash2</key>
 			<data>
-			XjafLQyYZ7rhgMuC3O2XC6r4FWmF58iqVz4IrYWCDeQ=
+			nfm2F6nBgOmredbasv8luz+EiNkeOpVVKVsnRWn0KHw=
 			</data>
 		</dict>
 	</dict>

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <WebKit/WebKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import "Proximiio.h"
 
 @interface ProximiioMapView : UIView
 
@@ -24,7 +25,7 @@
           opacity:(float)opacity
             title:(NSString *)title;
 
-- (void)addFloorPlan:(NSDictionary *)floorPlan;
+- (void)addFloorPlan:(ProximiioFloor *)floor;
 - (void)setLocationTracking:(BOOL)enabled;
 - (void)setView:(CLLocation *)location;
 - (void)setView:(CLLocation *)location zoom:(int)zoom;

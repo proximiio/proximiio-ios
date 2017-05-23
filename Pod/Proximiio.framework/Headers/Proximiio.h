@@ -23,6 +23,16 @@
 #import <Proximiio/ProximiioBufferSize.h>
 #import <Proximiio/ProximiioManager.h>
 
+#import <Proximiio/ProximiioFormatter.h>
+#import <Proximiio/ProximiioGeofenceManager.h>
+#import <Proximiio/ProximiioKalmanFilter.h>
+#import <Proximiio/ProximiioFormatter.h>
+#import <Proximiio/ProximiioOrganization.h>
+#import <Proximiio/ProximiioUser.h>
+#import <Proximiio/ProximiioSession.h>
+#import <Proximiio/ProximiioVisitor.h>
+#import <Proximiio/ProximiioLocationManagerDelegate.h>
+
 //! Project version number for Proximiio.
 FOUNDATION_EXPORT double ProximiioVersionNumber;
 
