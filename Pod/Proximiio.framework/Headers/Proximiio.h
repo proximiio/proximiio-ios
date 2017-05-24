@@ -23,7 +23,6 @@
 #import <Proximiio/ProximiioBufferSize.h>
 #import <Proximiio/ProximiioManager.h>
 
-#import <Proximiio/ProximiioFormatter.h>
 #import <Proximiio/ProximiioGeofenceManager.h>
 #import <Proximiio/ProximiioKalmanFilter.h>
 #import <Proximiio/ProximiioOrganization.h>
