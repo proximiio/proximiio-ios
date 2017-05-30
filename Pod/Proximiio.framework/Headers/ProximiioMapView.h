@@ -27,6 +27,7 @@
 
 - (void)addFloorPlan:(ProximiioFloor *)floor;
 - (void)setLocationTracking:(BOOL)enabled;
+- (void)setDestination:(CLLocation *)location;
 - (void)setView:(CLLocation *)location;
 - (void)setView:(CLLocation *)location zoom:(int)zoom;
 - (void)runCommand:(NSString *)command;
