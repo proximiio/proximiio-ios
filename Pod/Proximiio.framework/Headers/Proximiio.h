@@ -65,6 +65,7 @@ FOUNDATION_EXPORT const unsigned char ProximiioVersionString[];
 + (Proximiio*)sharedInstance;
 - (CBManagerState)btState;
 
+- (ProximiioFloor*)currentFloor;
 
 - (void)handlePush:(NSString *)title;
 - (void)handleOutput:(NSObject *)payload;
