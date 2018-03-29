@@ -22,6 +22,7 @@
 @property (nonatomic, strong) ProximiioPlace *place;
 @property (nonatomic, strong) NSString *departmentId;
 @property (nonatomic, strong) ProximiioDepartment *department;
+@property (nonatomic, strong) ProximiioFloor *floor;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *address;
 @property (nonatomic, strong) NSArray *tags;

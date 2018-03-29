@@ -67,6 +67,8 @@ FOUNDATION_EXPORT const unsigned char ProximiioVersionString[];
 
 - (ProximiioFloor*)currentFloor;
 
+- (NSString*)token;
+
 - (void)handlePush:(NSString *)title;
 - (void)handleOutput:(NSObject *)payload;
 - (void)handleFloorChange:(ProximiioFloor *)floor;
