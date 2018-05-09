@@ -56,6 +56,8 @@ FOUNDATION_EXPORT const unsigned char ProximiioVersionString[];
                   country:(NSString *)country
                  callback:(void (^)(ProximiioState result))callback;
 
+- (void)resetAndRefresh;
+
 - (void)setUpdateInterval:(double)updateInterval;
 - (void)addCustomiBeaconUUID:(NSString*)uuid;
 - (void)enable;
