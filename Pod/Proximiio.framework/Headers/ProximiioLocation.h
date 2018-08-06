@@ -40,6 +40,8 @@
 
 -(double) bearingToLocation:(CLLocation *_Nonnull) destinationLocation;
 
+- (BOOL)verify;
+
 @property int cycle;
 @property double originalAccuracy;
 @property double kalmanFix;
