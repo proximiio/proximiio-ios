@@ -21,7 +21,7 @@
 #import <Proximiio/ProximiioCustomLocation.h>
 #import <Proximiio/ProximiioBufferSize.h>
 #import <Proximiio/ProximiioEventType.h>
-
+#import <Proximiio/ProximiioPrivacyZone.h>
 
 //! Project version number for Proximiio.
 FOUNDATION_EXPORT double ProximiioVersionNumber;
@@ -56,6 +56,8 @@ FOUNDATION_EXPORT const unsigned char ProximiioVersionString[];
                   country:(NSString *)country
                  callback:(void (^)(ProximiioState result))callback;
 
+- (void)resetAndRefresh;
+
 - (void)setUpdateInterval:(double)updateInterval;
 - (void)addCustomiBeaconUUID:(NSString*)uuid;
 - (void)enable;
@@ -65,6 +67,9 @@ FOUNDATION_EXPORT const unsigned char ProximiioVersionString[];
 + (Proximiio*)sharedInstance;
 - (CBManagerState)btState;
 
+- (ProximiioFloor*)currentFloor;
+
+- (NSString*)token;
 
 - (void)handlePush:(NSString *)title;
 - (void)handleOutput:(NSObject *)payload;
@@ -229,6 +234,8 @@ indoorAtlasApiKeySecret:(NSString*)iaApiKeySecret
 - (void)proximiioPositionUpdated:(ProximiioLocation *)location;
 - (void)proximiioEnteredGeofence:(ProximiioGeofence *)geofence;
 - (void)proximiioExitedGeofence:(ProximiioGeofence *)geofence;
+- (void)proximiioEnteredPrivacyZone:(ProximiioPrivacyZone *)privacyZone;
+- (void)proximiioExitedPrivacyZone:(ProximiioPrivacyZone *)privacyZone;
 - (void)proximiioFloorChanged:(ProximiioFloor *)floor;
 - (void)proximiioFoundiBeacon:(ProximiioIBeacon *)beacon;
 - (void)proximiioUpdatediBeacon:(ProximiioIBeacon *)beacon;
@@ -251,5 +258,6 @@ indoorAtlasApiKeySecret:(NSString*)iaApiKeySecret
 - (void)proximiioUpdatedInputs;
 - (void)proximiioUpdatedPlaces;
 - (void)proximiioUpdatedGeofences;
+- (void)proximiioUpdatedPrivacyZones;
 
 @end

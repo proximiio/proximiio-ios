@@ -21,6 +21,7 @@
 - (NSArray *)allFloors;
 - (NSArray *)allDepartments;
 - (NSArray *)allGeofences;
+- (NSArray *)allPrivacyZones;
 - (NSArray *)allInputs;
 
 + (id)sharedManager;
@@ -44,6 +45,7 @@
 - (void)upsertFloor:(NSDictionary *)parameters withCallback:(void (^)(ProximiioAPIResult result))callback;
 - (void)upsertDepartment:(NSDictionary *)parameters withCallback:(void (^)(ProximiioAPIResult result))callback;
 - (void)upsertGeofence:(NSDictionary *)parameters withCallback:(void (^)(ProximiioAPIResult result))callback;
+- (void)upsertPrivacyZone:(NSDictionary *)parameters withCallback:(void (^)(ProximiioAPIResult result))callback;
 - (void)upsertInput:(NSDictionary *)parameters withCallback:(void (^)(ProximiioAPIResult result))callback;
 - (void)upsertApplication:(NSDictionary *)parameters withCallback:(void (^)(ProximiioAPIResult result))callback;
 
@@ -52,6 +54,7 @@
 @property (readonly, nonatomic, strong) NSMutableDictionary *floors;
 @property (readonly, nonatomic, strong) NSMutableDictionary *departments;
 @property (readonly, nonatomic, strong) NSMutableDictionary *geofences;
+@property (readonly, nonatomic, strong) NSMutableDictionary *privacyZones;
 @property (readonly, nonatomic, strong) NSMutableDictionary *inputs;
 
 @end
@@ -64,5 +67,6 @@
 - (void)didUpdateDepartments:(NSDictionary *)departments;
 - (void)didUpdateGeofences:(NSDictionary *)geofences;
 - (void)didUpdateInputs:(NSDictionary *)inputs;
+- (void)didUpdatePrivacyZones:(NSDictionary *)privacyZones;
 
 @end

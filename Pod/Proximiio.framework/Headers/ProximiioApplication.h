@@ -9,6 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "ProximiioResource.h"
 
+typedef NS_ENUM(NSUInteger, tAccelerometerMode) {
+    kAccelerometerOff = 0,
+    kAccelerometerForegroundOn,
+    kAccelerometerAlwaysOn,
+};
+
 @interface ProximiioApplication : ProximiioResource
 
 @property (nonatomic, strong) NSString *name;
@@ -21,6 +27,7 @@
 @property BOOL usesGeofencePositioning;
 @property BOOL usesTrilateration;
 @property BOOL usesNetworkInterval;
+@property tAccelerometerMode accelerometerMode;
 @property int networkInterval;
 @property int nativeActivationThreshold;
 @property NSString *indoorAtlasApiKey;
