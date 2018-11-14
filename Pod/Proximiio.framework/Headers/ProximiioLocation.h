@@ -33,6 +33,7 @@
                timestamp:(NSDate *_Nonnull)timestamp
                   source:(ProximiioLocationSource *_Nonnull)source;
 
+- (NSString *)sourceType;
 - (BOOL)hasSource;
 - (BOOL)isWithinInterval:(float)interval;
 - (BOOL)isInsidePolygon:(NSArray *_Nonnull)polygon;
