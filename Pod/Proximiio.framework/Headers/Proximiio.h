@@ -57,7 +57,7 @@ FOUNDATION_EXPORT const unsigned char ProximiioVersionString[];
 - (NSString *)visitorId;
 - (ProximiioLocation *)location;
 - (NSArray *)geofencesForLocation:(ProximiioLocation *)location;
-
+- (NSArray *)lastGeofences;
 - (CBManagerState)btState;
 - (ProximiioFloor*)currentFloor;
 
