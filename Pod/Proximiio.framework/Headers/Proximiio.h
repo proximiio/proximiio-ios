@@ -65,6 +65,9 @@ FOUNDATION_EXPORT const unsigned char ProximiioVersionString[];
 - (void)handleOutput:(NSObject *)payload;
 - (void)handleFloorChange:(ProximiioFloor *)floor;
 
+- (void)setDesiredAccuracy:(CLLocationAccuracy)desiredAccuracy;
+- (CLLocationAccuracy)desiredAccuracy;
+
 @property (weak) id delegate;
 @property (nonatomic, strong, readonly) NSString *visitorId;
 @property (readonly) BOOL remoteMode;
