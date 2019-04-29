@@ -18,7 +18,6 @@
 #import <Proximiio/ProximiioAPIResult.h>
 #import <Proximiio/ProximiioResourceManager.h>
 #import <Proximiio/ProximiioInputType.h>
-#import <Proximiio/ProximiioCustomLocation.h>
 #import <Proximiio/ProximiioBufferSize.h>
 #import <Proximiio/ProximiioEventType.h>
 #import <Proximiio/ProximiioPrivacyZone.h>

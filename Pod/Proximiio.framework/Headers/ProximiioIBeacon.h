@@ -43,4 +43,6 @@
  */
 @property (nonatomic, readonly) int         rssi;
 
++ (NSString *)identifierForUUID:(NSString *)uuid major:(int)major minor:(int)minor;
+
 @end

@@ -33,7 +33,6 @@
                timestamp:(NSDate *_Nonnull)timestamp
                   source:(ProximiioLocationSource *_Nonnull)source;
 
-- (NSString *)sourceType;
 - (BOOL)hasSource;
 - (BOOL)isWithinInterval:(float)interval;
 - (BOOL)isInsidePolygon:(NSArray *_Nonnull)polygon;
@@ -47,6 +46,7 @@
 @property double originalAccuracy;
 @property double kalmanFix;
 @property (nonatomic, strong) ProximiioLocationSource *_Nonnull source;
+@property (nonatomic, strong) NSString *_Nonnull sourceType;
 
 // CLLocation+GreatCircle extensions
 
