@@ -66,6 +66,7 @@ FOUNDATION_EXPORT const unsigned char ProximiioVersionString[];
 
 - (void)setDesiredAccuracy:(CLLocationAccuracy)desiredAccuracy;
 - (CLLocationAccuracy)desiredAccuracy;
+- (void)setAllowsBackgroundLocationUpdates:(BOOL)enabled;
 
 @property (weak) id delegate;
 @property (nonatomic, strong, readonly) NSString *visitorId;
@@ -270,5 +271,4 @@ indoorAtlasApiKeySecret:(NSString*)iaApiKeySecret
 - (void)proximiioUpdatedPlaces;
 - (void)proximiioUpdatedGeofences;
 - (void)proximiioUpdatedPrivacyZones;
-
 @end
