@@ -27,6 +27,7 @@ typedef NS_ENUM(NSUInteger, tAccelerometerMode) {
 @property BOOL usesGeofencePositioning;
 @property BOOL usesTrilateration;
 @property BOOL usesNetworkInterval;
+@property BOOL usesFleetManagement;
 @property tAccelerometerMode accelerometerMode;
 @property int networkInterval;
 @property int nativeActivationThreshold;

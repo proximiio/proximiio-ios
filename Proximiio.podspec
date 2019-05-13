@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Proximiio"
-  s.version          = "1.1.66"
+  s.version          = "1.1.67"
   s.summary          = "The one-step solution for location-aware applications."
 
 # This description is used to generate tags and improve search results.
@@ -29,6 +29,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   
   s.dependency       'IndoorAtlas'
+
 #s.source_files = 'Pod/Classes/**/*'
 #s.resource_bundles = {
 #'Proximiio' => ['Pod/Assets/*.png']
