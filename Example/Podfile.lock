@@ -1,14 +1,23 @@
 PODS:
-  - Proximiio (0.1.0)
+  - IndoorAtlas (2.4.1)
+  - Proximiio (1.1.74):
+    - IndoorAtlas
 
 DEPENDENCIES:
   - Proximiio (from `../`)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - IndoorAtlas
+
 EXTERNAL SOURCES:
   Proximiio:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  Proximiio: 803be49a31aaf1df0596b4f9b2ab2a1c005be715
+  IndoorAtlas: 866807ed552ed9571a2c2defddf0f0742af3a387
+  Proximiio: 173757e84cda27b84afa7802920fe9581b80e26e
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: da8f0b5c72a2a7430fc42aca494bad785f5bc470
+
+COCOAPODS: 1.7.5

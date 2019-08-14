@@ -1,25 +1,42 @@
 {
   "name": "Proximiio",
-  "version": "0.1.0",
-  "summary": "A short description of Proximiio.",
-  "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/Proximiio",
-  "license": "MIT",
+  "version": "1.1.74",
+  "summary": "The one-step solution for location-aware applications.",
+  "description": "Proximi.io is the one-step solution for location-aware applications.",
+  "homepage": "https://github.com/proximiio/proximiio-ios",
+  "license": "Commercial",
   "authors": {
-    "Marian Frische": "marian.frische@navtureapps.com"
+    "Proximi.io": "support@proximi.io"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/Proximiio.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/proximiio/proximiio-ios.git",
+    "tag": "1.1.74"
   },
   "platforms": {
-    "ios": "7.0"
+    "ios": "10.0"
   },
   "requires_arc": true,
-  "source_files": "Pod/Classes/**/*",
-  "resource_bundles": {
-    "Proximiio": [
-      "Pod/Assets/*.png"
+  "dependencies": {
+    "IndoorAtlas": [
+
     ]
-  }
+  },
+  "vendored_frameworks": "Pod/Proximiio.framework",
+  "libraries": [
+    "z",
+    "c++",
+    "icucore"
+  ],
+  "frameworks": [
+    "CoreLocation",
+    "SystemConfiguration",
+    "Security",
+    "Accelerate",
+    "CoreMotion",
+    "CFNetwork",
+    "CoreBluetooth",
+    "UIKit",
+    "Accelerate",
+    "CoreMotion"
+  ]
 }

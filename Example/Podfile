@@ -1,9 +1,6 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-
-target 'Proximiio_Tests', :exclusive => true do
+target 'Proximiio_Tests' do
   pod 'Proximiio', :path => '../'
-
-  
 end
