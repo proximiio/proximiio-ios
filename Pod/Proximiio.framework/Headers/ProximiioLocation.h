@@ -12,11 +12,11 @@
 
 @interface ProximiioLocation : CLLocation
 
-+ (ProximiioLocation * _Nonnull)locationWithLatitude:(float)latitude
-                                  longitude:(float)longitude;
++ (ProximiioLocation * _Nonnull)locationWithLatitude:(double)latitude
+                                  longitude:(double)longitude;
 
-+ (ProximiioLocation * _Nonnull)locationWithLatitude:(float)latitude
-                                  longitude:(float)longitude
++ (ProximiioLocation * _Nonnull)locationWithLatitude:(double)latitude
+                                  longitude:(double)longitude
                          horizontalAccuracy:(float)accuracy;
 
 + (id _Nonnull)locationWithCLLocation:(CLLocation *_Nonnull)location
