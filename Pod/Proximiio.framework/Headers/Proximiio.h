@@ -124,6 +124,13 @@ indoorAtlasVenueID:(NSString *)indoorAtlasVenueId
             address:(NSString*)address 
        withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
 
+- (BOOL)addPrivacyZone:(NSString*)name
+         department:(ProximiioDepartment*)department
+           location:(CLLocationCoordinate2D)location
+             radius:(double)radius
+            address:(NSString*)address
+       withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
+
 - (BOOL)addiBeaconInput:(NSString*)name
              department:(ProximiioDepartment*)department
                location:(CLLocationCoordinate2D)location
@@ -184,6 +191,14 @@ indoorAtlasApiKeySecret:(NSString*)iaApiKeySecret
                address:(NSString*)address
           withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
 
+- (BOOL)updatePrivacyZone:(NSString*)ID
+                  name:(NSString*)name
+            department:(ProximiioDepartment*)department
+              location:(CLLocationCoordinate2D)location
+                radius:(double)radius
+               address:(NSString*)address
+          withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
+
 - (BOOL)updateiBeaconInput:(NSString*)ID
                       name:(NSString*)name
                 department:(ProximiioDepartment*)department
@@ -235,6 +250,7 @@ indoorAtlasApiKeySecret:(NSString*)iaApiKeySecret
 - (void)deleteFloor:(NSString *)uuid withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
 - (void)deleteDepartment:(NSString *)uuid withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
 - (void)deleteGeofence:(NSString *)uuid withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
+- (void)deletePrivacyZone:(NSString *)uuid withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
 - (void)deleteInput:(NSString *)uuid withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
 
 @end
