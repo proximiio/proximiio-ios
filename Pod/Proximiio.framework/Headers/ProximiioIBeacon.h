@@ -16,7 +16,9 @@
  @interface ProximiioBeacon
  @brief ProximiioBeacon interface.
  */
-@interface ProximiioIBeacon : ProximiioBeacon
+@interface ProximiioIBeacon : ProximiioBeacon {
+    NSTimer *_lostTimer;
+}
 
 /*!
  @brief UUID of this beacon.
@@ -44,5 +46,8 @@
 @property (nonatomic, readonly) int         rssi;
 
 + (NSString *)identifierForUUID:(NSString *)uuid major:(int)major minor:(int)minor;
+
+- (NSTimer*)lostTimer;
+- (void)setLostTimer:(NSTimer*)timer;
 
 @end
