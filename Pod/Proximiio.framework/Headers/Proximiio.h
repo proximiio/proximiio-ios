@@ -113,6 +113,7 @@ indoorAtlasVenueID:(NSString *)indoorAtlasVenueId
     withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
 
 - (BOOL)addDepartment:(NSString*)name
+                place:(ProximiioPlace*)place
                 floor:(ProximiioFloor*)floor
                  tags:(NSArray*)tags
          withCallback:(void (^)(BOOL success, NSError* error))callback;
@@ -121,19 +122,20 @@ indoorAtlasVenueID:(NSString *)indoorAtlasVenueId
          department:(ProximiioDepartment*)department
            location:(CLLocationCoordinate2D)location
              radius:(double)radius
-            address:(NSString*)address 
+            address:(NSString*)address
        withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
 
 - (BOOL)addPrivacyZone:(NSString*)name
-         department:(ProximiioDepartment*)department
-           location:(CLLocationCoordinate2D)location
-             radius:(double)radius
-            address:(NSString*)address
-       withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
+            department:(ProximiioDepartment*)department
+              location:(CLLocationCoordinate2D)location
+                radius:(double)radius
+               address:(NSString*)address
+          withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
 
 - (BOOL)addiBeaconInput:(NSString*)name
              department:(ProximiioDepartment*)department
                location:(CLLocationCoordinate2D)location
+                 height:(int)height
                    uuid:(NSString*)uuid
                   major:(int)major
                   minor:(int)minor
@@ -141,6 +143,7 @@ indoorAtlasVenueID:(NSString *)indoorAtlasVenueId
 
 - (BOOL)addEddystoneInput:(NSString*)name
                department:(ProximiioDepartment*)department
+                   height:(int)height
                  location:(CLLocationCoordinate2D)location
               namespaceID:(NSString*)namespaceID
                instanceID:(NSString*)instanceID
@@ -148,18 +151,24 @@ indoorAtlasVenueID:(NSString *)indoorAtlasVenueId
 
 - (BOOL)addCustomInput:(NSString*)name
             department:(ProximiioDepartment*)department
+                height:(int)height
               location:(CLLocationCoordinate2D)location
           withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
 
 - (BOOL)addApplication:(NSString*)name
-            eddystones:(BOOL)eddystones
+        nativeLocation:(BOOL)nativeLocation
+        nativeAccuracy:(int)nativeAccuracy
               iBeacons:(BOOL)iBeacons
+            eddystones:(BOOL)eddystones
            indoorAtlas:(BOOL)indoorAtlas
-     indoorAtlasApiKey:(NSString*)iaApiKey 
+     indoorAtlasApiKey:(NSString*)iaApiKey
 indoorAtlasApiKeySecret:(NSString*)iaApiKeySecret
-       nativeGeofences:(BOOL)nativeGeofences
-             steerPath:(BOOL)steerPath
-          steerPathNDD:(NSString*)steerPathNDD
+            remoteMode:(BOOL)remoteMode
+           useGeofence:(BOOL)useGeofence
+      useTrilateration:(BOOL)useTrilateration
+    useNetworkInterval:(BOOL)useNetworkInterval
+       networkInterval:(int)networkInterval
+   activationThreshold:(int)activationThreshold
           withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
 
 - (BOOL)updatePlace:(NSString *)uuid
@@ -171,14 +180,15 @@ indoorAtlasApiKeySecret:(NSString*)iaApiKeySecret
        withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
 
 - (BOOL)updateFloor:(NSString*)ID
-               name:(NSString*)name            
+               name:(NSString*)name
         floorPlanID:(NSString*)floorPlanID
-              place:(ProximiioPlace*)place 
-        floorNumber:(NSNumber*)floorNumber 
+              place:(ProximiioPlace*)place
+        floorNumber:(NSNumber*)floorNumber
        withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
 
 - (BOOL)updateDepartment:(NSString*)ID
                     name:(NSString*)name
+                   place:(ProximiioPlace*)place
                    floor:(ProximiioFloor*)floor
                     tags:(NSArray*)tags
             withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
@@ -192,20 +202,21 @@ indoorAtlasApiKeySecret:(NSString*)iaApiKeySecret
           withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
 
 - (BOOL)updatePrivacyZone:(NSString*)ID
-                  name:(NSString*)name
-            department:(ProximiioDepartment*)department
-              location:(CLLocationCoordinate2D)location
-                radius:(double)radius
-               address:(NSString*)address
-          withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
+                     name:(NSString*)name
+               department:(ProximiioDepartment*)department
+                 location:(CLLocationCoordinate2D)location
+                   radius:(double)radius
+                  address:(NSString*)address
+             withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
 
 - (BOOL)updateiBeaconInput:(NSString*)ID
                       name:(NSString*)name
                 department:(ProximiioDepartment*)department
                   location:(CLLocationCoordinate2D)location
+                    height:(int)height
                       uuid:(NSString*)uuid
                      major:(int)major
-                     minor:(int)minor 
+                     minor:(int)minor
        triggersFloorChange:(BOOL)triggersFloorChange
        triggersPlaceChange:(BOOL)triggersPlaceChange
                    floorID:(NSString*)floorID
@@ -216,6 +227,7 @@ indoorAtlasApiKeySecret:(NSString*)iaApiKeySecret
                         name:(NSString*)name
                   department:(ProximiioDepartment*)department
                     location:(CLLocationCoordinate2D)location
+                      height:(int)height
                  namespaceID:(NSString*)namespaceID
                   instanceID:(NSString*)instanceID
          triggersFloorChange:(BOOL)triggersFloorChange
@@ -228,6 +240,7 @@ indoorAtlasApiKeySecret:(NSString*)iaApiKeySecret
                      name:(NSString*)name
                department:(ProximiioDepartment*)department
                  location:(CLLocationCoordinate2D)location
+                   height:(int)height
       triggersFloorChange:(BOOL)triggersFloorChange
       triggersPlaceChange:(BOOL)triggersPlaceChange
                   floorID:(NSString*)floorID
@@ -236,16 +249,22 @@ indoorAtlasApiKeySecret:(NSString*)iaApiKeySecret
 
 - (BOOL)updateApplication:(NSString*)ID
                      name:(NSString*)name
-               eddystones:(BOOL)eddystones
+           nativeLocation:(BOOL)nativeLocation
+           nativeAccuracy:(int)nativeAccuracy
                  iBeacons:(BOOL)iBeacons
+               eddystones:(BOOL)eddystones
               indoorAtlas:(BOOL)indoorAtlas
         indoorAtlasApiKey:(NSString*)iaApiKey
   indoorAtlasApiKeySecret:(NSString*)iaApiKeySecret
-          nativeGeofences:(BOOL)nativeGeofences
-                steerPath:(BOOL)steerPath
-             steerPathNDD:(NSString*)steerPathNDD
+               remoteMode:(BOOL)remoteMode
+              useGeofence:(BOOL)useGeofence
+         useTrilateration:(BOOL)useTrilateration
+       useNetworkInterval:(BOOL)useNetworkInterval
+          networkInterval:(int)networkInterval
+      activationThreshold:(int)activationThreshold
              withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
 
+- (void)deleteApplication:(NSString *)uuid withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
 - (void)deletePlace:(NSString *)uuid withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
 - (void)deleteFloor:(NSString *)uuid withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
 - (void)deleteDepartment:(NSString *)uuid withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));

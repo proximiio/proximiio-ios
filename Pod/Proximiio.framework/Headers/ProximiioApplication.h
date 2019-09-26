@@ -32,6 +32,7 @@ typedef NS_ENUM(NSUInteger, tAccelerometerMode) {
 @property int networkInterval;
 @property int nativeActivationThreshold;
 @property int maxBeaconDistance;
+@property int nativeAccuracy;
 @property NSString *indoorAtlasApiKey;
 @property NSString *indoorAtlasApiSecret;
     

@@ -38,5 +38,6 @@
 @property (nonatomic, strong) NSString *placeId;
 @property (nonatomic, strong) ProximiioLocation *location;
 @property (nonatomic, strong) ProximiioDepartment *department;
+@property int height;
 
 @end
