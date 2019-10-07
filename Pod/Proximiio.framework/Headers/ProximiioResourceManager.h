@@ -35,6 +35,11 @@
 - (ProximiioPlace *)placeWithUUID:(NSString *)uuid;
 - (ProximiioDepartment *)departmentWithUUID:(NSString *)uuid;
 
+- (NSString *)keyForUUID:(NSUUID *)uuid major:(int)major minor:(int)minor;
+- (NSString *)keyForNamespace:(NSString *)ns instance:(NSString *)instance;
+
+- (void)inputDeleteLocallyById:(NSString *) uuid;
+
 - (void)update:(NSString *)resource data:(NSDictionary *)data;
 
 - (void)upsert:(NSString *)resource
