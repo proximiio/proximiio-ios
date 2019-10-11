@@ -50,6 +50,7 @@ FOUNDATION_EXPORT const unsigned char ProximiioVersionString[];
 - (void)addCustomiBeaconUUID:(NSString*)uuid;
 - (void)enable;
 - (void)disable;
+- (void)wipe;
 
 - (NSString*)token;
 - (ProximiioApplication *)application;

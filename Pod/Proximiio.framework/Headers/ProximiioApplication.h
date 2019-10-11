@@ -9,6 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "ProximiioResource.h"
 
+#define DEFAULT_MAX_BEACON_DISTANCE 50 // meters
+#define DEFAULT_NATIVE_ACTIVATION_THRESHOLD 60000 //msec
+#define DEFAULT_NETWORK_INTERVAL 30000 //msec
+
 typedef NS_ENUM(NSUInteger, tAccelerometerMode) {
     kAccelerometerOff = 0,
     kAccelerometerForegroundOn,

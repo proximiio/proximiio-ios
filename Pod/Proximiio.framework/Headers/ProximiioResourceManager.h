@@ -38,6 +38,7 @@
 - (NSString *)keyForUUID:(NSUUID *)uuid major:(int)major minor:(int)minor;
 - (NSString *)keyForNamespace:(NSString *)ns instance:(NSString *)instance;
 
+- (void)wipe;
 - (void)inputDeleteLocallyById:(NSString *) uuid;
 
 - (void)update:(NSString *)resource data:(NSDictionary *)data;
