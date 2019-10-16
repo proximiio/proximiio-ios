@@ -24,7 +24,7 @@
 - (NSArray *)allPrivacyZones;
 - (NSArray *)allInputs;
 
-+ (id)sharedManager;
++ (ProximiioResourceManager*)sharedManager;
 
 - (void)fetchWithCallback:(void (^)(ProximiioAPIResult result))callback;
 
@@ -38,10 +38,11 @@
 - (NSString *)keyForUUID:(NSUUID *)uuid major:(int)major minor:(int)minor;
 - (NSString *)keyForNamespace:(NSString *)ns instance:(NSString *)instance;
 
-- (void)wipe;
 - (void)inputDeleteLocallyById:(NSString *) uuid;
 
 - (void)update:(NSString *)resource data:(NSDictionary *)data;
+
+- (void)wipeLocalCache;
 
 - (void)upsert:(NSString *)resource
     parameters:(NSDictionary *)parameters

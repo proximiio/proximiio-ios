@@ -50,7 +50,7 @@ FOUNDATION_EXPORT const unsigned char ProximiioVersionString[];
 - (void)addCustomiBeaconUUID:(NSString*)uuid;
 - (void)enable;
 - (void)disable;
-- (void)wipe;
+- (void)wipeLocalCache;
 
 - (NSString*)token;
 - (ProximiioApplication *)application;
@@ -79,6 +79,7 @@ FOUNDATION_EXPORT const unsigned char ProximiioVersionString[];
 -(NSArray *)geofences;
 -(NSArray *)applications;
 -(NSArray *)privacyZones;
+-(NSArray *)inputs;
 
 // DEPRECATE
 + (NSString *)visitorId  __attribute__((deprecated("Class level visitorId has been deprecated, please use instance level visitorId instead")));
@@ -111,6 +112,7 @@ indoorAtlasVenueID:(NSString *)indoorAtlasVenueId
      floorPlanID:(NSString*)floorPlanID
            place:(ProximiioPlace*)place
      floorNumber:(NSNumber*)floorNumber
+         anchors:(NSArray*)anchors
     withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
 
 - (BOOL)addDepartment:(NSString*)name
@@ -120,17 +122,25 @@ indoorAtlasVenueID:(NSString *)indoorAtlasVenueId
          withCallback:(void (^)(BOOL success, NSError* error))callback;
 
 - (BOOL)addGeofence:(NSString*)name
-         department:(ProximiioDepartment*)department
-           location:(CLLocationCoordinate2D)location
+               type:(NSString*)type
+               area:(ProximiioLocation*)area
+            address:(NSString *)address
              radius:(double)radius
-            address:(NSString*)address
+            polygon:(NSArray*)polygon
+         department:(ProximiioDepartment*)department
+              floor:(ProximiioFloor*)floor
+              place:(ProximiioPlace*)place
        withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
 
 - (BOOL)addPrivacyZone:(NSString*)name
-            department:(ProximiioDepartment*)department
-              location:(CLLocationCoordinate2D)location
+                  type:(NSString*)type
+                  area:(ProximiioLocation*)area
+               address:(NSString *)address
                 radius:(double)radius
-               address:(NSString*)address
+               polygon:(NSArray*)polygon
+            department:(ProximiioDepartment*)department
+                 floor:(ProximiioFloor*)floor
+                 place:(ProximiioPlace*)place
           withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
 
 - (BOOL)addiBeaconInput:(NSString*)name
@@ -185,6 +195,7 @@ indoorAtlasApiKeySecret:(NSString*)iaApiKeySecret
         floorPlanID:(NSString*)floorPlanID
               place:(ProximiioPlace*)place
         floorNumber:(NSNumber*)floorNumber
+            anchors:(NSArray*)anchors
        withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
 
 - (BOOL)updateDepartment:(NSString*)ID
@@ -195,19 +206,27 @@ indoorAtlasApiKeySecret:(NSString*)iaApiKeySecret
             withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
 
 - (BOOL)updateGeofence:(NSString*)ID
-                  name:(NSString*)name
-            department:(ProximiioDepartment*)department
-              location:(CLLocationCoordinate2D)location
+                  name:(NSString *)name
+                  type:(NSString*)type
+                  area:(ProximiioLocation*)area
+               address:(NSString *)address
                 radius:(double)radius
-               address:(NSString*)address
+               polygon:(NSArray*)polygon
+            department:(ProximiioDepartment*)department
+                 floor:(ProximiioFloor*)floor
+                 place:(ProximiioPlace*)place
           withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
 
 - (BOOL)updatePrivacyZone:(NSString*)ID
-                     name:(NSString*)name
-               department:(ProximiioDepartment*)department
-                 location:(CLLocationCoordinate2D)location
+                     name:(NSString *)name
+                     type:(NSString*)type
+                     area:(ProximiioLocation*)area
+                  address:(NSString *)address
                    radius:(double)radius
-                  address:(NSString*)address
+                  polygon:(NSArray*)polygon
+               department:(ProximiioDepartment*)department
+                    floor:(ProximiioFloor*)floor
+                    place:(ProximiioPlace*)place
              withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
 
 - (BOOL)updateiBeaconInput:(NSString*)ID
