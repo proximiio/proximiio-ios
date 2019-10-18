@@ -119,7 +119,7 @@ indoorAtlasVenueID:(NSString *)indoorAtlasVenueId
                 place:(ProximiioPlace*)place
                 floor:(ProximiioFloor*)floor
                  tags:(NSArray*)tags
-         withCallback:(void (^)(BOOL success, NSError* error))callback;
+         withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
 
 - (BOOL)addGeofence:(NSString*)name
                type:(NSString*)type
