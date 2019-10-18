@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Proximiio"
-  s.version          = "1.1.94"
+  s.version          = "1.1.95"
   s.summary          = "The one-step solution for location-aware applications."
 
 # This description is used to generate tags and improve search results.
