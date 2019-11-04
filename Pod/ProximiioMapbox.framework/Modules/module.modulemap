@@ -1,0 +1,11 @@
+framework module ProximiioMapbox {
+  umbrella header "ProximiioMapbox.h"
+
+  export *
+  module * { export * }
+}
+
+module ProximiioMapbox.Swift {
+    header "ProximiioMapbox-Swift.h"
+    requires objc
+}
