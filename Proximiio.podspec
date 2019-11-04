@@ -35,6 +35,6 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'Pod/Proximiio.framework'
 
   s.libraries = 'z', 'c++', 'icucore'
-  s.frameworks = Accelerate', 'CFNetwork', 'CoreBluetooth', 'CoreGraphics', 'CoreLocation', 'CoreMotion', 'Foundation', 'Security', 'SystemConfiguration', 'UIKit'
+  s.frameworks = 'Accelerate', 'CFNetwork', 'CoreBluetooth', 'CoreGraphics', 'CoreLocation', 'CoreMotion', 'Foundation', 'Security', 'SystemConfiguration', 'UIKit'
 
 end
