@@ -21,6 +21,7 @@
 #import <Proximiio/ProximiioBufferSize.h>
 #import <Proximiio/ProximiioEventType.h>
 #import <Proximiio/ProximiioPrivacyZone.h>
+#import <CrystDBCipher/CrystDB.h>
 
 //! Project version number for Proximiio.
 FOUNDATION_EXPORT double ProximiioVersionNumber;
@@ -31,6 +32,8 @@ FOUNDATION_EXPORT const unsigned char ProximiioVersionString[];
 @interface Proximiio : NSObject
 
 + (Proximiio*)sharedInstance;
+
+- (CrystManager *)database;
 
 - (void)authWithToken:(NSString *)token callback:(void (^)(ProximiioState result))callback;
 
@@ -304,12 +307,16 @@ indoorAtlasApiKeySecret:(NSString*)iaApiKeySecret
 - (void)deletePrivacyZone:(NSString *)uuid withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
 - (void)deleteInput:(NSString *)uuid withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
 
+
+// MARK: Route Snapping extra
+- (void) routeSnappingSetRoutePath:(NSArray *) path;
+- (NSArray *) routeSnappingCurrentPath;
 @end
 
+// MARK: - Delegates
 @protocol ProximiioDelegate
 
 @optional
-
 - (void)proximiioPositionUpdated:(ProximiioLocation *)location;
 - (void)proximiioEnteredGeofence:(ProximiioGeofence *)geofence;
 - (void)proximiioExitedGeofence:(ProximiioGeofence *)geofence;
