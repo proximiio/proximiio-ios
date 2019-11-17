@@ -22,6 +22,19 @@ it, simply add the following line to your Podfile:
 pod "Proximiio"
 ```
 
+also at the end of the file add:
+
+```ruby
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['SWIFT_VERSION'] = '5.1'
+            config.build_settings['ENABLE_BITCODE'] = 'NO'
+        end
+    end
+end
+```
+
 ## Author
 
 Proximi.io, support@proximi.io
