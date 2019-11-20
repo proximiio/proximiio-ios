@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.author           = { "Proximi.io" => "support@proximi.io" }
   s.source           = { :git => "https://github.com/proximiio/proximiio-ios.git", :tag => s.version.to_s }
 
-  s.platform     = :ios, '11.0'
+  s.platform     = :ios, '10.0'
   s.requires_arc = true
   
   s.dependency       'IndoorAtlas' 
