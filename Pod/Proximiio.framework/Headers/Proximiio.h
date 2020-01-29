@@ -24,6 +24,8 @@
 #import <Proximiio/ProximiioPrivacyZone.h>
 #import <Proximiio/ProximiioLocationManager.h>
 #import <Proximiio/ProximiioGeoJSON.h>
+#import <Proximiio/ProximiioPointOnLine.h>
+#import <Proximiio/ProximiioLine.h>
 
 //! Project version number for Proximiio.
 FOUNDATION_EXPORT double ProximiioVersionNumber;
