@@ -26,6 +26,10 @@
 #import <Proximiio/ProximiioGeoJSON.h>
 #import <Proximiio/ProximiioPointOnLine.h>
 #import <Proximiio/ProximiioLine.h>
+#import <Proximiio/Turf.h>
+#import <Proximiio/TurfMeasure.h>
+#import <Proximiio/ProximiioAmenity.h>
+
 
 //! Project version number for Proximiio.
 FOUNDATION_EXPORT double ProximiioVersionNumber;
