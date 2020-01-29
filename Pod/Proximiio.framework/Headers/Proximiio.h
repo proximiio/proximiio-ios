@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+
 #import <Proximiio/ProximiioLocation.h>
 #import <Proximiio/ProximiioLocationSource.h>
 #import <Proximiio/ProximiioState.h>
@@ -22,6 +23,7 @@
 #import <Proximiio/ProximiioEventType.h>
 #import <Proximiio/ProximiioPrivacyZone.h>
 #import <Proximiio/ProximiioLocationManager.h>
+#import <Proximiio/ProximiioGeoJSON.h>
 
 //! Project version number for Proximiio.
 FOUNDATION_EXPORT double ProximiioVersionNumber;

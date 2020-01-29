@@ -16,9 +16,6 @@
 @property (nonatomic, assign) CLLocationCoordinate2D end;
 
 -(id)initWithStart: (CLLocationCoordinate2D)start end:(CLLocationCoordinate2D)end;
-//-(ProximiioPointOnLine *) nearestPointOnLine:(CLLocationCoordinate2D)q;
-//-(CLLocation*) intersection:(ProximiioLine*)line;
-
 +(CLLocation*) intersection:(ProximiioLine*)line with:(ProximiioLine *)other;
 +(ProximiioPointOnLine *) pointOnLine:(CLLocationCoordinate2D)point coordinates:(NSArray *)coordinates;
 @end

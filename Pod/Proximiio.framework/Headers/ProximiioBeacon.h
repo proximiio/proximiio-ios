@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+
 #import "ProximiioInputType.h"
 #import "ProximiioLocationSource.h"
 #import "ProximiioDepartment.h"
