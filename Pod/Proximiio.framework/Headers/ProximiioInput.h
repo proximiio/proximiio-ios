@@ -24,7 +24,6 @@
 - (ProximiioFloor *)floor;
 - (int)level;
 
-
 @property ProximiioInputType type;
 @property BOOL triggerFloorChange;
 @property BOOL triggerVenueChange;
@@ -39,5 +38,10 @@
 @property (nonatomic, strong) ProximiioLocation *location;
 @property (nonatomic, strong) ProximiioDepartment *department;
 @property int height;
+
+@property BOOL fixPosition;
+@property double fixPositionRange;
+@property BOOL fixLevel;
+@property double fixLevelRange;
 
 @end

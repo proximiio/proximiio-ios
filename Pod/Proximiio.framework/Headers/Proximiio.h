@@ -21,7 +21,7 @@
 #import <Proximiio/ProximiioBufferSize.h>
 #import <Proximiio/ProximiioEventType.h>
 #import <Proximiio/ProximiioPrivacyZone.h>
-#import <CrystDBCipher/CrystDB.h>
+#import <Proximiio/ProximiioLocationManager.h>
 
 //! Project version number for Proximiio.
 FOUNDATION_EXPORT double ProximiioVersionNumber;
@@ -32,8 +32,6 @@ FOUNDATION_EXPORT const unsigned char ProximiioVersionString[];
 @interface Proximiio : NSObject
 
 + (Proximiio*)sharedInstance;
-
-- (CrystManager *)database;
 
 - (void)authWithToken:(NSString *)token callback:(void (^)(ProximiioState result))callback;
 
@@ -56,6 +54,12 @@ FOUNDATION_EXPORT const unsigned char ProximiioVersionString[];
 - (void)pdrToRouteThreshold:(double) thresholdInMeters;
 - (BOOL)pdrIsEnabled;
 - (double)pdrThresholdInMeters;
+
+// MARK: - GeoJSON
+- (void)syncFeatures:(void (^)(BOOL completed))callback;
+
+// MARK: - Amenity
+- (void)syncAmenities:(void (^)(BOOL completed))callback;
 
 - (void)setBufferSize:(ProximiioBufferSize)bufferSize;
 
@@ -87,6 +91,7 @@ FOUNDATION_EXPORT const unsigned char ProximiioVersionString[];
 @property (weak) id delegate;
 @property (nonatomic, strong, readonly) NSString *visitorId;
 @property (readonly) BOOL remoteMode;
+@property (nonatomic, strong) ProximiioLocationManager *locationManager;
 
 -(NSArray *)places;
 -(NSArray *)floors;

@@ -23,6 +23,8 @@
 - (void)setRoutePath:(NSArray *) path;
 - (NSArray *)currentPath;
 
+- (void) networkGetFeatures:(void (^)(BOOL completed))callback;
+
 - (ProximiioLocation *)getSnappedPosition:(ProximiioLocation*)current;
 - (ProximiioLocation *)getSnappedPosition:(ProximiioLocation*)current withPaths:(NSArray *)paths andThreshold:(double) threshold;
 @end
