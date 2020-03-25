@@ -30,6 +30,8 @@
 
 # pragma mark - Feature
 + (NSArray *)features;
++ (int) lastDbSync;
++ (void) setLastDbSync:(int) time;
 + (ProximiioGeoJSON *)featureInitWithJson:(NSDictionary *)json;
 + (ProximiioGeoJSON *)featureLineWithCoordinates:(NSArray *)coordinates properties:(NSDictionary *)properties;
 + (ProximiioGeoJSON *)featureEmptyLine;

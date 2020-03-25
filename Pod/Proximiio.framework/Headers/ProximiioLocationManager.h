@@ -20,17 +20,20 @@
 
 @interface ProximiioLocationManager : NSObject <ProximiioLocationSourceDelegate, ProximiioCoreLocationDelegate, ProximiioEddystoneReceiverDelegate, ProximiioMotionManagerDelegate>
 
++(ProximiioLocationManager *)sharedManager;
+
 -(void)startUpdating;
 -(void)stopUpdating;
 -(void)cleanUp;
 -(void)reset;
 -(void)enable;
 -(void)disable;
-+(id)sharedManager;
 -(void)configureWithApplication:( ProximiioApplication *)application;
 -(void)setInterval:(double)interval;
 -(void)setAllowsBackgroundLocationUpdates:(BOOL)enabled;
 -(void)addProcessor:(id <ProximiioLocationProcessor>)processor avoidDuplicates:(BOOL) avoidDuplicates;
+-(void)setDesiredAccuracy:(CLLocationAccuracy)desiredAccuracy;
+-(CLLocationAccuracy)desiredAccuracy;
 
 -(CBManagerState)btState;
 
@@ -47,7 +50,6 @@
 @property (nonatomic, strong) ProximiioLocation *lastLocation;
 @property (nonatomic, strong) NSTimer *customLocationTimer;
 @property (nonatomic, strong) ProximiioGeofenceManager *geofenceManager;
-@property (nonatomic, strong) ProximiioCoreLocation *coreLocationManager;
 @property (nonatomic, strong) ProximiioIndoorAtlas *indoorAtlas;
 @property (nonatomic, strong) ProximiioEddystoneReceiver *eddystoneReceiver;
 @property (nonatomic, strong) ProximiioFloor *currentFloor;

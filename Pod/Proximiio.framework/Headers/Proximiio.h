@@ -51,18 +51,6 @@ FOUNDATION_EXPORT const unsigned char ProximiioVersionString[];
 - (void)startUpdating;
 - (void)stopUpdating;
 
-// MARK: - Location Snapping
-- (void)snapToRouteEnabled:(Boolean) enabled;
-- (void)snapToRouteThreshold:(double) thresholdInMeters;
-- (BOOL)snapIsEnabled;
-- (double)snapThresholdInMeters;
-
-// MARK: - PDR
-- (void)pdrToRouteEnabled:(Boolean) enabled;
-- (void)pdrToRouteThreshold:(double) thresholdInMeters;
-- (BOOL)pdrIsEnabled;
-- (double)pdrThresholdInMeters;
-
 // MARK: - GeoJSON
 - (void)syncFeatures:(void (^)(BOOL completed))callback;
 
@@ -99,15 +87,22 @@ FOUNDATION_EXPORT const unsigned char ProximiioVersionString[];
 @property (weak) id delegate;
 @property (nonatomic, strong, readonly) NSString *visitorId;
 @property (readonly) BOOL remoteMode;
-@property (nonatomic, strong) ProximiioLocationManager *locationManager;
 
--(NSArray *)places;
--(NSArray *)floors;
--(NSArray *)departments;
--(NSArray *)geofences;
--(NSArray *)applications;
--(NSArray *)privacyZones;
--(NSArray *)inputs;
+- (NSArray<ProximiioPlace *>*)places;
+- (NSArray<ProximiioFloor *>*)floors;
+- (NSArray<ProximiioDepartment *>*)departments;
+- (NSArray<ProximiioGeofence *>*)geofences;
+- (NSArray<ProximiioApplication *>*)applications;
+- (NSArray<ProximiioPrivacyZone *>*)privacyZones;
+- (NSArray<ProximiioInput *>*)inputs;
+
+-(ProximiioPlace *)getPlace:(NSString *)uuid;
+-(ProximiioFloor *)getFloor:(NSString *)uuid;
+-(ProximiioDepartment *)getDepartment:(NSString *)uuid;
+-(ProximiioGeofence *)getGeofence:(NSString *)uuid;
+-(ProximiioApplication *)getApplication:(NSString *)uuid;
+-(ProximiioPrivacyZone *)getPrivacyZone:(NSString *)uuid;
+-(ProximiioInput *)getInput:(NSString *)uuid;
 
 // DEPRECATE
 + (NSString *)visitorId  __attribute__((deprecated("Class level visitorId has been deprecated, please use instance level visitorId instead")));
@@ -320,10 +315,6 @@ indoorAtlasApiKeySecret:(NSString*)iaApiKeySecret
 - (void)deletePrivacyZone:(NSString *)uuid withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
 - (void)deleteInput:(NSString *)uuid withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
 
-
-// MARK: Route Snapping extra
-- (void) routeSnappingSetRoutePath:(NSArray *) path;
-- (NSArray *) routeSnappingCurrentPath;
 @end
 
 // MARK: - Delegates

@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ProximiioCoreLocation : ProximiioLocationSource <CLLocationManagerDelegate>
 
++ (ProximiioCoreLocation *)shared;
+
 - (CLLocationAccuracy)desiredAccuracy;
 - (void)addUUIDRegion:(NSUUID *)uuid;
 - (void)setDesiredAccuracy:(CLLocationAccuracy)desiredAccuracy;
@@ -27,10 +29,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setAllowsBackgroundLocationUpdates:(BOOL)enabled;
 
 @property CLAuthorizationStatus authorizationStatus;
-@property (nonatomic, strong) CLLocationManager *locationManager;
 @property (nonatomic, strong) NSMutableArray *beaconRegions;
 @property (nonatomic, strong) NSMutableDictionary *existingBeacons;
 @property (nonatomic, strong) NSTimer *updateTimer;
+@property (nonatomic, strong) CLLocationManager *locationManager;
 @property BOOL started;
 @property BOOL nativeEnabled;
 @property BOOL beaconsEnabled;
