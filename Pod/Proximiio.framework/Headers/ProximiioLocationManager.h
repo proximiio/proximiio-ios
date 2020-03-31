@@ -51,6 +51,7 @@
 @property (nonatomic, strong) NSTimer *customLocationTimer;
 @property (nonatomic, strong) ProximiioGeofenceManager *geofenceManager;
 @property (nonatomic, strong) ProximiioIndoorAtlas *indoorAtlas;
+@property (nonatomic, strong) ProximiioCoreLocation *coreLocationManager;
 @property (nonatomic, strong) ProximiioEddystoneReceiver *eddystoneReceiver;
 @property (nonatomic, strong) ProximiioFloor *currentFloor;
 
