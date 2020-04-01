@@ -45,7 +45,7 @@ FOUNDATION_EXPORT const unsigned char ProximiioVersionString[];
 
 - (id)initWithDelegate:(id)delegate token:(NSString *)token;
 
-- (void)requestPermissions;
+- (void)requestPermissions:(BOOL)always;
 - (void)extendBackgroundTime;
 
 - (void)startUpdating;
