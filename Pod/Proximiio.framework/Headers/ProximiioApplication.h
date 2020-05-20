@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ProximiioResource.h"
+#import <Proximiio/ProximiioResource.h>
 
 #define DEFAULT_MAX_BEACON_DISTANCE 50 // meters
 #define DEFAULT_NATIVE_ACTIVATION_THRESHOLD 60000 //msec
