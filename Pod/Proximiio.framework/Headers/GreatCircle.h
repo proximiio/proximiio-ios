@@ -37,5 +37,5 @@ FOUNDATION_EXPORT double GreatCircleVersionNumber;
 FOUNDATION_EXPORT const unsigned char GreatCircleVersionString[];
 
 // Public headers.
-#import "CLLocation+GreatCircleExtensions.h"
+#import <Proximiio/CLLocation+GreatCircleExtensions.h>
 

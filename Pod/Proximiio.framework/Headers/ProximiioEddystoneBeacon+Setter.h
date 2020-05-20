@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ProximiioEddystoneBeacon.h"
+#import <Proximiio/ProximiioEddystoneBeacon.h>
 
 @interface ProximiioEddystoneBeacon ()
 {

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ProximiioLocation.h"
+#import <Proximiio/ProximiioLocation.h>
 
 @protocol ProximiioLocationProcessor <NSObject>
 @required

@@ -6,8 +6,8 @@
 //  Copyright © 2016 Proximi.io. All rights reserved.
 //
 
-#import "ProximiioResource.h"
-#import "ProximiioLocation.h"
+#import <Proximiio/ProximiioResource.h>
+#import <Proximiio/ProximiioLocation.h>
 
 @interface ProximiioPlace : ProximiioResource
 

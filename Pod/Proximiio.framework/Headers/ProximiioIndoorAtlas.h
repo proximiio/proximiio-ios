@@ -6,7 +6,7 @@
 //  Copyright © 2016 Proximi.io. All rights reserved.
 //
 
-#import "ProximiioLocationSource.h"
+#import <Proximiio/ProximiioLocationSource.h>
 #import <IndoorAtlas/IALocationManager.h>
 
 @interface ProximiioIndoorAtlas : ProximiioLocationSource <IALocationManagerDelegate>

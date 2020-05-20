@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ProximiioVisitor.h"
-#import "ProximiioSession.h"
+#import <Proximiio/ProximiioVisitor.h>
+#import <Proximiio/ProximiioSession.h>
 
 @interface ProximiioFirebaseManager : NSObject {
     

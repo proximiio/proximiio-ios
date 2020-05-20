@@ -8,7 +8,7 @@
 
 #import <CoreLocation/CoreLocation.h>
 
-#import "ProximiioLocation.h"
+#import <Proximiio/ProximiioLocation.h>
 
 @interface TurfIndexedCoordinate : NSObject
 - (id)initWithCoordinate:(CLLocationCoordinate2D) coordinate index:(int)index distance:(CLLocationDistance)distance;

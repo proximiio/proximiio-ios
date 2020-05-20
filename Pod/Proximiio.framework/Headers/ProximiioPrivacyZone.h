@@ -6,10 +6,10 @@
 //  Copyright © 2018 proximi.io. All rights reserved.
 //
 
-#import "ProximiioResource.h"
-#import "ProximiioLocation.h"
-#import "ProximiioPlace.h"
-#import "ProximiioDepartment.h"
+#import <Proximiio/ProximiioResource.h>
+#import <Proximiio/ProximiioLocation.h>
+#import <Proximiio/ProximiioPlace.h>
+#import <Proximiio/ProximiioDepartment.h>
 
 @interface ProximiioPrivacyZone : ProximiioResource
 

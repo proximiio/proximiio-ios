@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ProximiioAPIResult.h"
-#import "ProximiioInput.h"
-#import "ProximiioDepartment.h"
-#import "ProximiioPlace.h"
-#import "ProximiioFloor.h"
-#import "ProximiioApplication.h"
+#import <Proximiio/ProximiioAPIResult.h>
+#import <Proximiio/ProximiioInput.h>
+#import <Proximiio/ProximiioDepartment.h>
+#import <Proximiio/ProximiioPlace.h>
+#import <Proximiio/ProximiioFloor.h>
+#import <Proximiio/ProximiioApplication.h>
 
 @interface ProximiioResourceManager : NSObject
 
@@ -54,7 +54,6 @@
 - (void)upsertGeofence:(NSDictionary *)parameters withCallback:(void (^)(ProximiioAPIResult result))callback;
 - (void)upsertPrivacyZone:(NSDictionary *)parameters withCallback:(void (^)(ProximiioAPIResult result))callback;
 - (void)upsertInput:(NSDictionary *)parameters withCallback:(void (^)(ProximiioAPIResult result))callback;
-- (void)upsertApplication:(NSDictionary *)parameters withCallback:(void (^)(ProximiioAPIResult result))callback;
 
 @property (readonly, nonatomic, strong) NSMutableDictionary *applications;
 @property (readonly, nonatomic, strong) NSMutableDictionary *places;

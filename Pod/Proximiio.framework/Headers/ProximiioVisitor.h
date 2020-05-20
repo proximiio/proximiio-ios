@@ -6,7 +6,7 @@
 //  Copyright © 2016 Proximi.io. All rights reserved.
 //
 
-#import "ProximiioResource.h"
+#import <Proximiio/ProximiioResource.h>
 
 #define VISITOR_KEY @"visitorId"
 

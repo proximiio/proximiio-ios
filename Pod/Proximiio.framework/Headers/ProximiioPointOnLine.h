@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
-#import "ProximiioLine.h"
+#import <Proximiio/ProximiioLine.h>
 
 @interface ProximiioPointOnLine : NSObject
 @property (nonatomic, assign) int index;

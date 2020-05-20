@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
-#import "ProximiioLocationSource.h"
-#import "ProximiioIBeacon.h"
+#import <Proximiio/ProximiioLocationSource.h>
+#import <Proximiio/ProximiioIBeacon.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

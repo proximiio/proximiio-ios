@@ -13,10 +13,12 @@
 
 #define RESULT_OK 1
 #define RESULT_FAILED 2
+#define API_ROOT @"https://api.proximi.fi"
+#define API_VERSION @"v5"
 
 @interface ProximiioAPI : NSObject
 
-+(id)sharedManager;
++(ProximiioAPI *)sharedManager;
 
 -(void)getOne:(NSString *)resource
            id:(NSString *)uuid

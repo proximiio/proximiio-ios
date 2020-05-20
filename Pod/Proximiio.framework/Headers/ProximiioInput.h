@@ -6,12 +6,12 @@
 //  Copyright © 2016 Proximi.io. All rights reserved.
 //
 
-#import "ProximiioResource.h"
-#import "ProximiioLocation.h"
-#import "ProximiioBeacon.h"
-#import "ProximiioInputType.h"
-#import "ProximiioDepartment.h"
-#import "ProximiioFloor.h"
+#import <Proximiio/ProximiioResource.h>
+#import <Proximiio/ProximiioLocation.h>
+#import <Proximiio/ProximiioBeacon.h>
+#import <Proximiio/ProximiioInputType.h>
+#import <Proximiio/ProximiioDepartment.h>
+#import <Proximiio/ProximiioFloor.h>
 
 @interface ProximiioInput : ProximiioResource
 

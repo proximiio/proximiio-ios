@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-#import "ProximiioInputType.h"
-#import "ProximiioLocationSource.h"
-#import "ProximiioDepartment.h"
+#import <Proximiio/ProximiioInputType.h>
+#import <Proximiio/ProximiioLocationSource.h>
+#import <Proximiio/ProximiioDepartment.h>
 
 @interface ProximiioBeacon : ProximiioLocationSource;
 

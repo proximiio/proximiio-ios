@@ -6,7 +6,7 @@
 //  Copyright © 2017 proximi.io. All rights reserved.
 //
 
-#import "ProximiioLocationSource.h"
+#import <Proximiio/ProximiioLocationSource.h>
 
 @interface ProximiioTrilateration: ProximiioLocationSource
 

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ProximiioEvent.h"
+#import <Proximiio/ProximiioEvent.h>
 
 @interface ProximiioEventBuffer : NSObject
 

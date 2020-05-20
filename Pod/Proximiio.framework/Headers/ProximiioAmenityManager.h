@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ProximiioLocation.h"
+#import <Proximiio/ProximiioLocation.h>
 
 @interface ProximiioAmenityManager : NSObject
 + (id)sharedManager;

@@ -6,9 +6,9 @@
 //  Copyright © 2016 Proximi.io. All rights reserved.
 //
 
-#import "ProximiioResource.h"
-#import "ProximiioPlace.h"
-#import "ProximiioFloor.h"
+#import <Proximiio/ProximiioResource.h>
+#import <Proximiio/ProximiioPlace.h>
+#import <Proximiio/ProximiioFloor.h>
 
 @interface ProximiioDepartment : ProximiioResource
 

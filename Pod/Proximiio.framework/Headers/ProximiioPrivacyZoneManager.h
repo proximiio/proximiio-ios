@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ProximiioGeofence.h"
-#import "ProximiioLocation.h"
-#import "ProximiioPrivacyZone.h"
+#import <Proximiio/ProximiioGeofence.h>
+#import <Proximiio/ProximiioLocation.h>
+#import <Proximiio/ProximiioPrivacyZone.h>
 
 @interface ProximiioPrivacyZoneManager : NSObject
 
