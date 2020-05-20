@@ -27,6 +27,15 @@
 parameters:(NSDictionary *)parameters
   callback:(void (^)(ProximiioAPIResult result, NSDictionary *response))callback;
 
+-(void)getPaginated:(NSString *)resource
+         parameters:(NSDictionary *)parameters
+           callback:(void (^)(ProximiioAPIResult result, NSArray *response))callback;
+
+-(void)get:(NSString *)resource
+ paginated:(BOOL) paginated
+parameters:(NSDictionary *)parameters
+  callback:(void (^)(ProximiioAPIResult result, id response))callback;
+
 -(void)post:(NSString *)resource
  parameters:(id)parameters
    callback:(void (^)(ProximiioAPIResult result, NSDictionary *response))callback;
@@ -53,8 +62,12 @@ parameters:(NSDictionary *)parameters
 
 -(void)setNetworkInterval:(int)interval;
 -(void)setToken:(NSString *)token;
+-(void)setApi:(NSString *)api;
+-(void)setApiVersion:(NSString *)version;
 
 @property (readonly) NSString *token;
+@property (readonly) NSString *api;
+@property (readonly) NSString *apiVersion;
 @property (nonatomic, strong) NSMutableArray *customUUID;
 @property (nonatomic, strong) ProximiioBatch *positionsBatch;
 @property (nonatomic, strong) ProximiioBatch *eventsBatch;

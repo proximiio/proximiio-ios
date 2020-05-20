@@ -30,9 +30,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property CLAuthorizationStatus authorizationStatus;
 @property (nonatomic, strong) NSMutableArray *beaconRegions;
+@property (nonatomic, strong) NSMutableArray *monitorableRegions;
+@property (nonatomic, strong) NSMutableArray *regionIn;
 @property (nonatomic, strong) NSMutableDictionary *existingBeacons;
 @property (nonatomic, strong) NSTimer *updateTimer;
 @property (nonatomic, strong) CLLocationManager *locationManager;
+@property (nonatomic, strong) ProximiioLocation *lastProcessedLocationForRegion;
+@property (nonatomic, strong) ProximiioLocation *last;
 @property BOOL started;
 @property BOOL nativeEnabled;
 @property BOOL beaconsEnabled;

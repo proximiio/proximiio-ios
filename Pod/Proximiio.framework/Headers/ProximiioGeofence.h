@@ -16,6 +16,7 @@
 + (ProximiioGeofence *)geofenceFromJSON:(NSDictionary *)json;
 
 - (BOOL)isPolygon;
+- (CLCircularRegion *) circularRegion;
 
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *type;

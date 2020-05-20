@@ -16,6 +16,8 @@
 -(void)updateWithLocation:(ProximiioLocation *)location;
 -(void)exitAllGeofencesWith:(ProximiioLocation *)location;
 +(id)sharedManager;
+- (void)sendEnterGeofence:(ProximiioGeofence *)geofence location:(ProximiioLocation *)location;
+- (void)sendExitGeofence:(ProximiioGeofence *)geofence location:(ProximiioLocation *)location;
 
 @property (weak) id delegate;
 @property (nonatomic, strong, readonly) NSArray *lastGeofences;
@@ -23,9 +25,6 @@
 @end
 
 @protocol ProximiioGeofenceManagerDelegate
-
 - (void)didEnterGeofence:(ProximiioGeofence *)geofence;
 - (void)didLeaveGeofence:(ProximiioGeofence *)geofence;
-
-
 @end
