@@ -30,6 +30,7 @@
 #import <Proximiio/TurfMeasure.h>
 #import <Proximiio/ProximiioAmenity.h>
 #import <Proximiio/ProximiioApi.h>
+#import <Proximiio/ProximiioJWT.h>
 
 
 //! Project version number for Proximiio.
