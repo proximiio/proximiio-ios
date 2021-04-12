@@ -17,8 +17,6 @@
 @property (nonatomic, strong) NSString *placeId;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSArray *anchors;
-@property (nonatomic, strong) NSString *indoorAtlasFloorId;
-@property (nonatomic, strong) NSString *indoorAtlasFloorPlanId;
 @property (nonatomic, strong) NSArray *cornerArray;
 @property (nonatomic, strong) NSString *floorID;
 @property (nonatomic, strong) NSString *floorPlanImageURL;
@@ -31,5 +29,6 @@
 @property float floorPlanSideWidth;
 @property float floorPlanSideHeight;
 @property (nonatomic, strong) ProximiioLocation *floorPlanPivot;
+@property (nonatomic, strong) NSDictionary *metadata;
 
 @end

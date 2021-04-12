@@ -10,7 +10,6 @@
 #import <Proximiio/ProximiioApplication.h>
 #import <Proximiio/ProximiioLocation.h>
 #import <Proximiio/ProximiioLocationSource.h>
-#import <Proximiio/ProximiioIndoorAtlas.h>
 #import <Proximiio/ProximiioGeofenceManager.h>
 #import <Proximiio/ProximiioEddystoneReceiver.h>
 #import <Proximiio/ProximiioFloor.h>
@@ -50,7 +49,6 @@
 @property (nonatomic, strong) ProximiioLocation *lastLocation;
 @property (nonatomic, strong) NSTimer *customLocationTimer;
 @property (nonatomic, strong) ProximiioGeofenceManager *geofenceManager;
-@property (nonatomic, strong) ProximiioIndoorAtlas *indoorAtlas;
 @property (nonatomic, strong) ProximiioCoreLocation *coreLocationManager;
 @property (nonatomic, strong) ProximiioEddystoneReceiver *eddystoneReceiver;
 @property (nonatomic, strong) ProximiioFloor *currentFloor;

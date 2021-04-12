@@ -29,8 +29,9 @@
 #import <Proximiio/Turf.h>
 #import <Proximiio/TurfMeasure.h>
 #import <Proximiio/ProximiioAmenity.h>
-#import <Proximiio/ProximiioApi.h>
+#import <Proximiio/ProximiioAPI.h>
 #import <Proximiio/ProximiioJWT.h>
+#import <Proximiio/ProximiioCampus.h>
 
 
 //! Project version number for Proximiio.
@@ -58,6 +59,9 @@ FOUNDATION_EXPORT const unsigned char ProximiioVersionString[];
 
 // MARK: - Amenity
 - (void)syncAmenities:(void (^)(BOOL completed))callback;
+
+// MARK: - Campus
+- (void)syncCampuses:(void (^)(BOOL completed))callback;
 
 - (void)setBufferSize:(ProximiioBufferSize)bufferSize;
 
@@ -128,7 +132,6 @@ FOUNDATION_EXPORT const unsigned char ProximiioVersionString[];
 
 - (BOOL)addPlace:(NSString *)name location:(CLLocationCoordinate2D)location
          address:(NSString *)address
-indoorAtlasVenueID:(NSString *)indoorAtlasVenueId
             tags:(NSArray *)tags
     withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
 
@@ -196,9 +199,6 @@ indoorAtlasVenueID:(NSString *)indoorAtlasVenueId
         nativeAccuracy:(int)nativeAccuracy
               iBeacons:(BOOL)iBeacons
             eddystones:(BOOL)eddystones
-           indoorAtlas:(BOOL)indoorAtlas
-     indoorAtlasApiKey:(NSString*)iaApiKey
-indoorAtlasApiKeySecret:(NSString*)iaApiKeySecret
             remoteMode:(BOOL)remoteMode
            useGeofence:(BOOL)useGeofence
       useTrilateration:(BOOL)useTrilateration
@@ -211,7 +211,6 @@ indoorAtlasApiKeySecret:(NSString*)iaApiKeySecret
                name:(NSString *)name
            location:(CLLocationCoordinate2D)location
             address:(NSString *)address
- indoorAtlasVenueID:(NSString *)indoorAtlasVenueId
                tags:(NSArray *)tags
        withCallback:(void (^)(BOOL success, NSError* error))callback __attribute__((deprecated("Management methods will be removed in future")));
 
@@ -298,9 +297,6 @@ indoorAtlasApiKeySecret:(NSString*)iaApiKeySecret
            nativeAccuracy:(int)nativeAccuracy
                  iBeacons:(BOOL)iBeacons
                eddystones:(BOOL)eddystones
-              indoorAtlas:(BOOL)indoorAtlas
-        indoorAtlasApiKey:(NSString*)iaApiKey
-  indoorAtlasApiKeySecret:(NSString*)iaApiKeySecret
                remoteMode:(BOOL)remoteMode
               useGeofence:(BOOL)useGeofence
          useTrilateration:(BOOL)useTrilateration

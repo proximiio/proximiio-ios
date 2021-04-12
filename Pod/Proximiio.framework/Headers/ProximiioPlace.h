@@ -16,7 +16,7 @@
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *address;
 @property (nonatomic, strong) NSArray *tags;
-@property (nonatomic, strong) NSString *indoorAtlasVenueID;
 @property (nonatomic, strong) ProximiioLocation *location;
+@property (nonatomic, strong) NSDictionary *metadata;
 
 @end

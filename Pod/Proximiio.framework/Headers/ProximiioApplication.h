@@ -25,7 +25,6 @@ typedef NS_ENUM(NSUInteger, tAccelerometerMode) {
 
 @property BOOL remoteMode;
 @property BOOL usesNativeLocation;
-@property BOOL usesIndoorAtlas;
 @property BOOL usesIBeacons;
 @property BOOL usesEddyStones;
 @property BOOL usesGeofencePositioning;
@@ -37,8 +36,6 @@ typedef NS_ENUM(NSUInteger, tAccelerometerMode) {
 @property int nativeActivationThreshold;
 @property int maxBeaconDistance;
 @property int nativeAccuracy;
-@property NSString *indoorAtlasApiKey;
-@property NSString *indoorAtlasApiSecret;
     
 
 + (ProximiioApplication *)applicationFromJSON:(NSDictionary *)json;

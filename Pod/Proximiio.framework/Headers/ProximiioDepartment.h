@@ -20,5 +20,6 @@
 @property (nonatomic, strong) ProximiioFloor *floor;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSArray *tags;
+@property (nonatomic, strong) NSDictionary *metadata;
 
 @end

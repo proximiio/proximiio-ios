@@ -16,4 +16,5 @@
 - (void)addValue:(double)value;
 - (void)resetValue:(double)value;
 - (double)average;
+- (double)smallest;
 @end
