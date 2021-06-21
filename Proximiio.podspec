@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Proximiio"
-  s.version          = "5.1.3"
+  s.version          = "5.1.5"
   s.summary          = "The one-step solution for location-aware applications."
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,6 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '10.0'
   s.requires_arc = true
   
-  s.dependency       'IndoorAtlas' 
   s.dependency       'DarklyEventSource'
   s.dependency       'CrystDBCipher'
 

@@ -1,5 +1,5 @@
 //
-//  ProximiioAmenityManager.h
+//  ProximiioAmenityCategoryManager.h
 //  Proximiio
 //
 //  Created by dev on 12/12/19.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ProximiioAmenityManager : NSObject
+@interface ProximiioAmenityCategoryManager : NSObject
 + (id)sharedManager;
 - (void) networkGetAmenities:(void (^)(BOOL completed))callback;
 @end

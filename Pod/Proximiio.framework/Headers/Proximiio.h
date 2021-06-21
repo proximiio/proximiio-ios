@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+#import <Proximiio/ProximiioAmenity.h>
+#import <Proximiio/ProximiioAmenityCategory.h>
+#import <Proximiio/ProximiioAPI.h>
 #import <Proximiio/ProximiioLocation.h>
 #import <Proximiio/ProximiioLocationSource.h>
 #import <Proximiio/ProximiioState.h>
@@ -26,13 +29,11 @@
 #import <Proximiio/ProximiioGeoJSON.h>
 #import <Proximiio/ProximiioPointOnLine.h>
 #import <Proximiio/ProximiioLine.h>
-#import <Proximiio/Turf.h>
-#import <Proximiio/TurfMeasure.h>
-#import <Proximiio/ProximiioAmenity.h>
-#import <Proximiio/ProximiioAPI.h>
+#import <Proximiio/ProximiioMapStyle.h>
 #import <Proximiio/ProximiioJWT.h>
 #import <Proximiio/ProximiioCampus.h>
-
+#import <Proximiio/Turf.h>
+#import <Proximiio/TurfMeasure.h>
 
 //! Project version number for Proximiio.
 FOUNDATION_EXPORT double ProximiioVersionNumber;
