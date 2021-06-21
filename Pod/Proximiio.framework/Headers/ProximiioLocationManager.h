@@ -31,6 +31,7 @@
 -(void)setInterval:(double)interval;
 -(void)setAllowsBackgroundLocationUpdates:(BOOL)enabled;
 -(void)addProcessor:(id <ProximiioLocationProcessor>)processor avoidDuplicates:(BOOL) avoidDuplicates;
+-(void)removeProcessor:(id <ProximiioLocationProcessor>)processor;
 -(void)setDesiredAccuracy:(CLLocationAccuracy)desiredAccuracy;
 -(CLLocationAccuracy)desiredAccuracy;
 
