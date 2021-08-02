@@ -26,7 +26,7 @@
 
 + (ProximiioResourceManager*)sharedManager;
 
-- (void)fetchWithCallback:(void (^)(ProximiioAPIResult result))callback;
+- (void)audit:(void (^)(ProximiioAPIResult result))callback;
 
 - (ProximiioApplication *)applicationWithUUID:(NSString *)uuid;
 - (ProximiioInput *)inputWithUUID:(NSUUID *)uuid major:(int)major minor:(int)minor;
@@ -40,20 +40,7 @@
 
 - (void)inputDeleteLocallyById:(NSString *) uuid;
 
-- (void)update:(NSString *)resource data:(NSDictionary *)data;
-
 - (void)wipeLocalCache;
-
-- (void)upsert:(NSString *)resource
-    parameters:(NSDictionary *)parameters
-  withCallback:(void (^)(ProximiioAPIResult result))callback;
-
-- (void)upsertPlace:(NSDictionary *)parameters withCallback:(void (^)(ProximiioAPIResult result))callback;
-- (void)upsertFloor:(NSDictionary *)parameters withCallback:(void (^)(ProximiioAPIResult result))callback;
-- (void)upsertDepartment:(NSDictionary *)parameters withCallback:(void (^)(ProximiioAPIResult result))callback;
-- (void)upsertGeofence:(NSDictionary *)parameters withCallback:(void (^)(ProximiioAPIResult result))callback;
-- (void)upsertPrivacyZone:(NSDictionary *)parameters withCallback:(void (^)(ProximiioAPIResult result))callback;
-- (void)upsertInput:(NSDictionary *)parameters withCallback:(void (^)(ProximiioAPIResult result))callback;
 
 @property (readonly, nonatomic, strong) NSMutableDictionary *applications;
 @property (readonly, nonatomic, strong) NSMutableDictionary *places;

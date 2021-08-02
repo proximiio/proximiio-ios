@@ -10,14 +10,15 @@
 #import <Proximiio/ProximiioPlace.h>
 #import <Proximiio/ProximiioFloor.h>
 
-@interface ProximiioDepartment : ProximiioResource
+@interface ProximiioDepartment: ProximiioResource
 
 + (ProximiioDepartment *)departmentFromJSON:(NSDictionary *)json;
 
+- (ProximiioPlace *)place;
+- (ProximiioFloor *)floor;
+
 @property (nonatomic, strong) NSString *placeId;
-@property (nonatomic, strong) ProximiioPlace *place;
 @property (nonatomic, strong) NSString *floorId;
-@property (nonatomic, strong) ProximiioFloor *floor;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSArray *tags;
 @property (nonatomic, strong) NSDictionary *metadata;

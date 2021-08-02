@@ -17,17 +17,18 @@
 
 - (BOOL)isPolygon;
 
+- (ProximiioDepartment *) department;
+- (ProximiioFloor *)floor;
+- (ProximiioPlace *)place;
+
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *type;
 @property (nonatomic, strong) ProximiioLocation *area;
 @property (nonatomic, strong) NSString *address;
 @property double radius;
 @property (nonatomic, strong) NSArray *polygon;
-@property (nonatomic, strong) ProximiioDepartment *department;
 @property (nonatomic, strong) NSString *departmentId;
-@property (nonatomic, strong) ProximiioPlace *place;
 @property (nonatomic, strong) NSString *placeId;
-@property (nonatomic, strong) ProximiioFloor *floor;
 @property (nonatomic, strong) NSString *floorId;
 @property (nonatomic, strong) NSDictionary *metadata;
 

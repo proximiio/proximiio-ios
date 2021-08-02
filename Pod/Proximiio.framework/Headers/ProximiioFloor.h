@@ -13,12 +13,13 @@
 
 + (ProximiioFloor *)floorFromJSON:(NSDictionary *)json;
 
-@property (nonatomic, strong) ProximiioPlace *place;
+- (ProximiioPlace *)place;
+
 @property (nonatomic, strong) NSString *placeId;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSArray *anchors;
 @property (nonatomic, strong) NSArray *cornerArray;
-@property (nonatomic, strong) NSString *floorID;
+@property (nonatomic, strong) NSString *floorId;
 @property (nonatomic, strong) NSString *floorPlanImageURL;
 @property (nonatomic, strong) NSNumber *floorNumber;
 @property (nonatomic, strong) NSNumber *level;
@@ -28,7 +29,9 @@
 @property float floorPlanHeading;
 @property float floorPlanSideWidth;
 @property float floorPlanSideHeight;
-@property (nonatomic, strong) ProximiioLocation *floorPlanPivot;
 @property (nonatomic, strong) NSDictionary *metadata;
+
+// @property (nonatomic, strong) ProximiioLocation *floorPlanPivot;
+
 
 @end

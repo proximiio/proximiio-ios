@@ -11,12 +11,16 @@
 #import <Proximiio/ProximiioPlace.h>
 #import <Proximiio/ProximiioDepartment.h>
 
-@interface ProximiioGeofence : ProximiioResource
+@interface ProximiioGeofence: ProximiioResource
 
 + (ProximiioGeofence *)geofenceFromJSON:(NSDictionary *)json;
 
 - (BOOL)isPolygon;
 - (CLCircularRegion *) circularRegion;
+
+- (ProximiioDepartment *) department;
+- (ProximiioFloor *)floor;
+- (ProximiioPlace *)place;
 
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *type;
@@ -24,11 +28,8 @@
 @property (nonatomic, strong) NSString *address;
 @property double radius;
 @property (nonatomic, strong) NSArray *polygon;
-@property (nonatomic, strong) ProximiioDepartment *department;
 @property (nonatomic, strong) NSString *departmentId;
-@property (nonatomic, strong) ProximiioPlace *place;
 @property (nonatomic, strong) NSString *placeId;
-@property (nonatomic, strong) ProximiioFloor *floor;
 @property (nonatomic, strong) NSString *floorId;
 @property (nonatomic, strong) NSDictionary *metadata;
 

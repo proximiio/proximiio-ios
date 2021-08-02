@@ -9,7 +9,7 @@
 #import <Proximiio/ProximiioResource.h>
 #import <Proximiio/ProximiioLocation.h>
 
-@interface ProximiioPlace : ProximiioResource
+@interface ProximiioPlace: ProximiioResource
 
 + (ProximiioPlace *)placeFromJSON:(NSDictionary *)json;
 
