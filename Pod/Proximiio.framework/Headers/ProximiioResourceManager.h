@@ -27,6 +27,7 @@
 + (ProximiioResourceManager*)sharedManager;
 
 - (void)audit:(void (^)(ProximiioAPIResult result))callback;
+- (void)fetchWithCallback:(void (^)(ProximiioAPIResult result))callback;
 
 - (ProximiioApplication *)applicationWithUUID:(NSString *)uuid;
 - (ProximiioInput *)inputWithUUID:(NSUUID *)uuid major:(int)major minor:(int)minor;
