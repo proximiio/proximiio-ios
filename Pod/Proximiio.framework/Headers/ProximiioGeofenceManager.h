@@ -21,6 +21,8 @@
 
 @property (weak) id delegate;
 @property (nonatomic, strong, readonly) NSArray *lastGeofences;
+@property (nonatomic, strong, readonly) NSMutableArray *activeGeofences;
+
 
 @end
 
