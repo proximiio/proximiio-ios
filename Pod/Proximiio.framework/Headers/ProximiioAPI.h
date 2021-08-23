@@ -73,5 +73,4 @@ parameters:(NSDictionary *)parameters
 @property (nonatomic, strong) NSMutableArray *customUUID;
 @property (nonatomic, strong) ProximiioBatch *positionsBatch;
 @property (nonatomic, strong) ProximiioBatch *eventsBatch;
-@property (nonatomic, strong) ProximiioBatch *telemetriesBatch;
 @end
