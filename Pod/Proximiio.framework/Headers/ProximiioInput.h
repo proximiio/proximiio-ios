@@ -42,5 +42,7 @@
 @property double fixPositionRange;
 @property BOOL fixLevel;
 @property double fixLevelRange;
+@property BOOL transitional;
+@property double transitionalThreshold;
 
 @end

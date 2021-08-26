@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <Proximiio/ProximiioLocation.h>
+#import <Proximiio/ProximiioInput.h>
 
 @protocol ProximiioLocationProcessor <NSObject>
 @required
-- (ProximiioLocation *)process: (ProximiioLocation *)currentPosition floor:(ProximiioFloor *) currentFloor hasLevelChanger: (BOOL) levelChanger;
+- (ProximiioLocation *)process: (ProximiioLocation *)currentPosition floor:(ProximiioFloor *) currentFloor hasLevelChanger: (BOOL) levelChanger transitional:(ProximiioInput *) transitional;
 @end
