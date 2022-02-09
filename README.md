@@ -28,7 +28,7 @@ also at the end of the file add:
 post_install do |installer|
     installer.pods_project.targets.each do |target|
         target.build_configurations.each do |config|
-            config.build_settings['SWIFT_VERSION'] = '5.1'
+            config.build_settings['SWIFT_VERSION'] = '5.3'
             config.build_settings['ENABLE_BITCODE'] = 'NO'
         end
     end
