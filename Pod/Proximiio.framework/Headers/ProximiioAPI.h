@@ -65,12 +65,17 @@ parameters:(NSDictionary *)parameters
 -(void)setNetworkInterval:(int)interval;
 -(void)setToken:(NSString *)token;
 -(void)setApi:(NSString *)api;
+-(void)setApiFailover:(NSMutableArray *)failover;
 -(void)setApiVersion:(NSString *)version;
+-(NSString *)currentApi;
+
 
 @property (readonly) NSString *token;
 @property (readonly) NSString *api;
 @property (readonly) NSString *apiVersion;
+@property (readonly) NSMutableArray *failover;
 @property (nonatomic, strong) NSMutableArray *customUUID;
 @property (nonatomic, strong) ProximiioBatch *positionsBatch;
 @property (nonatomic, strong) ProximiioBatch *eventsBatch;
+@property (nonatomic, assign) int retry;
 @end

@@ -32,6 +32,7 @@
 -(void)setAllowsBackgroundLocationUpdates:(BOOL)enabled;
 -(void)addProcessor:(id <ProximiioLocationProcessor>)processor avoidDuplicates:(BOOL) avoidDuplicates;
 -(void)removeProcessor:(id <ProximiioLocationProcessor>)processor;
+-(void)setFloorChange:(int)confirmations;
 -(void)setDesiredAccuracy:(CLLocationAccuracy)desiredAccuracy;
 -(CLLocationAccuracy)desiredAccuracy;
 
@@ -40,6 +41,7 @@
 @property (readonly) BOOL isUpdating;
 @property float processingInterval;
 @property float maxLocationAge;
+@property int confirmation;
 
 @property (weak) id delegate;
 @property (nonatomic, strong) ProximiioApplication *application;
@@ -53,5 +55,6 @@
 @property (nonatomic, strong) ProximiioCoreLocation *coreLocationManager;
 @property (nonatomic, strong) ProximiioEddystoneReceiver *eddystoneReceiver;
 @property (nonatomic, strong) ProximiioFloor *currentFloor;
+@property (nonatomic, strong) ProximiioFloor *lastFloor;
 
 @end

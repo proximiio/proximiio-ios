@@ -23,6 +23,7 @@ typedef NS_ENUM(NSUInteger, tAccelerometerMode) {
 
 @property (nonatomic, strong) NSString *name;
 
+@property BOOL advanced;
 @property BOOL remoteMode;
 @property BOOL usesNativeLocation;
 @property BOOL usesIBeacons;

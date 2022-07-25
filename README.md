@@ -1,5 +1,7 @@
 # Proximiio
 
+### Version 5.2.23
+
 
 [![Version](https://img.shields.io/cocoapods/v/Proximiio.svg?style=flat)](http://cocoapods.org/pods/Proximiio)
 [![License](https://img.shields.io/cocoapods/l/Proximiio.svg?style=flat)](http://cocoapods.org/pods/Proximiio)
