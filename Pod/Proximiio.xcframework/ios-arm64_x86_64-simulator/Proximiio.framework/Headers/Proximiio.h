@@ -34,6 +34,35 @@
 #import <Proximiio/ProximiioCampus.h>
 #import <Proximiio/Turf.h>
 #import <Proximiio/TurfMeasure.h>
+#import <Proximiio/TurfRadianCoordinate2D.h>
+#import <Proximiio/ProximiioReachability.h>
+#import <Proximiio/TurfIndexedCoordinate.h>
+#import <Proximiio/CLLocation+GreatCircleExtensions.h>
+#import <Proximiio/ProximiioMetricsManager.h>
+#import <Proximiio/ProximiioFeatureManager.h>
+#import <Proximiio/ProximiioCampusManager.h>
+#import <Proximiio/Trigonometry.h>
+#import <Proximiio/IndexedAverage.h>
+#import <Proximiio/ProximiioTrilateration.h>
+#import <Proximiio/ProximiioKalmanFilter.h>
+#import <Proximiio/ProximiioFirebaseManager.h>
+#import <Proximiio/ProximiioIBeacon+Setter.h>
+#import <Proximiio/ProximiioMotionManager.h>
+#import <Proximiio/ProximiioPrivacyZoneManager.h>
+#import <Proximiio/ProximiioEvent.h>
+#import <Proximiio/AccelerometerFilter.h>
+#import <Proximiio/NSNullExtension.h>
+#import <Proximiio/matrix.h>
+#import <Proximiio/ProximiioLocationManagerDelegate.h>
+#import <Proximiio/ProximiioEddystoneBeacon+Setter.h>
+#import <Proximiio/kalman.h>
+#import <Proximiio/ProximiioEventBuffer.h>
+#import <Proximiio/GreatCircle.h>
+#import <Proximiio/ProximiioAmenityManager.h>
+#import <Proximiio/TurfPolyline.h>
+#import <Proximiio/ProximiioFormatter.h>
+#import <Proximiio/ProximiioAmenityCategoryManager.h>
+
 
 //! Project version number for Proximiio.
 FOUNDATION_EXPORT double ProximiioVersionNumber;

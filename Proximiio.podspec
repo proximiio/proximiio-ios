@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Proximiio"
-  s.version          = "5.2.24"
+  s.version          = "5.2.25"
   s.summary          = "The one-step solution for location-aware applications."
 
 # This description is used to generate tags and improve search results.
@@ -35,7 +35,5 @@ Pod::Spec.new do |s|
 
   s.libraries = 'z', 'c++', 'icucore'
   s.frameworks = 'Accelerate', 'CFNetwork', 'CoreBluetooth', 'CoreGraphics', 'CoreLocation', 'CoreMotion', 'Foundation', 'Security', 'SystemConfiguration', 'UIKit'
-
-  s.user_target_xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES' }
 
 end
