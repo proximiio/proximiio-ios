@@ -7,7 +7,7 @@
 //  Copyright (c) 2014 Navture Apps. All rights reserved.
 //
 
-#import <Proximiio/ProximiioIBeacon.h>
+#import "ProximiioIBeacon.h"
 #import <CoreLocation/CoreLocation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
 

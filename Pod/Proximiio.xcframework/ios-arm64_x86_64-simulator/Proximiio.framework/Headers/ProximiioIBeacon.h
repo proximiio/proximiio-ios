@@ -10,7 +10,7 @@
 
 #import <CoreLocation/CoreLocation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
-#import <Proximiio/ProximiioBeacon.h>
+#import "ProximiioBeacon.h"
 
 /*!
  @interface ProximiioBeacon

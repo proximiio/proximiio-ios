@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Nathan Ducrey. All rights reserved.
 //
 
-#import <Proximiio/ProximiioJWTAlgorithm.h>
+#import "ProximiioJWTAlgorithm.h"
 #import <Foundation/Foundation.h>
 #import <CommonCrypto/CommonHMAC.h>
 

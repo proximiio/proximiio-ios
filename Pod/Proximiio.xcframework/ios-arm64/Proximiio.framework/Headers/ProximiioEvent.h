@@ -6,11 +6,11 @@
 //  Copyright © 2016 Proximi.io. All rights reserved.
 //
 
-#import <Proximiio/ProximiioResource.h>
-#import <Proximiio/ProximiioGeofence.h>
-#import <Proximiio/ProximiioLocationSource.h>
-#import <Proximiio/ProximiioLocation.h>
-#import <Proximiio/ProximiioEventType.h>
+#import "ProximiioResource.h"
+#import "ProximiioGeofence.h"
+#import "ProximiioLocationSource.h"
+#import "ProximiioLocation.h"
+#import "ProximiioEventType.h"
 
 @interface ProximiioEvent : ProximiioResource
 

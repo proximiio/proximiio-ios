@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Proximiio/ProximiioAPIResult.h>
-#import <Proximiio/ProximiioInput.h>
-#import <Proximiio/ProximiioDepartment.h>
-#import <Proximiio/ProximiioPlace.h>
-#import <Proximiio/ProximiioFloor.h>
-#import <Proximiio/ProximiioApplication.h>
+#import "ProximiioAPIResult.h"
+#import "ProximiioInput.h"
+#import "ProximiioDepartment.h"
+#import "ProximiioPlace.h"
+#import "ProximiioFloor.h"
+#import "ProximiioApplication.h"
 
 @interface ProximiioResourceManager : NSObject
 

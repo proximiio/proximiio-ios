@@ -8,9 +8,9 @@
 
 #import <CoreLocation/CoreLocation.h>
 
-#import <Proximiio/ProximiioGeoJSON.h>
-#import <Proximiio/TurfIndexedCoordinate.h>
-#import <Proximiio/TurfRadianCoordinate2D.h>
+#import "ProximiioGeoJSON.h"
+#import "TurfIndexedCoordinate.h"
+#import "TurfRadianCoordinate2D.h"
 
 @interface TurfPolyline : NSObject
 

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Proximiio/Proximiio.h>
+#import "Proximiio.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

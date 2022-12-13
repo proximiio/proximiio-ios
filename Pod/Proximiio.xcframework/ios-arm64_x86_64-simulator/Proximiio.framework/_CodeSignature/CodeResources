@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/GreatCircle.h</key>
 		<data>
-		2s9DPi/xfYlLCh6Dmb+c4d3susM=
+		VdjFOzwHxSXH7vujGDvsFxcYGgA=
 		</data>
 		<key>Headers/IndexedAverage.h</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Headers/Proximiio.h</key>
 		<data>
-		68GpiY5k+cETswG6StykTupd8AY=
+		ZIZavQTFW7/2Dd8mm3EXEEb7lDw=
 		</data>
 		<key>Headers/ProximiioAPI.h</key>
 		<data>
-		9L/EJIOeFDrZ3jX0f61/fhq4xW4=
+		MvuUe/L77oBTpiaOLYtGteJuMy8=
 		</data>
 		<key>Headers/ProximiioAPIResult.h</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Headers/ProximiioApplication.h</key>
 		<data>
-		uvElln/mT/vCUqVpfuq/LdCPT60=
+		rsUv34FDyFIjfiy6NM8l+MXLrog=
 		</data>
 		<key>Headers/ProximiioBatch.h</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Headers/ProximiioBeacon.h</key>
 		<data>
-		v0MJnBfJYVpPIqvh/CixHI/Vfq8=
+		DC4cJNbuzERj+JWG2tyeEzW6Dcg=
 		</data>
 		<key>Headers/ProximiioBufferSize.h</key>
 		<data>
@@ -82,31 +82,31 @@
 		</data>
 		<key>Headers/ProximiioCoreLocation.h</key>
 		<data>
-		1IVdZaUZstN+ACS34DMMGlaWQKE=
+		BgptwnPPiQr6geHrjGm3KTlT4r4=
 		</data>
 		<key>Headers/ProximiioDepartment.h</key>
 		<data>
-		P3ViB6j4aTj8QNPjyZN68OoKQNE=
+		iRwdlnD47x7iRhutNEA/o6huLag=
 		</data>
 		<key>Headers/ProximiioEddystoneBeacon+Setter.h</key>
 		<data>
-		mxpdjVvVqFYsRdUxRignA0Qh8vU=
+		/oQIRtpAK2cJs+jHtFNYUqRpiTU=
 		</data>
 		<key>Headers/ProximiioEddystoneBeacon.h</key>
 		<data>
-		nSOiPyiPFb44YPh1JHz+nj2POYg=
+		2IWqhkvgOzSsLepfXt6iVNXSshc=
 		</data>
 		<key>Headers/ProximiioEddystoneReceiver.h</key>
 		<data>
-		KnhE3ABMPYR8/+kw5193/0aNL38=
+		45RiIKObMv6FlrqCKMLI3c7+D1Y=
 		</data>
 		<key>Headers/ProximiioEvent.h</key>
 		<data>
-		QuXA2SmwuYHa9TGfTv21moNK20k=
+		0rauBs+8MkKwWd4hDLM2Swly8tY=
 		</data>
 		<key>Headers/ProximiioEventBuffer.h</key>
 		<data>
-		6g23UDmoijeS26cs40TbKkclMUQ=
+		FDAqGXcVa5qKIOFCfBIqQjnaUPs=
 		</data>
 		<key>Headers/ProximiioEventType.h</key>
 		<data>
@@ -114,15 +114,15 @@
 		</data>
 		<key>Headers/ProximiioFeatureManager.h</key>
 		<data>
-		zkeJ0ZUMhfzZtgdBFjIbVclGYt8=
+		L4h7i/D4JXn804zndu/lWCm+MZ4=
 		</data>
 		<key>Headers/ProximiioFirebaseManager.h</key>
 		<data>
-		LGgwkdv7cyrYpSQGvAYiJXthEZE=
+		yCi2nH+T7/pHRMawIIyDlRtFCjI=
 		</data>
 		<key>Headers/ProximiioFloor.h</key>
 		<data>
-		XSHNVuOkjMF95TpOufuJVQW1mu8=
+		ElvW0VBJrhFjhvY0zoJQqKjmicc=
 		</data>
 		<key>Headers/ProximiioFormatter.h</key>
 		<data>
@@ -134,23 +134,23 @@
 		</data>
 		<key>Headers/ProximiioGeofence.h</key>
 		<data>
-		egGnhSB0tn2/adIxIXa6SYfQ/6E=
+		5oabtKvUeqTtSsrV76lpnAOJlcY=
 		</data>
 		<key>Headers/ProximiioGeofenceManager.h</key>
 		<data>
-		gr1p1M2zfEfFtUZ6e3xxEnIRA/k=
+		I7B57kQ/hJHssCU/tNHrjHMAJCw=
 		</data>
 		<key>Headers/ProximiioIBeacon+Setter.h</key>
 		<data>
-		qygyHRxjWIUQ09tgW5UebUthmZQ=
+		S8IFB9WWkJgN6H+ol2/v4j2d20Y=
 		</data>
 		<key>Headers/ProximiioIBeacon.h</key>
 		<data>
-		t2X0tLC5ELvIB+AHcVpb/vrg098=
+		UqKdTgGBNII4tv6a34tz6cj2AVU=
 		</data>
 		<key>Headers/ProximiioInput.h</key>
 		<data>
-		iBn0frtwoT0xx0bsvXioGtpgf0A=
+		85eFh3geuM2Y27DNHwyDue5L7Sc=
 		</data>
 		<key>Headers/ProximiioInputType.h</key>
 		<data>
@@ -158,7 +158,7 @@
 		</data>
 		<key>Headers/ProximiioJWT.h</key>
 		<data>
-		d5aCtwb4q9dYPyvVlJH/aQ97ga4=
+		R29mff5KOfVxT1ZUfgXRcXn8LBE=
 		</data>
 		<key>Headers/ProximiioJWTAlgorithm.h</key>
 		<data>
@@ -178,15 +178,15 @@
 		</data>
 		<key>Headers/ProximiioLocationManager.h</key>
 		<data>
-		/5krkrAdzrW8TzQG03Ani7RuWMo=
+		pQN56180e548z/9ND0od6mFcD/c=
 		</data>
 		<key>Headers/ProximiioLocationManagerDelegate.h</key>
 		<data>
-		Nm4WWHUduWV+yhWHlqQBmHK1T7o=
+		YSZzAsF34zZuc+wHZwWdbLPCP54=
 		</data>
 		<key>Headers/ProximiioLocationProcessor.h</key>
 		<data>
-		WZNzVKtnRix5o4km9kvkz9EFeg0=
+		EwdkM5HDzm1CV4Iae48rjGel0YI=
 		</data>
 		<key>Headers/ProximiioLocationSource.h</key>
 		<data>
@@ -198,7 +198,7 @@
 		</data>
 		<key>Headers/ProximiioMetricsManager.h</key>
 		<data>
-		qxp/JkyJ868/4frUZ0B9yybY4FE=
+		8pwcj0bq5+ivyinvcAsmzndmMyk=
 		</data>
 		<key>Headers/ProximiioMode.h</key>
 		<data>
@@ -206,7 +206,7 @@
 		</data>
 		<key>Headers/ProximiioMotionManager.h</key>
 		<data>
-		CO3r2HpIMXVTAId0JxmddgqqfkU=
+		PC5llmt/oTqw5WenOIlZ9izUVRM=
 		</data>
 		<key>Headers/ProximiioMotionManagerDelegate.h</key>
 		<data>
@@ -218,19 +218,19 @@
 		</data>
 		<key>Headers/ProximiioPlace.h</key>
 		<data>
-		Ss6cfASc38MJKkBsn5swfdLYzKw=
+		rmSk0VHCRJAU0TNiEMI3P6XaoHU=
 		</data>
 		<key>Headers/ProximiioPointOnLine.h</key>
 		<data>
-		WuXwxbaCDhlyITe7g04gL8CB2Dc=
+		hOwJzwkGZfLhpG1te553bFWJzP8=
 		</data>
 		<key>Headers/ProximiioPrivacyZone.h</key>
 		<data>
-		gnBkjwZYlFSvDDkEhRoFJ+VImEc=
+		wXqDUzVGxJwzM0JRktcZyx2ho4g=
 		</data>
 		<key>Headers/ProximiioPrivacyZoneManager.h</key>
 		<data>
-		bxaXTeel8cz2r7IqP7Wbdiisuf0=
+		XZ7z9t8WHR2uveDQXACWLF/50Ok=
 		</data>
 		<key>Headers/ProximiioReachability.h</key>
 		<data>
@@ -242,11 +242,11 @@
 		</data>
 		<key>Headers/ProximiioResourceManager.h</key>
 		<data>
-		8FgdVnddqk0EgDcWSBr00nJd1gE=
+		VMi/WJML5tOxR6gLCtlZbrcCPYI=
 		</data>
 		<key>Headers/ProximiioSession.h</key>
 		<data>
-		3SPBXTqIJXEDDvroiUE9n9nFh8M=
+		/ulO3ckoPtIuSVbBzfj4IFs12Hk=
 		</data>
 		<key>Headers/ProximiioState.h</key>
 		<data>
@@ -254,7 +254,7 @@
 		</data>
 		<key>Headers/ProximiioTrilateration.h</key>
 		<data>
-		ICdZfovgj8jybdwWKnvG7RlXXG0=
+		Ec67bLKRyzrTb/7WHVPDgNmMCEs=
 		</data>
 		<key>Headers/ProximiioUser.h</key>
 		<data>
@@ -262,19 +262,19 @@
 		</data>
 		<key>Headers/ProximiioVisitor.h</key>
 		<data>
-		WEjhhPcxH/4x8/D+LZPT37Rr8f4=
+		xugWgM+5GkbhPyL1Lf9pHxak8zc=
 		</data>
 		<key>Headers/Trigonometry.h</key>
 		<data>
-		w1H3tm81SEijyqLuFxk2eVwMVck=
+		osUdXRhDBcr13FHznnDDEQw/L+w=
 		</data>
 		<key>Headers/Turf.h</key>
 		<data>
-		NRextCytK/bY3XeleQn+bSBu3HI=
+		9+roqGq1SHDnGrl8ks3FvsSdtic=
 		</data>
 		<key>Headers/TurfIndexedCoordinate.h</key>
 		<data>
-		1/pJXF1EHPCMHuC0pkYyIem481I=
+		NQVPs9JMAMWXgn+MoL14ca7PYJ0=
 		</data>
 		<key>Headers/TurfLineSegment.h</key>
 		<data>
@@ -282,11 +282,11 @@
 		</data>
 		<key>Headers/TurfMeasure.h</key>
 		<data>
-		RFawSjbPfPsWE8fNxdkPB5sHdeQ=
+		iSdXgIxT+beOHKqrEURCs4PImCw=
 		</data>
 		<key>Headers/TurfPolyline.h</key>
 		<data>
-		MG5BSAIyc8AXOGV+tLAfuxvnrD4=
+		bC+bxoUw4oK4rMT3TwIV1yXxdA8=
 		</data>
 		<key>Headers/TurfRadianCoordinate2D.h</key>
 		<data>
@@ -336,7 +336,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Tf9AGggkZSThnxYwlTM4H1h6n+aF4sXNUHVu4oB/t64=
+			mRq2/QcgyiJVZzjjMEuEbDfFR2FvdXYQ4cQmZDGoDOg=
 			</data>
 		</dict>
 		<key>Headers/IndexedAverage.h</key>
@@ -357,14 +357,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8WUAb0/gJhxmOTqbKZQhBgo4VDW6f8G9yJwyNmPmBIo=
+			jEcaM/C2vwUvS/T7hkju7lcrcXbZO1NnTIClE5GHs1o=
 			</data>
 		</dict>
 		<key>Headers/ProximiioAPI.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CCVeWb+gJtSh4SGDCOaqowomu1T8Uh4aIAxOkJzpr1U=
+			V/4iqrESqW9B7xnIhApwqG0xPU4sfVJ06oKyPJhBBZI=
 			</data>
 		</dict>
 		<key>Headers/ProximiioAPIResult.h</key>
@@ -406,7 +406,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XIGeVZfFGyZWC8GsaTgkSHBwtFfV/1RW01/JeCnZ56g=
+			D5JoaJCzC+0kEVYRf3lv2PoT/eWQVJbaVJwucIBCUsk=
 			</data>
 		</dict>
 		<key>Headers/ProximiioBatch.h</key>
@@ -420,7 +420,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			F6bbvIA8MtSEWPD0IFaQlS4cTd81nLxVEBTv+OUAY7s=
+			YFVD3YaKQu4ikhFy1eoiNwkAMATYajhBe0PUj+AS150=
 			</data>
 		</dict>
 		<key>Headers/ProximiioBufferSize.h</key>
@@ -448,49 +448,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+5ACPLSwYEJtMkfKvGDvjRBFCnCKlkFtO6ORmYIimRs=
+			y0Wz2uFyqFcLN4HniD0TGyiIaHbiKuskqYl8QgrqeR8=
 			</data>
 		</dict>
 		<key>Headers/ProximiioDepartment.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2sVeG31DUJK23H//HeUmDwq+zXEQVFapfQq/3x99iQY=
+			fdaHEBryzbfoXcOiBQNFVRDZBXOmq//NK5TMZa42BQY=
 			</data>
 		</dict>
 		<key>Headers/ProximiioEddystoneBeacon+Setter.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			30AQW6F5E9hNxlIN5bdh4sFv3Ukz0239OKviDWEPEa4=
+			IBOwpCVc+oPp+Ej+xTeyGL+b/zCWDRccTbxDgOZnR5g=
 			</data>
 		</dict>
 		<key>Headers/ProximiioEddystoneBeacon.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HHNcdB6UCq2x8pZdmxcAuRLcjELNAmzS92BUPjb+cNs=
+			yEqFddMQtIZvw5YwSCc5cMyIeYQ8EkPn6SpDweHjigg=
 			</data>
 		</dict>
 		<key>Headers/ProximiioEddystoneReceiver.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+/JexXbL4BVYIOLahWGXCXizrVD00UB3objgD5zfm7g=
+			H4XDdbK2634cKnWfjyF9Qwic11ZDrEf7aDpguo98Ctk=
 			</data>
 		</dict>
 		<key>Headers/ProximiioEvent.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tKnp3Anw6kqI4sZ/zs3EPFhiaanNUUDNjTKes6vK81w=
+			CltHSKUDulX9KVj0g7socIJqMd3rzzwwscL7DliJJzg=
 			</data>
 		</dict>
 		<key>Headers/ProximiioEventBuffer.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			L41g+1vLRqnwR/JNa6+meTVlFwI0SDumYpTUZNCKyfg=
+			z571OQMtm2eAcQGl9kPSehiNrsvRrLKNSpkeXRsNFPI=
 			</data>
 		</dict>
 		<key>Headers/ProximiioEventType.h</key>
@@ -504,21 +504,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1sMevy1YQTQtLv+aesv70K9jSr9ups1/xge52KKCCuo=
+			tNgNh7cIQeTjRikfeqEzcOvXCFfdCvREkoMDyZu4nYQ=
 			</data>
 		</dict>
 		<key>Headers/ProximiioFirebaseManager.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XpD3Lvw41j7/DTEWe0uScyczDtWgmqVVtncIkpgo1ac=
+			kweBhUrLdZ4xJ3ZKsas3V/rT5hoLczjRBTJ1nfgQ/Wo=
 			</data>
 		</dict>
 		<key>Headers/ProximiioFloor.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YATQ1vQn3mmBicb78rd/0jbBELYFIqMz1UhDqoTP6W4=
+			bwzbRKSCIvahSvsoFENanzCdncMwXh/qsSnmBXmeEJk=
 			</data>
 		</dict>
 		<key>Headers/ProximiioFormatter.h</key>
@@ -539,35 +539,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BOWdtiUeMwng3flZKgLhLG238irD2LMPoo2U45vIA38=
+			8wgxpvcgj+0zEqUYe8zho0qa4BzbQzvUzPC3eivPLjA=
 			</data>
 		</dict>
 		<key>Headers/ProximiioGeofenceManager.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5ZCBJTbLl+yICpmwHWTC2ggZNFd+loue9SGU09Q3P1Y=
+			Wd/BzHHKWRy4SziQYIFI8xWGuvinz2WzQDU1eENOvUA=
 			</data>
 		</dict>
 		<key>Headers/ProximiioIBeacon+Setter.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kUHTUk2TYt9UEgwirfIJeNmq2vyPTG4SBPH0Lm7Bh6A=
+			LN7ECNmcMfl6yMLoX6uitbv4S5J17B3EcXPixOk6sD4=
 			</data>
 		</dict>
 		<key>Headers/ProximiioIBeacon.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			A1Na3C3Gx0spNmza3dRxlrqD9MeOD9qiHNWQYdD74Jc=
+			HxeuMjuApQzzMU9h8wHfFa0Des4ap/qkXCO3RxXWIDg=
 			</data>
 		</dict>
 		<key>Headers/ProximiioInput.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9Q46f/FTezm5EyVn2R3MdUDGSouYXBDAgy95dBNOmeo=
+			Elos7/M9FBKI6lb71BGyqq/5wSdrYchBOsH5PQZbH4g=
 			</data>
 		</dict>
 		<key>Headers/ProximiioInputType.h</key>
@@ -581,7 +581,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			t9iIBJzWlIlY8XZkjwyX5mpfNBgzg1Zgiz8XU8MsIlg=
+			hNOiL3wFJawrlIN+hUyhNjSby2HE+0G990F9H4TXHgY=
 			</data>
 		</dict>
 		<key>Headers/ProximiioJWTAlgorithm.h</key>
@@ -616,21 +616,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+zxWm17y8QlVZjCygwc5PmPDUh+8OLaQzWOJG2zfKxY=
+			tgP3kEa799XUB5B2ky49DN3S3GPd04kJEgJslIi/dt0=
 			</data>
 		</dict>
 		<key>Headers/ProximiioLocationManagerDelegate.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zX6hfevS45gVLQLh+QhhLcLIodgA1+qBJaVeIKTpAkE=
+			tooppcL1UT5rvHeks8XdtfxCH5VcINSISE76twG60Xw=
 			</data>
 		</dict>
 		<key>Headers/ProximiioLocationProcessor.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/ljPcy64xctflVc0nLFXPqEOcAFIBSlBaobOEqhgz+o=
+			V9CPKuSZt+in+23h8zBiaPwrscCuhziwuzJm3RGH0Vc=
 			</data>
 		</dict>
 		<key>Headers/ProximiioLocationSource.h</key>
@@ -651,7 +651,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QN1LASj5sQe8ww8RrguTZH8nVZ1jRzC55edMSlzcdrc=
+			jTcTNo4RqIWMmyZSXJ1IfVepMc0gyFucFVSy5W5vIqw=
 			</data>
 		</dict>
 		<key>Headers/ProximiioMode.h</key>
@@ -665,7 +665,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2I6ujU49/gqLnPXRaHdfdraf9Yd1eCysUClFcjBbHh0=
+			fdw174laXbjfu8Sdu7MLdYCuH35WeA6hEu2zxsuUIjI=
 			</data>
 		</dict>
 		<key>Headers/ProximiioMotionManagerDelegate.h</key>
@@ -686,28 +686,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			p8jLXz/DKKAvO6lTp0GQ/QYMtf346cRrvD/GvY1t6nU=
+			KFmTGk7BUw0/A9z2VpPNtQWKLOB6ZiRdTbuF4fAjxMQ=
 			</data>
 		</dict>
 		<key>Headers/ProximiioPointOnLine.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			orSATw/MqRZsKi+N3gcrRuZyf1uIBKxRuLUmk3HuTJo=
+			QWyztAqIheKoCu1XHWD2/THQ5Ta9uGHHmU2Mqo42o4Y=
 			</data>
 		</dict>
 		<key>Headers/ProximiioPrivacyZone.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kTvjHHNnLVmwHpuxr38vzJAjG5kyxUBlLVFuU2Yco1s=
+			nlFUhPd7kNRaOzqRMR/bEjI9Rx+IEe2ZG8ojfxVZuN4=
 			</data>
 		</dict>
 		<key>Headers/ProximiioPrivacyZoneManager.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QyG9ETBXhfLYknCN+XEctPjXsUZKKq0p31hYaYV6rSg=
+			3gXvKb6faKQCSxfZzq4uRdWibNpouL881OvZ5xKiOuY=
 			</data>
 		</dict>
 		<key>Headers/ProximiioReachability.h</key>
@@ -728,14 +728,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vwVXx9FF4m/F+N4kuv8aSyA2ZHikmsPV268hPgOmkBU=
+			JRhXA/EY/xGVian42Uv8n2LQAKrwM+tskrHDroG5ofw=
 			</data>
 		</dict>
 		<key>Headers/ProximiioSession.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			t1o9sXDPxhP8zbESyI8w9M6l28KkelnjDy/HSnFEDGI=
+			7SNcNPzHkksCD4pKtLka01A8kp7cgwIAd2PpLIqnKPk=
 			</data>
 		</dict>
 		<key>Headers/ProximiioState.h</key>
@@ -749,7 +749,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rL6W39/5yI0Mg/n3D9wJoJsG7FWrpjaJh0Q0urTwGis=
+			TQ161i7BN/gDR9ixjMQgQwr2Qm8aP5t9GCdzS7NNCeU=
 			</data>
 		</dict>
 		<key>Headers/ProximiioUser.h</key>
@@ -763,28 +763,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SF6FHilayAhPdtVmXPmZbfwJ/lXWfNnN2cYH0HK6gMo=
+			zfjXC5Y1Phzlk29pWeEy7hTFqzzS1t7AJwPGCtoho1w=
 			</data>
 		</dict>
 		<key>Headers/Trigonometry.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hafNgId1i3D5+RcJWVRnnTTh1Cb1gcNoEL921/3YWQI=
+			+Sw2fq5QAziVtoyPbE77XmkRBW3bV4GucMjXjBB6M1Y=
 			</data>
 		</dict>
 		<key>Headers/Turf.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eEcn1E/Pe4tgE3hXipwFY/9PY4G76e3mKPYEsD8DIEc=
+			+6pJV/0UoFvBloDzoxmq+QW16HcW7dpMciuExTVuYrE=
 			</data>
 		</dict>
 		<key>Headers/TurfIndexedCoordinate.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Suj4HYcMfszMf29LDyuAxhlBzq3qxKcz3h0O7zFic3A=
+			gmalRjvWnKKILhTPDd7+QLF58vRUB+EU9F3LJzTbPe4=
 			</data>
 		</dict>
 		<key>Headers/TurfLineSegment.h</key>
@@ -798,14 +798,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			w54Wc+ve/eB4COf/8EFlxzbW7csvYdjqs4Dm0kcnuh0=
+			lQ3+arly+ZdCQb3bLNEnXcX2/SbQhgkOAYg002SBktY=
 			</data>
 		</dict>
 		<key>Headers/TurfPolyline.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			x3wqm7ubqq2Hh65H4yR72oMj0dHl87e+l0XQre3oUzE=
+			TLRPfGlNSCMK87Kg3LLfN5WhxXG+6y0oQaumP1P8gUI=
 			</data>
 		</dict>
 		<key>Headers/TurfRadianCoordinate2D.h</key>

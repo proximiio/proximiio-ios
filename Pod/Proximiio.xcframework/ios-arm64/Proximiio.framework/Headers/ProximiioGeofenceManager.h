@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Proximiio/ProximiioGeofence.h>
-#import <Proximiio/ProximiioLocation.h>
+#import "ProximiioGeofence.h"
+#import "ProximiioLocation.h"
 
 @interface ProximiioGeofenceManager : NSObject
 

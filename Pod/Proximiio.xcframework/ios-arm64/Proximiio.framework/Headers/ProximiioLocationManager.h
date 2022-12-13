@@ -7,15 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Proximiio/ProximiioApplication.h>
-#import <Proximiio/ProximiioLocation.h>
-#import <Proximiio/ProximiioLocationSource.h>
-#import <Proximiio/ProximiioGeofenceManager.h>
-#import <Proximiio/ProximiioEddystoneReceiver.h>
-#import <Proximiio/ProximiioFloor.h>
-#import <Proximiio/ProximiioCoreLocation.h>
-#import <Proximiio/ProximiioMotionManagerDelegate.h>
-#import <Proximiio/ProximiioLocationProcessor.h>
+#import "ProximiioApplication.h"
+#import "ProximiioLocation.h"
+#import "ProximiioLocationSource.h"
+#import "ProximiioGeofenceManager.h"
+#import "ProximiioEddystoneReceiver.h"
+#import "ProximiioFloor.h"
+#import "ProximiioCoreLocation.h"
+#import "ProximiioMotionManagerDelegate.h"
+#import "ProximiioLocationProcessor.h"
 
 @interface ProximiioLocationManager : NSObject <ProximiioLocationSourceDelegate, ProximiioCoreLocationDelegate, ProximiioEddystoneReceiverDelegate, ProximiioMotionManagerDelegate>
 

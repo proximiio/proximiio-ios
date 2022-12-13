@@ -8,10 +8,10 @@
 
 #import <CoreLocation/CoreLocation.h>
 
-#import <Proximiio/TurfLineSegment.h>
-#import <Proximiio/ProximiioPointOnLine.h>
-#import <Proximiio/ProximiioLine.h>
-#import <Proximiio/Constant.h>
+#import "TurfLineSegment.h"
+#import "ProximiioPointOnLine.h"
+#import "ProximiioLine.h"
+#import "Constant.h"
 
 @interface Turf : NSObject
 + (CLLocationCoordinate2D) intersectionOfLine: (TurfLineSegment *)line1 withLine:(TurfLineSegment *)line2;

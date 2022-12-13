@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
-#import <Proximiio/ProximiioEddystoneBeacon.h>
+#import "ProximiioEddystoneBeacon.h"
 
 @class ProximiioEddystoneReceiver;
 

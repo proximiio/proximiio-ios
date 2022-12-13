@@ -7,7 +7,7 @@
 //
 
 #import <CoreLocation/CoreLocation.h>
-#import <Proximiio/ProximiioLocation.h>
+#import "ProximiioLocation.h"
 
 @interface TurfMeasure : NSObject
 + (CLLocationCoordinate2D) coordinate:(CLLocationCoordinate2D)coordinate distanceInMeter:(double)distanceKm bearing:(double)bearing;

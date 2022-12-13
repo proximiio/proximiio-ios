@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Proximiio/ProximiioLocation.h>
+#import "ProximiioLocation.h"
 
 @interface ProximiioFeatureManager : NSObject
 

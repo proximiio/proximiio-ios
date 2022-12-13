@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Proximiio/ProximiioAPIResult.h>
-#import <Proximiio/ProximiioBatch.h>
-#import <Proximiio/ProximiioSession.h>
+#import "ProximiioAPIResult.h"
+#import "ProximiioBatch.h"
+#import "ProximiioSession.h"
 
 #define RESULT_OK 1
 #define RESULT_FAILED 2

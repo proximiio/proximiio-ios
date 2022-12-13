@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
-#import <Proximiio/ProximiioLocation.h>
+#import "ProximiioLocation.h"
 
 @interface Trigonometry : NSObject
 

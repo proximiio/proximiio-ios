@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import <Proximiio/ProximiioMotionManagerDelegate.h>
+#import "ProximiioMotionManagerDelegate.h"
 
 @interface ProximiioMotionManager : NSObject
 + (id)sharedManager;

@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Proximiio/ProximiioOrganization.h>
-#import <Proximiio/ProximiioUser.h>
-#import <Proximiio/ProximiioApplication.h>
-#import <Proximiio/ProximiioVisitor.h>
+#import "ProximiioOrganization.h"
+#import "ProximiioUser.h"
+#import "ProximiioApplication.h"
+#import "ProximiioVisitor.h"
 
 typedef enum ProximiioSessionType {
     kProximiioUserSession,

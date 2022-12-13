@@ -9,7 +9,7 @@
 #ifndef ProximiioLocationManagerDelegate_h
 #define ProximiioLocationManagerDelegate_h
 
-#import <Proximiio/ProximiioLocation.h>
+#import "ProximiioLocation.h"
 
 @protocol ProximiioLocationManagerDelegate
 
