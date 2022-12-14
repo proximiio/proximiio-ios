@@ -1,6 +1,6 @@
 # Proximiio
 
-### Version 5.2.26
+### Version 5.2.27
 
 
 [![Version](https://img.shields.io/cocoapods/v/Proximiio.svg?style=flat)](http://cocoapods.org/pods/Proximiio)
