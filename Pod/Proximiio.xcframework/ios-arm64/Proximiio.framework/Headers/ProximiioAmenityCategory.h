@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CrystDBCipher/CrystDB.h>
+@import CrystDBCipher;
 
 @interface ProximiioAmenityCategory : NSObject <CrystDB>
 - (id)initWithDictionary:(NSDictionary *)dict;

@@ -42,11 +42,11 @@
 		</data>
 		<key>Headers/ProximiioAmenity.h</key>
 		<data>
-		tl9uDiQxyQyJjoTzgNh15h6quKo=
+		vQ6Tne35uMGYuNryVvDWEYTjrYM=
 		</data>
 		<key>Headers/ProximiioAmenityCategory.h</key>
 		<data>
-		8by5sLIovjIlkuy9uIP8UgP4Rr8=
+		nOsaLIHjQZ4krHHnMKkIjAeMDwI=
 		</data>
 		<key>Headers/ProximiioAmenityCategoryManager.h</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Headers/ProximiioCampus.h</key>
 		<data>
-		CLoQPQ1wvIL4Rod1MkCzxMM1qEw=
+		ZhAr15UDeP1U3gMbVCY/OPQqPf4=
 		</data>
 		<key>Headers/ProximiioCampusManager.h</key>
 		<data>
@@ -130,7 +130,7 @@
 		</data>
 		<key>Headers/ProximiioGeoJSON.h</key>
 		<data>
-		wQ1DNzkgy26qCA7leIQ9Q6GBIg4=
+		8Z8DDscEzTtxv7oO0pz7Ib5Nz+s=
 		</data>
 		<key>Headers/ProximiioGeofence.h</key>
 		<data>
@@ -194,7 +194,7 @@
 		</data>
 		<key>Headers/ProximiioMapStyle.h</key>
 		<data>
-		CYvqiAylnGrqGFK7ZV+FrtpKu6g=
+		KRMzX+MbgQxRf9Et9aLyUJwrg4g=
 		</data>
 		<key>Headers/ProximiioMetricsManager.h</key>
 		<data>
@@ -378,14 +378,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			L7nMKAdIXYKNknk9vk+13+EuFEmuwjbyEt2T9xIXjqE=
+			vMQ6pkjYHV0Wf0CPoxjGQuZP0/dLtsgxdovKJueViZk=
 			</data>
 		</dict>
 		<key>Headers/ProximiioAmenityCategory.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+CtPpf5X0soHl91UVfQLTi+wYdNSJWOn7o2YeiyEo+E=
+			UiyDIsNLuPGQ6fk/8AaFSMir8UXKZA4+iMFZ75VPRA4=
 			</data>
 		</dict>
 		<key>Headers/ProximiioAmenityCategoryManager.h</key>
@@ -434,7 +434,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			q4bN/YXE8eltWkHlbWRzzxuXm5KYcDuSe2hlY3tOQis=
+			UpPEY0m45sAJHOBW+aFkrlDTGaNi+xHVZIiyeoNE4z0=
 			</data>
 		</dict>
 		<key>Headers/ProximiioCampusManager.h</key>
@@ -532,7 +532,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FXZIL1ZXeL4EM+YRfKAdAf448kTZqQ/0ms5BS9HG9S0=
+			qVkwdlI0nZPfVW+nq/GxmbS39VKaqvm0bBCnaNq+1N8=
 			</data>
 		</dict>
 		<key>Headers/ProximiioGeofence.h</key>
@@ -644,7 +644,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8BDs/2hp7F9LQ8Ztx9o9RMBOPUo4jGOXGShD5HOuHE4=
+			RJ5m5BjSkWoX9IyvZ2YriS/63SnP0J1ci3XGXOKmVTE=
 			</data>
 		</dict>
 		<key>Headers/ProximiioMetricsManager.h</key>
