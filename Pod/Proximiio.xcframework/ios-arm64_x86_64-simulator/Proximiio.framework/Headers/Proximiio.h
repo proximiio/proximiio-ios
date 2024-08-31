@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#import "ProximiioAmenity.h"
-#import "ProximiioAmenityCategory.h"
 #import "ProximiioAPI.h"
 #import "ProximiioLocation.h"
 #import "ProximiioLocationSource.h"
@@ -62,6 +60,8 @@
 #import "TurfPolyline.h"
 #import "ProximiioFormatter.h"
 #import "ProximiioAmenityCategoryManager.h"
+#import "ProximiioAmenity.h"
+#import "ProximiioAmenityCategory.h"
 
 
 //! Project version number for Proximiio.
