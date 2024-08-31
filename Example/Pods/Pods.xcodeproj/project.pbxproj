@@ -16,6 +16,7 @@
 				C3D97A0465A63AA08AEA84B19739C228 /* PBXTargetDependency */,
 			);
 			name = Proximiio;
+			productName = Proximiio;
 		};
 		AA6E119C34F4DE60D4FFF46C6C2543EA /* IndoorAtlas */ = {
 			isa = PBXAggregateTarget;
@@ -25,6 +26,7 @@
 			dependencies = (
 			);
 			name = IndoorAtlas;
+			productName = IndoorAtlas;
 		};
 /* End PBXAggregateTarget section */
 
@@ -60,17 +62,17 @@
 
 /* Begin PBXFileReference section */
 		05696DE18859925C4FA3F985DFED88B6 /* Pods-Proximiio_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Proximiio_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		0B80212216BD89DFD5C317A3EBDDBE2E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		0B80212216BD89DFD5C317A3EBDDBE2E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		52557103DD6B7865A7EC40D9793493C0 /* Pods-Proximiio_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Proximiio_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		59F9681DEED7FD8E87B228728D3A50A1 /* Pods_Proximiio_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Proximiio_Tests.framework; path = "Pods-Proximiio_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C3C09ACBF96157A24BFC3E9C342BC86 /* Proximiio.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Proximiio.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		59F9681DEED7FD8E87B228728D3A50A1 /* Pods_Proximiio_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Proximiio_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C3C09ACBF96157A24BFC3E9C342BC86 /* Proximiio.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Proximiio.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		806D6B6C62D9096859607048EC0D7497 /* IndoorAtlas.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IndoorAtlas.xcconfig; sourceTree = "<group>"; };
-		83955E9DD45DB957683E4E038E9A7086 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		83955E9DD45DB957683E4E038E9A7086 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		8A70B8CB06FF6D1EAE689AAB0C5D84AC /* Pods-Proximiio_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Proximiio_Tests-Info.plist"; sourceTree = "<group>"; };
 		98646AB94C14FF36345AE01535BF22F2 /* Pods-Proximiio_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Proximiio_Tests-dummy.m"; sourceTree = "<group>"; };
 		9AFC0D859793DA7BF005E86138ACC780 /* Pods-Proximiio_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Proximiio_Tests-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B0138EF844A4F044F64DED06B95005CF /* Proximiio.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Proximiio.xcconfig; sourceTree = "<group>"; };
 		C38B081AC1A6A0C32380B8DCC1EEA22A /* Pods-Proximiio_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Proximiio_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C44CE999253D6AE0190BB4ABF4B9B7EB /* Pods-Proximiio_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Proximiio_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -141,7 +143,6 @@
 				D6C56D960A36EE8E5FB07ED21B918650 /* Frameworks */,
 				2E79D85112FF883D65117305050D6F42 /* Support Files */,
 			);
-			name = IndoorAtlas;
 			path = IndoorAtlas;
 			sourceTree = "<group>";
 		};
@@ -401,13 +402,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -558,7 +558,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
