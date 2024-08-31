@@ -192,10 +192,16 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Proximiio_Tests/Pods-Proximiio_Tests-frameworks.sh",
-				"${PODS_ROOT}/../../Pod/Proximiio.framework",
+				"${BUILT_PRODUCTS_DIR}/CrystDBCipher/CrystDBCipher.framework",
+				"${BUILT_PRODUCTS_DIR}/DarklyEventSource/DarklyEventSource.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLCipher/SQLCipher.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Proximiio/Proximiio.framework/Proximiio",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CrystDBCipher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DarklyEventSource.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLCipher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Proximiio.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,23 +1,35 @@
 PODS:
-  - IndoorAtlas (2.4.1)
-  - Proximiio (1.1.74):
-    - IndoorAtlas
+  - CrystDBCipher (0.1.12):
+    - SQLCipher
+  - DarklyEventSource (4.1.1)
+  - Proximiio (5.3.0):
+    - CrystDBCipher
+    - DarklyEventSource
+  - SQLCipher (4.6.1):
+    - SQLCipher/standard (= 4.6.1)
+  - SQLCipher/common (4.6.1)
+  - SQLCipher/standard (4.6.1):
+    - SQLCipher/common
 
 DEPENDENCIES:
   - Proximiio (from `../`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - IndoorAtlas
+  https://github.com/CocoaPods/Specs:
+    - CrystDBCipher
+    - DarklyEventSource
+    - SQLCipher
 
 EXTERNAL SOURCES:
   Proximiio:
     :path: "../"
 
 SPEC CHECKSUMS:
-  IndoorAtlas: 866807ed552ed9571a2c2defddf0f0742af3a387
-  Proximiio: 173757e84cda27b84afa7802920fe9581b80e26e
+  CrystDBCipher: 5aa287d612edbc1e596bb90f5aeeedd3a13b7e7a
+  DarklyEventSource: 6df384dcdb211d2b6bfbbe93a3148bd25567dd61
+  Proximiio: 4b48c80a1dc977efb97dfbf48220b424a38c8429
+  SQLCipher: 77fbe633cd84db04b07876dd50766b4924b57d61
 
-PODFILE CHECKSUM: da8f0b5c72a2a7430fc42aca494bad785f5bc470
+PODFILE CHECKSUM: 9db4e8b296feb93eabb64c93b9bfc440c8c64636
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.15.2

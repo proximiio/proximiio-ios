@@ -9,107 +9,306 @@
 /* Begin PBXAggregateTarget section */
 		3C00E69971F9D9A57AB7356D9277C0EF /* Proximiio */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 1C57B6A9D2CBAF8E8A0C1C3140468F75 /* Build configuration list for PBXAggregateTarget "Proximiio" */;
+			buildConfigurationList = FBEF997CDDA2C8B055F668C0002D593F /* Build configuration list for PBXAggregateTarget "Proximiio" */;
 			buildPhases = (
+				94952F687FC773E82842B0093C8CBA1C /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
-				C3D97A0465A63AA08AEA84B19739C228 /* PBXTargetDependency */,
+				B995A85C320211701FEF7A2D3727A8C8 /* PBXTargetDependency */,
+				F90D30E1D465D116C5B1D8B2187AD774 /* PBXTargetDependency */,
 			);
 			name = Proximiio;
-			productName = Proximiio;
-		};
-		AA6E119C34F4DE60D4FFF46C6C2543EA /* IndoorAtlas */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 17617C75CAAAEFFACDA6EEF24BB9C4C5 /* Build configuration list for PBXAggregateTarget "IndoorAtlas" */;
-			buildPhases = (
-			);
-			dependencies = (
-			);
-			name = IndoorAtlas;
-			productName = IndoorAtlas;
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		5DFBB113B69E3BDA2696359E29E29A54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		675574D416DC4F1404C239CC3CF2F991 /* Pods-Proximiio_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AFC0D859793DA7BF005E86138ACC780 /* Pods-Proximiio_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BD5EF89D221BB0A1E2A997A3D217A90B /* Pods-Proximiio_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 98646AB94C14FF36345AE01535BF22F2 /* Pods-Proximiio_Tests-dummy.m */; };
+		0F3D3739622E205DE0D524A3559B4F43 /* CrystKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 22506516B36F41B6C4A9B05A9D15649B /* CrystKeyChain.m */; };
+		140D6ABFE103579CF07BE4D68747DF3C /* LDEventParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F24EB84B4605232E1B7D544B9B9899D4 /* LDEventParser.m */; };
+		2A0A1195C9FC576E43081F361648BD90 /* NSArray+LDEventSource.h in Headers */ = {isa = PBXBuildFile; fileRef = D052ACC20BEFC1FFBE19F113DD509DD4 /* NSArray+LDEventSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A69C32214783760A57B0D484C81DAF2 /* NSString+LDEventSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F3391E003EDF37287118CB3F23AB3599 /* NSString+LDEventSource.m */; };
+		2D1A034682E1417578A71A1582296681 /* LDEventStringAccumulator.h in Headers */ = {isa = PBXBuildFile; fileRef = 02A3B597ECFCCFF9C41ECA8F3F4CF5E1 /* LDEventStringAccumulator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D5B05D821FE407D1BDA34AC2FD74DD4 /* NSObject+CrystDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 239E890BF51942622ED439FBA9B5D594 /* NSObject+CrystDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		396AC7CB863621A5D9BBA71459EB73AB /* LDEventSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B7754CBB4D4F61B638DD51F0E76181F /* LDEventSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A1EB3038051BC1E0B5D69CDF2F45601 /* SQLCipher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4809A8D4DDEABBED8B0EAF12FF5876 /* SQLCipher-dummy.m */; };
+		3D027624B9C6F10BA5A87AAFF8B5A682 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9FB0A6AB1E69C23631F3C24E5B925F4 /* Foundation.framework */; };
+		4A19809990B83988451AF71892E23F69 /* Pods-Proximiio_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 98646AB94C14FF36345AE01535BF22F2 /* Pods-Proximiio_Tests-dummy.m */; };
+		4C3021C744C20C58CC59FCDEAD127855 /* NSArray+LDEventSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BB01DF00990887DA72DB960BC01F75E5 /* NSArray+LDEventSource.m */; };
+		4D052163F388363690CF61304039DD13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 590EC7411B844952E1A478A345CCBF5F /* UIKit.framework */; };
+		5298B80EA6473307248F5E1669E5A87D /* CrystDBCipher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 476280D7A006A5DC5161EA70028FB948 /* CrystDBCipher-dummy.m */; };
+		58B3AC80F44E36E6EB16CA18980B8736 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9FB0A6AB1E69C23631F3C24E5B925F4 /* Foundation.framework */; };
+		61813ED2E513666803818CE669932C9F /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = F4EAB148D25AF16BFA0FFFAB51E1C945 /* PrivacyInfo.xcprivacy */; };
+		661696A120BDA4617DD469277C3EECB0 /* sqlite3.h in Headers */ = {isa = PBXBuildFile; fileRef = BB894A68FC3E6CD5FAE8057DD31B0AE5 /* sqlite3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66975C66A7596F732911EB057B77908F /* CrystDBCipher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 183E768A63B582E554A303A83BCDA281 /* CrystDBCipher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68A0CC2A059A4225C0BB969E33E29B5A /* Pods-Proximiio_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AFC0D859793DA7BF005E86138ACC780 /* Pods-Proximiio_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73DA7695995A3C4E227DC0EF95742D5A /* LDEventSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0C1C8B8684D2B5E779F00B45BB7B2 /* LDEventSource.m */; };
+		75A88E519BAF2635DBCC94733CECF01B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9FB0A6AB1E69C23631F3C24E5B925F4 /* Foundation.framework */; };
+		7ACC75E7350BAAB0F0476F0FBFFDDB54 /* CrystManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A1F5B27BA65904AF70213387A07079 /* CrystManager.m */; };
+		7DFE5A407B108E6A2F4C3606AA892BC7 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 45A7D70C10376ACC6BE11C1B760DB974 /* sqlite3.c */; settings = {COMPILER_FLAGS = "-DNDEBUG -DSQLITE_HAS_CODEC -DSQLITE_TEMP_STORE=2 -DSQLITE_SOUNDEX -DSQLITE_THREADSAFE -DSQLITE_ENABLE_RTREE -DSQLITE_ENABLE_STAT3 -DSQLITE_ENABLE_STAT4 -DSQLITE_ENABLE_COLUMN_METADATA -DSQLITE_ENABLE_MEMORY_MANAGEMENT -DSQLITE_ENABLE_LOAD_EXTENSION -DSQLITE_ENABLE_FTS4 -DSQLITE_ENABLE_FTS4_UNICODE61 -DSQLITE_ENABLE_FTS3_PARENTHESIS -DSQLITE_ENABLE_UNLOCK_NOTIFY -DSQLITE_ENABLE_JSON1 -DSQLITE_ENABLE_FTS5 -DSQLCIPHER_CRYPTO_CC -DHAVE_USLEEP=1 -DSQLITE_MAX_VARIABLE_NUMBER=99999 -fno-objc-arc"; }; };
+		8E4BBD8D6D8867EBF52884B11B314E59 /* DarklyEventSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 468E32849D8BDA246E1472F03B4470AA /* DarklyEventSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F2DD91008568F7F978A8BC059DE1AC4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCAD4DDCDEBD20035BBCA7D46BE3EE6B /* Security.framework */; };
+		93DA42C33951F00B1DE4234EDD7C9F5A /* SQLCipher-SQLCipher in Resources */ = {isa = PBXBuildFile; fileRef = 40B6E82B558CAB2B289F5BD57C9E2223 /* SQLCipher-SQLCipher */; };
+		97132E131F4FC2F7E26FDAACA334B84C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCAD4DDCDEBD20035BBCA7D46BE3EE6B /* Security.framework */; };
+		993A6CC7F88B49B0F21A7A3D3CFA09DB /* NSObject+CrystDB.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CB81B7DCC5B4FE6244861F7CAA8B09 /* NSObject+CrystDB.m */; };
+		9E797C64050FBE50BD80EE4E28788A68 /* DarklyEventSource-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EA2C61581CAF84646CC1553F88FA0AC /* DarklyEventSource-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B113F85B7D06A56F89C7F593EA361BDA /* SQLCipher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E34F587164379A63A4BC50A597BB9BAB /* SQLCipher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7A43948EB8A3C78FD221CCA5F41C79D /* LDEventParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 78BD974CEFA7CD82ADA3A4479B9A7850 /* LDEventParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7C5C8F3C6C773E9C50A396C04AAD4F0 /* NSString+LDEventSource.h in Headers */ = {isa = PBXBuildFile; fileRef = F49C00EF03C39C363BFE3D13B09AD309 /* NSString+LDEventSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA14086B53C2F2FD0451085753CB3013 /* CrystDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 374E6C532977D33B142CE1C96A565CAC /* CrystDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA9BBB69CF83C7043A89959AB2ED8413 /* LDEventStringAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB3541C84CDF93FD30DE32A94DBCADF /* LDEventStringAccumulator.m */; };
+		CF83C455AD5F9C32A23106CA98AA2648 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9FB0A6AB1E69C23631F3C24E5B925F4 /* Foundation.framework */; };
+		D051B80E73F062C3571C4CC774C847B7 /* DarklyEventSource-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1627229A2BEDF06173CB1023F6E3383 /* DarklyEventSource-dummy.m */; };
+		D4496D0DB644301C4961D5C85D44F78E /* CrystKeyChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 411EEF4F23407B2F86953374D5D70950 /* CrystKeyChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D685D136C1EF77F80EC481B70FCCA368 /* CrystManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A03BECC1378A1CAF7114FD8A0CF017D8 /* CrystManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDC54DD53A51229FF3791477305355E5 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62102EE89F8419EEE187B72F44139CA3 /* CoreFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		012AED37B4E3A1EE99E063EAA375DB82 /* PBXContainerItemProxy */ = {
+		1A13AF5625AD3730615CAAAD7AA094C9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AA6E119C34F4DE60D4FFF46C6C2543EA;
-			remoteInfo = IndoorAtlas;
+			remoteGlobalIDString = 63E753B265B7563C34451BA67858C1D6;
+			remoteInfo = DarklyEventSource;
 		};
-		8BC2CB563475AC3F21E21D314A952EB2 /* PBXContainerItemProxy */ = {
+		223ADDCC5041890A84332761F28CDB6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9D20B9CBD7E29B798CF9251B4EC50DE;
+			remoteInfo = CrystDBCipher;
+		};
+		531A49EFF826AED4563D527613E4E470 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D21962D0DE148A440FADB55935BD4264;
+			remoteInfo = SQLCipher;
+		};
+		8DBD390BB7812A94D159B444C16362F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3C00E69971F9D9A57AB7356D9277C0EF;
 			remoteInfo = Proximiio;
 		};
-		B2D9758FD1E27D1C0602D423FA4D591A /* PBXContainerItemProxy */ = {
+		98200EEAABE03FA9D08887CD7109CF40 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AA6E119C34F4DE60D4FFF46C6C2543EA;
-			remoteInfo = IndoorAtlas;
+			remoteGlobalIDString = 87FC595F8D2A5960F7C8C0F0CBCFBC8D;
+			remoteInfo = "SQLCipher-SQLCipher";
+		};
+		AE260585CB9090B569FBFB026E2636AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63E753B265B7563C34451BA67858C1D6;
+			remoteInfo = DarklyEventSource;
+		};
+		AE38E76A86DE84BB0B0C4A7BE040E79B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9D20B9CBD7E29B798CF9251B4EC50DE;
+			remoteInfo = CrystDBCipher;
+		};
+		D2CFB286EE751DF0D9CBC0C1655B329E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D21962D0DE148A440FADB55935BD4264;
+			remoteInfo = SQLCipher;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02A3B597ECFCCFF9C41ECA8F3F4CF5E1 /* LDEventStringAccumulator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LDEventStringAccumulator.h; path = LDEventSource/LDEventStringAccumulator.h; sourceTree = "<group>"; };
 		05696DE18859925C4FA3F985DFED88B6 /* Pods-Proximiio_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Proximiio_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		0B80212216BD89DFD5C317A3EBDDBE2E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		09C610757D833567F997DA73C7340A8F /* DarklyEventSource.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DarklyEventSource.debug.xcconfig; sourceTree = "<group>"; };
+		183E768A63B582E554A303A83BCDA281 /* CrystDBCipher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CrystDBCipher-umbrella.h"; sourceTree = "<group>"; };
+		1FD5F5B0E4809A3AE2ECDE142F44A6BB /* SQLCipher */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SQLCipher; path = SQLCipher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2080CF4DEF323800D4BF52600F56C2DC /* DarklyEventSource */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DarklyEventSource; path = DarklyEventSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21531EEBA78FD76171DE576470B02421 /* CrystDBCipher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CrystDBCipher.modulemap; sourceTree = "<group>"; };
+		22506516B36F41B6C4A9B05A9D15649B /* CrystKeyChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CrystKeyChain.m; path = CrystDB/CrystKeyChain.m; sourceTree = "<group>"; };
+		239E890BF51942622ED439FBA9B5D594 /* NSObject+CrystDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+CrystDB.h"; path = "CrystDB/NSObject+CrystDB.h"; sourceTree = "<group>"; };
+		23BE71E828869B584C2ADF14225E1236 /* CrystDBCipher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CrystDBCipher.release.xcconfig; sourceTree = "<group>"; };
+		2BDF2A5E442A7C4CE9E396027C38765C /* CrystDBCipher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CrystDBCipher.debug.xcconfig; sourceTree = "<group>"; };
+		2EA2C61581CAF84646CC1553F88FA0AC /* DarklyEventSource-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DarklyEventSource-umbrella.h"; sourceTree = "<group>"; };
+		34E6FE8D7B09486CECECBD1853A0B2EA /* Proximiio-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Proximiio-xcframeworks.sh"; sourceTree = "<group>"; };
+		36B904A43C7E6D2C7599EFF321E257DA /* CrystDBCipher */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CrystDBCipher; path = CrystDBCipher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		374E6C532977D33B142CE1C96A565CAC /* CrystDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CrystDB.h; path = CrystDB/CrystDB.h; sourceTree = "<group>"; };
+		40B6E82B558CAB2B289F5BD57C9E2223 /* SQLCipher-SQLCipher */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "SQLCipher-SQLCipher"; path = SQLCipher.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		411EEF4F23407B2F86953374D5D70950 /* CrystKeyChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CrystKeyChain.h; path = CrystDB/CrystKeyChain.h; sourceTree = "<group>"; };
+		43AFE45AECC630C0F8709F5D38354B3B /* DarklyEventSource.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DarklyEventSource.modulemap; sourceTree = "<group>"; };
+		45A7D70C10376ACC6BE11C1B760DB974 /* sqlite3.c */ = {isa = PBXFileReference; includeInIndex = 1; path = sqlite3.c; sourceTree = "<group>"; };
+		468E32849D8BDA246E1472F03B4470AA /* DarklyEventSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DarklyEventSource.h; path = LDEventSource/DarklyEventSource.h; sourceTree = "<group>"; };
+		476280D7A006A5DC5161EA70028FB948 /* CrystDBCipher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CrystDBCipher-dummy.m"; sourceTree = "<group>"; };
+		4EB3541C84CDF93FD30DE32A94DBCADF /* LDEventStringAccumulator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LDEventStringAccumulator.m; path = LDEventSource/LDEventStringAccumulator.m; sourceTree = "<group>"; };
+		50074AB8CF07D4515A87FDB1B0486B5C /* DarklyEventSource-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DarklyEventSource-prefix.pch"; sourceTree = "<group>"; };
 		52557103DD6B7865A7EC40D9793493C0 /* Pods-Proximiio_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Proximiio_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		59F9681DEED7FD8E87B228728D3A50A1 /* Pods_Proximiio_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Proximiio_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C3C09ACBF96157A24BFC3E9C342BC86 /* Proximiio.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Proximiio.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		806D6B6C62D9096859607048EC0D7497 /* IndoorAtlas.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IndoorAtlas.xcconfig; sourceTree = "<group>"; };
-		83955E9DD45DB957683E4E038E9A7086 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		590EC7411B844952E1A478A345CCBF5F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		59F9681DEED7FD8E87B228728D3A50A1 /* Pods-Proximiio_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Proximiio_Tests"; path = Pods_Proximiio_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61F2CC086A09C431331483D039EE62A4 /* SQLCipher-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SQLCipher-Info.plist"; sourceTree = "<group>"; };
+		62102EE89F8419EEE187B72F44139CA3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		68B235F9CEEB5FB705C7A6BF40ADC730 /* Proximiio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Proximiio.release.xcconfig; sourceTree = "<group>"; };
+		7036D320690FF8BB6B46E502C45288A8 /* DarklyEventSource-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DarklyEventSource-Info.plist"; sourceTree = "<group>"; };
+		75B491CE3FF106F4EB080DE51AC70085 /* SQLCipher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLCipher-prefix.pch"; sourceTree = "<group>"; };
+		78BD974CEFA7CD82ADA3A4479B9A7850 /* LDEventParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LDEventParser.h; path = LDEventSource/LDEventParser.h; sourceTree = "<group>"; };
+		78D1B1B1B9C47AA62AD479B08C5604FF /* DarklyEventSource.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DarklyEventSource.release.xcconfig; sourceTree = "<group>"; };
+		83A1F5B27BA65904AF70213387A07079 /* CrystManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CrystManager.m; path = CrystDB/CrystManager.m; sourceTree = "<group>"; };
 		8A70B8CB06FF6D1EAE689AAB0C5D84AC /* Pods-Proximiio_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Proximiio_Tests-Info.plist"; sourceTree = "<group>"; };
+		8B7754CBB4D4F61B638DD51F0E76181F /* LDEventSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LDEventSource.h; path = LDEventSource/LDEventSource.h; sourceTree = "<group>"; };
+		8DC0C1C8B8684D2B5E779F00B45BB7B2 /* LDEventSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LDEventSource.m; path = LDEventSource/LDEventSource.m; sourceTree = "<group>"; };
+		97CFCFA51C7530462D10EFC469A6FF58 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		98646AB94C14FF36345AE01535BF22F2 /* Pods-Proximiio_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Proximiio_Tests-dummy.m"; sourceTree = "<group>"; };
 		9AFC0D859793DA7BF005E86138ACC780 /* Pods-Proximiio_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Proximiio_Tests-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B0138EF844A4F044F64DED06B95005CF /* Proximiio.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Proximiio.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A03BECC1378A1CAF7114FD8A0CF017D8 /* CrystManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CrystManager.h; path = CrystDB/CrystManager.h; sourceTree = "<group>"; };
+		A0B4D2ECBAEFBE184BAF02B3D8EC635E /* CrystDBCipher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CrystDBCipher-prefix.pch"; sourceTree = "<group>"; };
+		A1627229A2BEDF06173CB1023F6E3383 /* DarklyEventSource-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DarklyEventSource-dummy.m"; sourceTree = "<group>"; };
+		BB01DF00990887DA72DB960BC01F75E5 /* NSArray+LDEventSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+LDEventSource.m"; path = "LDEventSource/NSArray+LDEventSource.m"; sourceTree = "<group>"; };
+		BB894A68FC3E6CD5FAE8057DD31B0AE5 /* sqlite3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
 		C38B081AC1A6A0C32380B8DCC1EEA22A /* Pods-Proximiio_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Proximiio_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C44CE999253D6AE0190BB4ABF4B9B7EB /* Pods-Proximiio_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Proximiio_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		E72AB9D175C13D048E233E03CEDF47C2 /* Proximiio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Proximiio.framework; path = "../../Library/Developer/Xcode/DerivedData/Proximiio-dayqywurlhujqecjryhqvcejgorg/Build/Products/Debug-iphonesimulator/Proximiio.framework"; sourceTree = "<group>"; };
+		C895A3E7089E67D25D91E51AF6B07344 /* SQLCipher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLCipher.debug.xcconfig; sourceTree = "<group>"; };
+		CCAD4DDCDEBD20035BBCA7D46BE3EE6B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		CE4809A8D4DDEABBED8B0EAF12FF5876 /* SQLCipher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLCipher-dummy.m"; sourceTree = "<group>"; };
+		CF9577AAB28376A96480AB8DDA0C5AC0 /* ResourceBundle-SQLCipher-SQLCipher-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SQLCipher-SQLCipher-Info.plist"; sourceTree = "<group>"; };
+		D052ACC20BEFC1FFBE19F113DD509DD4 /* NSArray+LDEventSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+LDEventSource.h"; path = "LDEventSource/NSArray+LDEventSource.h"; sourceTree = "<group>"; };
+		D454E5B9CC86D28737707F97F2D3F21F /* Proximiio.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = Proximiio.xcframework; path = Pod/Proximiio.xcframework; sourceTree = "<group>"; };
+		D8CB81B7DCC5B4FE6244861F7CAA8B09 /* NSObject+CrystDB.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+CrystDB.m"; path = "CrystDB/NSObject+CrystDB.m"; sourceTree = "<group>"; };
+		D9FB0A6AB1E69C23631F3C24E5B925F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E01DF0B627ACCF7B6034C1B44402B6DD /* Proximiio.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Proximiio.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E34F587164379A63A4BC50A597BB9BAB /* SQLCipher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLCipher-umbrella.h"; sourceTree = "<group>"; };
 		F1BFE33B4793148C169BFD7B78D3A85D /* Pods-Proximiio_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Proximiio_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		F8FE888BB6BF051692E3C85529C8F84E /* IndoorAtlas.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IndoorAtlas.framework; path = "indooratlas-ios-sdk/IndoorAtlas.framework"; sourceTree = "<group>"; };
+		F21CB9D13B0F421D6C36D2AC0F7F787E /* SQLCipher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SQLCipher.modulemap; sourceTree = "<group>"; };
+		F24EB84B4605232E1B7D544B9B9899D4 /* LDEventParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LDEventParser.m; path = LDEventSource/LDEventParser.m; sourceTree = "<group>"; };
+		F315CE8014D6E6EE5D4C98D17F9AB979 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F3391E003EDF37287118CB3F23AB3599 /* NSString+LDEventSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+LDEventSource.m"; path = "LDEventSource/NSString+LDEventSource.m"; sourceTree = "<group>"; };
+		F49C00EF03C39C363BFE3D13B09AD309 /* NSString+LDEventSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+LDEventSource.h"; path = "LDEventSource/NSString+LDEventSource.h"; sourceTree = "<group>"; };
+		F4E341D803101E04B49048D9AA7C0E7A /* Proximiio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Proximiio.debug.xcconfig; sourceTree = "<group>"; };
+		F4EAB148D25AF16BFA0FFFAB51E1C945 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = "sqlcipher-resources/PrivacyInfo.xcprivacy"; sourceTree = "<group>"; };
+		F5880C9302928D83FEFA4E4E0A797A38 /* CrystDBCipher-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CrystDBCipher-Info.plist"; sourceTree = "<group>"; };
 		FB528343710995B66C68E99856632BDF /* Pods-Proximiio_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Proximiio_Tests.modulemap"; sourceTree = "<group>"; };
+		FD956987C068731B7D613EABA05458AC /* SQLCipher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLCipher.release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6B875993A5A1363A781467C48ADD3AC8 /* Frameworks */ = {
+		42D29A83420334A737C49D880F903EA8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DFBB113B69E3BDA2696359E29E29A54 /* Foundation.framework in Frameworks */,
+				75A88E519BAF2635DBCC94733CECF01B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BD637B50A0DA501FAFAEEEC94D880EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D027624B9C6F10BA5A87AAFF8B5A682 /* Foundation.framework in Frameworks */,
+				97132E131F4FC2F7E26FDAACA334B84C /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7668B48AF72DDBA207209EDAAFCF1478 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9436B756703641CB40EE679C8543E9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC54DD53A51229FF3791477305355E5 /* CoreFoundation.framework in Frameworks */,
+				CF83C455AD5F9C32A23106CA98AA2648 /* Foundation.framework in Frameworks */,
+				8F2DD91008568F7F978A8BC059DE1AC4 /* Security.framework in Frameworks */,
+				4D052163F388363690CF61304039DD13 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAB003B396B9FD1218095F9FCD2F29DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58B3AC80F44E36E6EB16CA18980B8736 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02AF8472A61806001DD3D164BB65006A /* Support Files */ = {
+		0F38B5076134CFC697F26BEE75C1AD55 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B0138EF844A4F044F64DED06B95005CF /* Proximiio.xcconfig */,
+				CF9577AAB28376A96480AB8DDA0C5AC0 /* ResourceBundle-SQLCipher-SQLCipher-Info.plist */,
+				F21CB9D13B0F421D6C36D2AC0F7F787E /* SQLCipher.modulemap */,
+				CE4809A8D4DDEABBED8B0EAF12FF5876 /* SQLCipher-dummy.m */,
+				61F2CC086A09C431331483D039EE62A4 /* SQLCipher-Info.plist */,
+				75B491CE3FF106F4EB080DE51AC70085 /* SQLCipher-prefix.pch */,
+				E34F587164379A63A4BC50A597BB9BAB /* SQLCipher-umbrella.h */,
+				C895A3E7089E67D25D91E51AF6B07344 /* SQLCipher.debug.xcconfig */,
+				FD956987C068731B7D613EABA05458AC /* SQLCipher.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Proximiio";
+			path = "../Target Support Files/SQLCipher";
 			sourceTree = "<group>";
 		};
-		2E79D85112FF883D65117305050D6F42 /* Support Files */ = {
+		12333C288A1AB72BDE723485CAAD6470 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				806D6B6C62D9096859607048EC0D7497 /* IndoorAtlas.xcconfig */,
+				F4EAB148D25AF16BFA0FFFAB51E1C945 /* PrivacyInfo.xcprivacy */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/IndoorAtlas";
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		290BDC1C307633D57AAB126BCB733A40 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				45A7D70C10376ACC6BE11C1B760DB974 /* sqlite3.c */,
+				BB894A68FC3E6CD5FAE8057DD31B0AE5 /* sqlite3.h */,
+				12333C288A1AB72BDE723485CAAD6470 /* Resources */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		33843A709FD1E5830AB52628044EE577 /* Proximiio */ = {
+			isa = PBXGroup;
+			children = (
+				E4D5C05F31162772DAD2421581EB72E1 /* Frameworks */,
+				C1666B810543A1ED5A996BBBB84C1001 /* Pod */,
+				DDF3D2928472F5DE59ACD620D56B6867 /* Support Files */,
+			);
+			name = Proximiio;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		3636A3608E4A3A3AB43C9C084456EF77 /* SQLCipher */ = {
+			isa = PBXGroup;
+			children = (
+				290BDC1C307633D57AAB126BCB733A40 /* common */,
+				0F38B5076134CFC697F26BEE75C1AD55 /* Support Files */,
+			);
+			name = SQLCipher;
+			path = SQLCipher;
+			sourceTree = "<group>";
+		};
+		3F18DDEDBEFDD432031838F2626F5703 /* CrystDBCipher */ = {
+			isa = PBXGroup;
+			children = (
+				374E6C532977D33B142CE1C96A565CAC /* CrystDB.h */,
+				411EEF4F23407B2F86953374D5D70950 /* CrystKeyChain.h */,
+				22506516B36F41B6C4A9B05A9D15649B /* CrystKeyChain.m */,
+				A03BECC1378A1CAF7114FD8A0CF017D8 /* CrystManager.h */,
+				83A1F5B27BA65904AF70213387A07079 /* CrystManager.m */,
+				239E890BF51942622ED439FBA9B5D594 /* NSObject+CrystDB.h */,
+				D8CB81B7DCC5B4FE6244861F7CAA8B09 /* NSObject+CrystDB.m */,
+				CED3334E62BFE3BEE54A34D3334FA886 /* Support Files */,
+			);
+			name = CrystDBCipher;
+			path = CrystDBCipher;
 			sourceTree = "<group>";
 		};
 		40219A0E89D92445A21ECECD7ADE593D /* Pods-Proximiio_Tests */ = {
@@ -129,74 +328,113 @@
 			path = "Target Support Files/Pods-Proximiio_Tests";
 			sourceTree = "<group>";
 		};
-		732DF18F379D3ABB4771188D7A502FEE /* Frameworks */ = {
+		5AC803DE8089A691AFB418FF3BF5E28D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E72AB9D175C13D048E233E03CEDF47C2 /* Proximiio.framework */,
+				36B904A43C7E6D2C7599EFF321E257DA /* CrystDBCipher */,
+				2080CF4DEF323800D4BF52600F56C2DC /* DarklyEventSource */,
+				59F9681DEED7FD8E87B228728D3A50A1 /* Pods-Proximiio_Tests */,
+				1FD5F5B0E4809A3AE2ECDE142F44A6BB /* SQLCipher */,
+				40B6E82B558CAB2B289F5BD57C9E2223 /* SQLCipher-SQLCipher */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		736B4FA4D84EC373EB7DD8D7B64363CD /* IndoorAtlas */ = {
-			isa = PBXGroup;
-			children = (
-				D6C56D960A36EE8E5FB07ED21B918650 /* Frameworks */,
-				2E79D85112FF883D65117305050D6F42 /* Support Files */,
-			);
-			path = IndoorAtlas;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		7E8E5B632C4EC5736173CBFA54A6D8D8 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				841D7C3DF2BF81C9871F916FDE609941 /* Proximiio */,
+				33843A709FD1E5830AB52628044EE577 /* Proximiio */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		841D7C3DF2BF81C9871F916FDE609941 /* Proximiio */ = {
+		9A2A3041476D073FC219BCC8DEDCBBE4 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				732DF18F379D3ABB4771188D7A502FEE /* Frameworks */,
-				88AFC64ECA76B578C943E2258E44844A /* Pod */,
-				02AF8472A61806001DD3D164BB65006A /* Support Files */,
+				43AFE45AECC630C0F8709F5D38354B3B /* DarklyEventSource.modulemap */,
+				A1627229A2BEDF06173CB1023F6E3383 /* DarklyEventSource-dummy.m */,
+				7036D320690FF8BB6B46E502C45288A8 /* DarklyEventSource-Info.plist */,
+				50074AB8CF07D4515A87FDB1B0486B5C /* DarklyEventSource-prefix.pch */,
+				2EA2C61581CAF84646CC1553F88FA0AC /* DarklyEventSource-umbrella.h */,
+				09C610757D833567F997DA73C7340A8F /* DarklyEventSource.debug.xcconfig */,
+				78D1B1B1B9C47AA62AD479B08C5604FF /* DarklyEventSource.release.xcconfig */,
 			);
-			name = Proximiio;
-			path = ../..;
+			name = "Support Files";
+			path = "../Target Support Files/DarklyEventSource";
 			sourceTree = "<group>";
 		};
-		88AFC64ECA76B578C943E2258E44844A /* Pod */ = {
+		B4144D3741FD309C4219A4CC54B48F32 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				83955E9DD45DB957683E4E038E9A7086 /* LICENSE */,
-				6C3C09ACBF96157A24BFC3E9C342BC86 /* Proximiio.podspec */,
-				0B80212216BD89DFD5C317A3EBDDBE2E /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		A3D7500DAD52FB50D1E4FCD18FCDC7DD /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				736B4FA4D84EC373EB7DD8D7B64363CD /* IndoorAtlas */,
+				3F18DDEDBEFDD432031838F2626F5703 /* CrystDBCipher */,
+				B908E69CF4B8A7F2AC52D8DB83D6617D /* DarklyEventSource */,
+				3636A3608E4A3A3AB43C9C084456EF77 /* SQLCipher */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		B2935839B44E094E1193FF60F67476B9 /* Products */ = {
+		B908E69CF4B8A7F2AC52D8DB83D6617D /* DarklyEventSource */ = {
 			isa = PBXGroup;
 			children = (
-				59F9681DEED7FD8E87B228728D3A50A1 /* Pods_Proximiio_Tests.framework */,
+				468E32849D8BDA246E1472F03B4470AA /* DarklyEventSource.h */,
+				78BD974CEFA7CD82ADA3A4479B9A7850 /* LDEventParser.h */,
+				F24EB84B4605232E1B7D544B9B9899D4 /* LDEventParser.m */,
+				8B7754CBB4D4F61B638DD51F0E76181F /* LDEventSource.h */,
+				8DC0C1C8B8684D2B5E779F00B45BB7B2 /* LDEventSource.m */,
+				02A3B597ECFCCFF9C41ECA8F3F4CF5E1 /* LDEventStringAccumulator.h */,
+				4EB3541C84CDF93FD30DE32A94DBCADF /* LDEventStringAccumulator.m */,
+				D052ACC20BEFC1FFBE19F113DD509DD4 /* NSArray+LDEventSource.h */,
+				BB01DF00990887DA72DB960BC01F75E5 /* NSArray+LDEventSource.m */,
+				F49C00EF03C39C363BFE3D13B09AD309 /* NSString+LDEventSource.h */,
+				F3391E003EDF37287118CB3F23AB3599 /* NSString+LDEventSource.m */,
+				9A2A3041476D073FC219BCC8DEDCBBE4 /* Support Files */,
 			);
-			name = Products;
+			name = DarklyEventSource;
+			path = DarklyEventSource;
 			sourceTree = "<group>";
 		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+				C9DCE32C78C46DB64A170BF4BB518C37 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1666B810543A1ED5A996BBBB84C1001 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F315CE8014D6E6EE5D4C98D17F9AB979 /* LICENSE */,
+				E01DF0B627ACCF7B6034C1B44402B6DD /* Proximiio.podspec */,
+				97CFCFA51C7530462D10EFC469A6FF58 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		C9DCE32C78C46DB64A170BF4BB518C37 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				62102EE89F8419EEE187B72F44139CA3 /* CoreFoundation.framework */,
+				D9FB0A6AB1E69C23631F3C24E5B925F4 /* Foundation.framework */,
+				CCAD4DDCDEBD20035BBCA7D46BE3EE6B /* Security.framework */,
+				590EC7411B844952E1A478A345CCBF5F /* UIKit.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		CED3334E62BFE3BEE54A34D3334FA886 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				21531EEBA78FD76171DE576470B02421 /* CrystDBCipher.modulemap */,
+				476280D7A006A5DC5161EA70028FB948 /* CrystDBCipher-dummy.m */,
+				F5880C9302928D83FEFA4E4E0A797A38 /* CrystDBCipher-Info.plist */,
+				A0B4D2ECBAEFBE184BAF02B3D8EC635E /* CrystDBCipher-prefix.pch */,
+				183E768A63B582E554A303A83BCDA281 /* CrystDBCipher-umbrella.h */,
+				2BDF2A5E442A7C4CE9E396027C38765C /* CrystDBCipher.debug.xcconfig */,
+				23BE71E828869B584C2ADF14225E1236 /* CrystDBCipher.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CrystDBCipher";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -204,25 +442,28 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				7E8E5B632C4EC5736173CBFA54A6D8D8 /* Development Pods */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				A3D7500DAD52FB50D1E4FCD18FCDC7DD /* Pods */,
-				B2935839B44E094E1193FF60F67476B9 /* Products */,
+				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
+				B4144D3741FD309C4219A4CC54B48F32 /* Pods */,
+				5AC803DE8089A691AFB418FF3BF5E28D /* Products */,
 				F262C7503C26242C0084D29290BAA56F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		DDF3D2928472F5DE59ACD620D56B6867 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				34E6FE8D7B09486CECECBD1853A0B2EA /* Proximiio-xcframeworks.sh */,
+				F4E341D803101E04B49048D9AA7C0E7A /* Proximiio.debug.xcconfig */,
+				68B235F9CEEB5FB705C7A6BF40ADC730 /* Proximiio.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Proximiio";
 			sourceTree = "<group>";
 		};
-		D6C56D960A36EE8E5FB07ED21B918650 /* Frameworks */ = {
+		E4D5C05F31162772DAD2421581EB72E1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F8FE888BB6BF051692E3C85529C8F84E /* IndoorAtlas.framework */,
+				D454E5B9CC86D28737707F97F2D3F21F /* Proximiio.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -238,35 +479,145 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		C4B88D410E1D4FC47D41F623887B9A4D /* Headers */ = {
+		8D8F0DF6167791A26591E6D21CB0E6EA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				675574D416DC4F1404C239CC3CF2F991 /* Pods-Proximiio_Tests-umbrella.h in Headers */,
+				8E4BBD8D6D8867EBF52884B11B314E59 /* DarklyEventSource.h in Headers */,
+				9E797C64050FBE50BD80EE4E28788A68 /* DarklyEventSource-umbrella.h in Headers */,
+				B7A43948EB8A3C78FD221CCA5F41C79D /* LDEventParser.h in Headers */,
+				396AC7CB863621A5D9BBA71459EB73AB /* LDEventSource.h in Headers */,
+				2D1A034682E1417578A71A1582296681 /* LDEventStringAccumulator.h in Headers */,
+				2A0A1195C9FC576E43081F361648BD90 /* NSArray+LDEventSource.h in Headers */,
+				B7C5C8F3C6C773E9C50A396C04AAD4F0 /* NSString+LDEventSource.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		910558092E868420B0B91095701A8DAE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B113F85B7D06A56F89C7F593EA361BDA /* SQLCipher-umbrella.h in Headers */,
+				661696A120BDA4617DD469277C3EECB0 /* sqlite3.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD4AEFD91D146946ED1E362121B58182 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68A0CC2A059A4225C0BB969E33E29B5A /* Pods-Proximiio_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E68A25D2A63F796AFE6B1FBAAC7AE226 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA14086B53C2F2FD0451085753CB3013 /* CrystDB.h in Headers */,
+				66975C66A7596F732911EB057B77908F /* CrystDBCipher-umbrella.h in Headers */,
+				D4496D0DB644301C4961D5C85D44F78E /* CrystKeyChain.h in Headers */,
+				D685D136C1EF77F80EC481B70FCCA368 /* CrystManager.h in Headers */,
+				2D5B05D821FE407D1BDA34AC2FD74DD4 /* NSObject+CrystDB.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		B05DE7AD76657F622599D322894CDDAB /* Pods-Proximiio_Tests */ = {
+		63E753B265B7563C34451BA67858C1D6 /* DarklyEventSource */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4DBFE8CDEC08E09CC5E67A1B8720188B /* Build configuration list for PBXNativeTarget "Pods-Proximiio_Tests" */;
+			buildConfigurationList = 5C25298B286A8AA4DEEF50A4CA223990 /* Build configuration list for PBXNativeTarget "DarklyEventSource" */;
 			buildPhases = (
-				C4B88D410E1D4FC47D41F623887B9A4D /* Headers */,
-				9C6F39673BF58F1FA2F0D7232CB0D009 /* Sources */,
-				6B875993A5A1363A781467C48ADD3AC8 /* Frameworks */,
-				6686CCEF1E67EA00E64ACB434E0A1FC7 /* Resources */,
+				8D8F0DF6167791A26591E6D21CB0E6EA /* Headers */,
+				A459CF25BD3C7E285DED994460897288 /* Sources */,
+				CAB003B396B9FD1218095F9FCD2F29DC /* Frameworks */,
+				F9CBE347597530B4222BD2703C2FE787 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A7692BE8448D39CABDE2E73A0BFEC942 /* PBXTargetDependency */,
-				99484585F76E943A1DF985A967EFC95B /* PBXTargetDependency */,
+			);
+			name = DarklyEventSource;
+			productName = DarklyEventSource;
+			productReference = 2080CF4DEF323800D4BF52600F56C2DC /* DarklyEventSource */;
+			productType = "com.apple.product-type.framework";
+		};
+		87FC595F8D2A5960F7C8C0F0CBCFBC8D /* SQLCipher-SQLCipher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2DF0C4C03C2319A9E44DE83F0BEC5DA /* Build configuration list for PBXNativeTarget "SQLCipher-SQLCipher" */;
+			buildPhases = (
+				6E493C411E587F5C14DD551CC0475933 /* Sources */,
+				7668B48AF72DDBA207209EDAAFCF1478 /* Frameworks */,
+				B006CE9E8A36914BAB8093F4A7AA1FEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SQLCipher-SQLCipher";
+			productName = SQLCipher;
+			productReference = 40B6E82B558CAB2B289F5BD57C9E2223 /* SQLCipher-SQLCipher */;
+			productType = "com.apple.product-type.bundle";
+		};
+		A9D20B9CBD7E29B798CF9251B4EC50DE /* CrystDBCipher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75F5891EFCB2C3030D8E1AE95B71D626 /* Build configuration list for PBXNativeTarget "CrystDBCipher" */;
+			buildPhases = (
+				E68A25D2A63F796AFE6B1FBAAC7AE226 /* Headers */,
+				2FA56A1C8C81B4EB78380E8FE53D9311 /* Sources */,
+				B9436B756703641CB40EE679C8543E9E /* Frameworks */,
+				BBC94388A274E5179B6977898E753DF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				435C93CBD91CDFA1C4C30BD069BBCB5F /* PBXTargetDependency */,
+			);
+			name = CrystDBCipher;
+			productName = CrystDBCipher;
+			productReference = 36B904A43C7E6D2C7599EFF321E257DA /* CrystDBCipher */;
+			productType = "com.apple.product-type.framework";
+		};
+		B05DE7AD76657F622599D322894CDDAB /* Pods-Proximiio_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47414CFBCEC8F0A08FD191F0F2AB5514 /* Build configuration list for PBXNativeTarget "Pods-Proximiio_Tests" */;
+			buildPhases = (
+				BD4AEFD91D146946ED1E362121B58182 /* Headers */,
+				CBF74F7D41DAB403546FA996D6AEB57D /* Sources */,
+				42D29A83420334A737C49D880F903EA8 /* Frameworks */,
+				33BDF5A169FB58393D495CBC41B9433E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3AB255D6944B3232374FAA23725A5A7 /* PBXTargetDependency */,
+				3E24485F3588DC1C891D56D96B1DC2D9 /* PBXTargetDependency */,
+				6E442EEBA814B916380EE7171CB08390 /* PBXTargetDependency */,
+				6133BAFA52923C725ED272C72F148C2A /* PBXTargetDependency */,
 			);
 			name = "Pods-Proximiio_Tests";
-			productName = "Pods-Proximiio_Tests";
-			productReference = 59F9681DEED7FD8E87B228728D3A50A1 /* Pods_Proximiio_Tests.framework */;
+			productName = Pods_Proximiio_Tests;
+			productReference = 59F9681DEED7FD8E87B228728D3A50A1 /* Pods-Proximiio_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+		D21962D0DE148A440FADB55935BD4264 /* SQLCipher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A8C3E2AC020D96E5F9DD76F0AA469F8 /* Build configuration list for PBXNativeTarget "SQLCipher" */;
+			buildPhases = (
+				910558092E868420B0B91095701A8DAE /* Headers */,
+				02B4AF0E80EC391853A038FEA0BC4FF1 /* Sources */,
+				5BD637B50A0DA501FAFAEEEC94D880EA /* Frameworks */,
+				269ED84F095A9A71552D5CD50241DF34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9015FC3DF597C6F914D2D14591E46781 /* PBXTargetDependency */,
+			);
+			name = SQLCipher;
+			productName = SQLCipher;
+			productReference = 1FD5F5B0E4809A3AE2ECDE142F44A6BB /* SQLCipher */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -275,30 +626,64 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				Base,
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = B2935839B44E094E1193FF60F67476B9 /* Products */;
+			productRefGroup = 5AC803DE8089A691AFB418FF3BF5E28D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AA6E119C34F4DE60D4FFF46C6C2543EA /* IndoorAtlas */,
+				A9D20B9CBD7E29B798CF9251B4EC50DE /* CrystDBCipher */,
+				63E753B265B7563C34451BA67858C1D6 /* DarklyEventSource */,
 				B05DE7AD76657F622599D322894CDDAB /* Pods-Proximiio_Tests */,
 				3C00E69971F9D9A57AB7356D9277C0EF /* Proximiio */,
+				D21962D0DE148A440FADB55935BD4264 /* SQLCipher */,
+				87FC595F8D2A5960F7C8C0F0CBCFBC8D /* SQLCipher-SQLCipher */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6686CCEF1E67EA00E64ACB434E0A1FC7 /* Resources */ = {
+		269ED84F095A9A71552D5CD50241DF34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93DA42C33951F00B1DE4234EDD7C9F5A /* SQLCipher-SQLCipher in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33BDF5A169FB58393D495CBC41B9433E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B006CE9E8A36914BAB8093F4A7AA1FEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61813ED2E513666803818CE669932C9F /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBC94388A274E5179B6977898E753DF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9CBE347597530B4222BD2703C2FE787 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -307,57 +692,203 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		94952F687FC773E82842B0093C8CBA1C /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Proximiio/Proximiio-xcframeworks.sh",
+				"${PODS_ROOT}/../../Pod/Proximiio.xcframework",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputPaths = (
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Proximiio/Proximiio.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Proximiio/Proximiio-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		9C6F39673BF58F1FA2F0D7232CB0D009 /* Sources */ = {
+		02B4AF0E80EC391853A038FEA0BC4FF1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD5EF89D221BB0A1E2A997A3D217A90B /* Pods-Proximiio_Tests-dummy.m in Sources */,
+				3A1EB3038051BC1E0B5D69CDF2F45601 /* SQLCipher-dummy.m in Sources */,
+				7DFE5A407B108E6A2F4C3606AA892BC7 /* sqlite3.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FA56A1C8C81B4EB78380E8FE53D9311 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5298B80EA6473307248F5E1669E5A87D /* CrystDBCipher-dummy.m in Sources */,
+				0F3D3739622E205DE0D524A3559B4F43 /* CrystKeyChain.m in Sources */,
+				7ACC75E7350BAAB0F0476F0FBFFDDB54 /* CrystManager.m in Sources */,
+				993A6CC7F88B49B0F21A7A3D3CFA09DB /* NSObject+CrystDB.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E493C411E587F5C14DD551CC0475933 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A459CF25BD3C7E285DED994460897288 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D051B80E73F062C3571C4CC774C847B7 /* DarklyEventSource-dummy.m in Sources */,
+				140D6ABFE103579CF07BE4D68747DF3C /* LDEventParser.m in Sources */,
+				73DA7695995A3C4E227DC0EF95742D5A /* LDEventSource.m in Sources */,
+				CA9BBB69CF83C7043A89959AB2ED8413 /* LDEventStringAccumulator.m in Sources */,
+				4C3021C744C20C58CC59FCDEAD127855 /* NSArray+LDEventSource.m in Sources */,
+				2A69C32214783760A57B0D484C81DAF2 /* NSString+LDEventSource.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF74F7D41DAB403546FA996D6AEB57D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A19809990B83988451AF71892E23F69 /* Pods-Proximiio_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		99484585F76E943A1DF985A967EFC95B /* PBXTargetDependency */ = {
+		3E24485F3588DC1C891D56D96B1DC2D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DarklyEventSource;
+			target = 63E753B265B7563C34451BA67858C1D6 /* DarklyEventSource */;
+			targetProxy = AE260585CB9090B569FBFB026E2636AD /* PBXContainerItemProxy */;
+		};
+		435C93CBD91CDFA1C4C30BD069BBCB5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SQLCipher;
+			target = D21962D0DE148A440FADB55935BD4264 /* SQLCipher */;
+			targetProxy = D2CFB286EE751DF0D9CBC0C1655B329E /* PBXContainerItemProxy */;
+		};
+		6133BAFA52923C725ED272C72F148C2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SQLCipher;
+			target = D21962D0DE148A440FADB55935BD4264 /* SQLCipher */;
+			targetProxy = 531A49EFF826AED4563D527613E4E470 /* PBXContainerItemProxy */;
+		};
+		6E442EEBA814B916380EE7171CB08390 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Proximiio;
 			target = 3C00E69971F9D9A57AB7356D9277C0EF /* Proximiio */;
-			targetProxy = 8BC2CB563475AC3F21E21D314A952EB2 /* PBXContainerItemProxy */;
+			targetProxy = 8DBD390BB7812A94D159B444C16362F6 /* PBXContainerItemProxy */;
 		};
-		A7692BE8448D39CABDE2E73A0BFEC942 /* PBXTargetDependency */ = {
+		9015FC3DF597C6F914D2D14591E46781 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = IndoorAtlas;
-			target = AA6E119C34F4DE60D4FFF46C6C2543EA /* IndoorAtlas */;
-			targetProxy = 012AED37B4E3A1EE99E063EAA375DB82 /* PBXContainerItemProxy */;
+			name = "SQLCipher-SQLCipher";
+			target = 87FC595F8D2A5960F7C8C0F0CBCFBC8D /* SQLCipher-SQLCipher */;
+			targetProxy = 98200EEAABE03FA9D08887CD7109CF40 /* PBXContainerItemProxy */;
 		};
-		C3D97A0465A63AA08AEA84B19739C228 /* PBXTargetDependency */ = {
+		B995A85C320211701FEF7A2D3727A8C8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = IndoorAtlas;
-			target = AA6E119C34F4DE60D4FFF46C6C2543EA /* IndoorAtlas */;
-			targetProxy = B2D9758FD1E27D1C0602D423FA4D591A /* PBXContainerItemProxy */;
+			name = CrystDBCipher;
+			target = A9D20B9CBD7E29B798CF9251B4EC50DE /* CrystDBCipher */;
+			targetProxy = 223ADDCC5041890A84332761F28CDB6C /* PBXContainerItemProxy */;
+		};
+		C3AB255D6944B3232374FAA23725A5A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CrystDBCipher;
+			target = A9D20B9CBD7E29B798CF9251B4EC50DE /* CrystDBCipher */;
+			targetProxy = AE38E76A86DE84BB0B0C4A7BE040E79B /* PBXContainerItemProxy */;
+		};
+		F90D30E1D465D116C5B1D8B2187AD774 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DarklyEventSource;
+			target = 63E753B265B7563C34451BA67858C1D6 /* DarklyEventSource */;
+			targetProxy = 1A13AF5625AD3730615CAAAD7AA094C9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3DAB30E500B84BDABB63D413264F967E /* Debug */ = {
+		10E4B1F350383DE9F6CF1D261BF6D342 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0138EF844A4F044F64DED06B95005CF /* Proximiio.xcconfig */;
+			baseConfigurationReference = 23BE71E828869B584C2ADF14225E1236 /* CrystDBCipher.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64\n";
+				GCC_PREFIX_HEADER = "Target Support Files/CrystDBCipher/CrystDBCipher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CrystDBCipher/CrystDBCipher-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CrystDBCipher/CrystDBCipher.modulemap";
+				PRODUCT_MODULE_NAME = CrystDBCipher;
+				PRODUCT_NAME = CrystDBCipher;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		4D0A30D58D2BE186F51AEF8143F3C85E /* Release */ = {
+		12178208F399D5F2167D8559A227D48A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD956987C068731B7D613EABA05458AC /* SQLCipher.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64\n";
+				GCC_PREFIX_HEADER = "Target Support Files/SQLCipher/SQLCipher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SQLCipher/SQLCipher-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SQLCipher/SQLCipher.modulemap";
+				PRODUCT_MODULE_NAME = SQLCipher;
+				PRODUCT_NAME = SQLCipher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -380,159 +911,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		620145C222FB8223D40271C4F63B8BA0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 806D6B6C62D9096859607048EC0D7497 /* IndoorAtlas.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		708A2CA53E1F740D1A44367B356EEA9D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05696DE18859925C4FA3F985DFED88B6 /* Pods-Proximiio_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Proximiio_Tests/Pods-Proximiio_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Proximiio_Tests/Pods-Proximiio_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		860413058B659DAAA40C73C90E48AAA6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 806D6B6C62D9096859607048EC0D7497 /* IndoorAtlas.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		9F445A0FC3EC9E039EBAF247EE1F9257 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 52557103DD6B7865A7EC40D9793493C0 /* Pods-Proximiio_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Proximiio_Tests/Pods-Proximiio_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Proximiio_Tests/Pods-Proximiio_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D2A5011B315E0BB5DBF185F518E4D334 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -571,14 +950,286 @@
 			};
 			name = Debug;
 		};
-		EE6D3B4D664A02811352633AD13566A0 /* Release */ = {
+		2ECE71FA897984BCC674023AE661225A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0138EF844A4F044F64DED06B95005CF /* Proximiio.xcconfig */;
+			baseConfigurationReference = C895A3E7089E67D25D91E51AF6B07344 /* SQLCipher.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64\n";
+				GCC_PREFIX_HEADER = "Target Support Files/SQLCipher/SQLCipher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SQLCipher/SQLCipher-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SQLCipher/SQLCipher.modulemap";
+				PRODUCT_MODULE_NAME = SQLCipher;
+				PRODUCT_NAME = SQLCipher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		559BD5DFE5B4A15064F858D959F5E435 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05696DE18859925C4FA3F985DFED88B6 /* Pods-Proximiio_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64\n";
+				INFOPLIST_FILE = "Target Support Files/Pods-Proximiio_Tests/Pods-Proximiio_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Proximiio_Tests/Pods-Proximiio_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8F9C44D29C26CC0F59325BBA361FCFA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4E341D803101E04B49048D9AA7C0E7A /* Proximiio.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64\n";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		98A6E020945B0B59509D6EAAD8E5B4E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C895A3E7089E67D25D91E51AF6B07344 /* SQLCipher.debug.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SQLCipher";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64\n";
+				IBSC_MODULE = SQLCipher;
+				INFOPLIST_FILE = "Target Support Files/SQLCipher/ResourceBundle-SQLCipher-SQLCipher-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = SQLCipher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		A4FC27874F3504B7C5EF43809A13A4FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52557103DD6B7865A7EC40D9793493C0 /* Pods-Proximiio_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64\n";
+				INFOPLIST_FILE = "Target Support Files/Pods-Proximiio_Tests/Pods-Proximiio_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Proximiio_Tests/Pods-Proximiio_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A60C5D10A0F63D79DBA83E69FDC4DF96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BDF2A5E442A7C4CE9E396027C38765C /* CrystDBCipher.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64\n";
+				GCC_PREFIX_HEADER = "Target Support Files/CrystDBCipher/CrystDBCipher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CrystDBCipher/CrystDBCipher-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CrystDBCipher/CrystDBCipher.modulemap";
+				PRODUCT_MODULE_NAME = CrystDBCipher;
+				PRODUCT_NAME = CrystDBCipher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A858B6948A97D1D3C076C2EFE61392FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78D1B1B1B9C47AA62AD479B08C5604FF /* DarklyEventSource.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64\n";
+				GCC_PREFIX_HEADER = "Target Support Files/DarklyEventSource/DarklyEventSource-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DarklyEventSource/DarklyEventSource-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DarklyEventSource/DarklyEventSource.modulemap";
+				PRODUCT_MODULE_NAME = DarklyEventSource;
+				PRODUCT_NAME = DarklyEventSource;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AE5BF1217EE8CAC5E68F0D986799D7DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68B235F9CEEB5FB705C7A6BF40ADC730 /* Proximiio.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64\n";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -586,23 +1237,64 @@
 			};
 			name = Release;
 		};
+		E537B7B20C171AD983819D8A6E7627A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD956987C068731B7D613EABA05458AC /* SQLCipher.release.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SQLCipher";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64\n";
+				IBSC_MODULE = SQLCipher;
+				INFOPLIST_FILE = "Target Support Files/SQLCipher/ResourceBundle-SQLCipher-SQLCipher-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = SQLCipher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		EF17A255B97E6EEAC41D574913703251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09C610757D833567F997DA73C7340A8F /* DarklyEventSource.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64\n";
+				GCC_PREFIX_HEADER = "Target Support Files/DarklyEventSource/DarklyEventSource-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DarklyEventSource/DarklyEventSource-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DarklyEventSource/DarklyEventSource.modulemap";
+				PRODUCT_MODULE_NAME = DarklyEventSource;
+				PRODUCT_NAME = DarklyEventSource;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		17617C75CAAAEFFACDA6EEF24BB9C4C5 /* Build configuration list for PBXAggregateTarget "IndoorAtlas" */ = {
+		47414CFBCEC8F0A08FD191F0F2AB5514 /* Build configuration list for PBXNativeTarget "Pods-Proximiio_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				620145C222FB8223D40271C4F63B8BA0 /* Debug */,
-				860413058B659DAAA40C73C90E48AAA6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1C57B6A9D2CBAF8E8A0C1C3140468F75 /* Build configuration list for PBXAggregateTarget "Proximiio" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3DAB30E500B84BDABB63D413264F967E /* Debug */,
-				EE6D3B4D664A02811352633AD13566A0 /* Release */,
+				559BD5DFE5B4A15064F858D959F5E435 /* Debug */,
+				A4FC27874F3504B7C5EF43809A13A4FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -610,17 +1302,53 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D2A5011B315E0BB5DBF185F518E4D334 /* Debug */,
-				4D0A30D58D2BE186F51AEF8143F3C85E /* Release */,
+				2B9E26EAE2CD392AD762421F663075A1 /* Debug */,
+				63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4DBFE8CDEC08E09CC5E67A1B8720188B /* Build configuration list for PBXNativeTarget "Pods-Proximiio_Tests" */ = {
+		5C25298B286A8AA4DEEF50A4CA223990 /* Build configuration list for PBXNativeTarget "DarklyEventSource" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				708A2CA53E1F740D1A44367B356EEA9D /* Debug */,
-				9F445A0FC3EC9E039EBAF247EE1F9257 /* Release */,
+				EF17A255B97E6EEAC41D574913703251 /* Debug */,
+				A858B6948A97D1D3C076C2EFE61392FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75F5891EFCB2C3030D8E1AE95B71D626 /* Build configuration list for PBXNativeTarget "CrystDBCipher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60C5D10A0F63D79DBA83E69FDC4DF96 /* Debug */,
+				10E4B1F350383DE9F6CF1D261BF6D342 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A8C3E2AC020D96E5F9DD76F0AA469F8 /* Build configuration list for PBXNativeTarget "SQLCipher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ECE71FA897984BCC674023AE661225A /* Debug */,
+				12178208F399D5F2167D8559A227D48A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2DF0C4C03C2319A9E44DE83F0BEC5DA /* Build configuration list for PBXNativeTarget "SQLCipher-SQLCipher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98A6E020945B0B59509D6EAAD8E5B4E4 /* Debug */,
+				E537B7B20C171AD983819D8A6E7627A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBEF997CDDA2C8B055F668C0002D593F /* Build configuration list for PBXAggregateTarget "Proximiio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F9C44D29C26CC0F59325BBA361FCFA4 /* Debug */,
+				AE5BF1217EE8CAC5E68F0D986799D7DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

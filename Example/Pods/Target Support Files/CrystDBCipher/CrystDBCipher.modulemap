@@ -1,0 +1,6 @@
+framework module CrystDBCipher {
+  umbrella header "CrystDBCipher-umbrella.h"
+
+  export *
+  module * { export * }
+}
