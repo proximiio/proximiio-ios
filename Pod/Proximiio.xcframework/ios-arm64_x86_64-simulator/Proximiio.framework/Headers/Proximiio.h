@@ -84,6 +84,7 @@ FOUNDATION_EXPORT const unsigned char ProximiioVersionString[];
 - (void)startUpdating;
 - (void)stopUpdating;
 
+- (void)setLocalDataMode:(BOOL)mode package:(NSDictionary *)package;
 - (void)sync:(void (^)(BOOL completed))callback;
 
 - (void)setBufferSize:(ProximiioBufferSize)bufferSize;

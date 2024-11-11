@@ -40,7 +40,7 @@
 - (NSString *)keyForNamespace:(NSString *)ns instance:(NSString *)instance;
 
 - (void)inputDeleteLocallyById:(NSString *) uuid;
-
+- (void)setDataMode:(BOOL)mode package:(NSDictionary *)_package;
 - (void)wipeLocalCache;
 
 @property (readonly, nonatomic, strong) NSMutableDictionary *applications;
